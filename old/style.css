@@ -1,0 +1,100 @@
+/*Main parts*/
+
+/************************
+* Individual components *
+************************/
+
+.left {
+    padding-right: 2vw;
+
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+    align-items: flex-end;
+}
+
+.right {
+    padding-left: 2vw;
+    font-size: 2.3em;
+}
+
+/* Headline with the name */
+#name h1 {
+    font-family: 'Sofia', cursive;
+    font-size: 5em;
+    font-weight: 100;
+    color: #424242;
+    margin: 0;
+    padding: 0;
+}
+
+/* Icons below the name */
+
+/*Links*/
+.menu {
+}
+.menu a {
+    display: inline-flex;
+    color: #3299BB;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    background-color: #424242;
+    color: #FF9900;
+}
+
+
+/*Social icons*/
+#social {
+    margin-top: 17px;
+    padding:0;
+}
+
+#social .nav-link {
+    padding-left: 20px;
+    padding-right: 0;
+    color: #BCBCBC;
+    font-size: 2.8em;
+}
+#social .nav-link:hover {
+    color: #FF9900;
+
+}
+
+/*********************
+* General components *
+*********************/
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #E9E9E9;
+    color: #E0E4CC;
+
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+}
+
+.half {
+    flex: 50%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-size: 1.2em;
+    margin: .25em 0;
+    padding: 0 1em;
+}
