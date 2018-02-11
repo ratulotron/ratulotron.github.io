@@ -10,83 +10,48 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
     crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Merriweather:300">
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="test.css">
 </head>
 
-<body class="container-fluid" id="content">
+<body class="container-fluid d-flex flex-column justify-content-center" id="content">
   <!-- My name, and tags and social links -->
   <div class="row ">
-    <div class="col-md-6 col-xs-12 homepage-content">
-      <div id="name">
-        <h1>ratul</h1>
-        <h1>minhaz</h1>
+    <div class="col-sm-6 col-xs-12 d-flex flex-column align-items-end homepage-content">
+      <div class="d-flex flex-column align-items-end" id="name">
+        <header>
+          <h1>ratul</h1>
+          <h1>minhaz</h1>
+        </header>
       </div>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="fa fa-github-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="fa fa-envelope-square" aria-hidden="true"></i>
-          </a>
-        </li>
-      </ul>
+      <nav class="nav" id="social-menu">
+          <a class="nav-link" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a class="nav-link" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+          <a class="nav-link" href="#"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+          <a class="nav-link" href="#"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
+      </nav>
     </div>
-    <div class="col-md-6 col-xs-12 swappable-content tags">
-      <ul class="menu nav flex-column">
-        <li class="nav-item">
+    <div class="col-sm-6 col-xs-12 d-inline-block tags">
+      <nav class="nav flex-column link">
           <a class="nav-link" href="#">bangladeshi</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#">linguaphile</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#">web crafter</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#">cs graduate</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#">sci-fi buff</a>
-        </li>
-      </ul>
+      </nav>
     </div>
   </div>
-  <footer class="fixed-bottom">
-    <ul class="menu nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">
-          about
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          writings
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          contact
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          cv
-        </a>
-      </li>
-    </ul>
+  <footer>
+      <nav class="nav fixed-bottom justify-content-center link">
+          <a class="nav-link" href="#">about</a>
+          <a class="nav-link" href="#">writings</a>
+          <a class="nav-link" href="#">contact</a>
+          <a class="nav-link" href="#">cv</a>
+        </nav>
   </footer>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

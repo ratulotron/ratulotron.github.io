@@ -1,3 +1,43 @@
 body {
-  height: 100vh;
+  height: 100vh !important;
+  
+  /* The Color settings */
+  font-family: 'Merriweather', serif;
+  background-color: #E9E9E9;
+  color: #E0E4CC;
+}
+
+header {
+  font-family: 'Sofia', cursive;
+  font-size: 5em;
+  font-weight: 100;
+  color: #424242;
+  margin: 0;
+  padding: 0;
+}
+
+/*****************************/
+/* Component specific stylings */
+/*****************************/
+
+/* Social menu icons under the name */
+#social-menu a {
+  padding-left: 20px;
+  padding-right: 0;
+  color: #BCBCBC;
+  font-size: 2.8em;
+}
+/* Social menu icons under the name when hovered */
+#social-menu a:hover {
+  color: #FF9900;
+}
+
+/* Site-wide links */
+.link {
+  color: #3299BB;
+}
+
+.link a:hover {
+  color: #3299BB;
+  text-decoration: underline #FF9900;
 }
