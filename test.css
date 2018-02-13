@@ -3,41 +3,66 @@ body {
   
   /* The Color settings */
   font-family: 'Merriweather', serif;
-  background-color: #E9E9E9;
-  color: #E0E4CC;
+  background-color: #031634;
 }
 
+/* All headers */
+/* Page titles */
+/* Post titles */
+/* Sub titles */
 header {
   font-family: 'Sofia', cursive;
-  font-size: 5em;
-  font-weight: 100;
-  color: #424242;
+  /* font-weight: 100; */
+  color: #CDB380;
   margin: 0;
   padding: 0;
 }
 
+
 /*****************************/
 /* Component specific stylings */
 /*****************************/
+/**********/
+/* GLOBAL */
+/*********/
 
+/* Site-wide links */
+.link a {
+  color: #D4D4D4;
+}
+
+.link a:hover {
+  color: #00B5B5;
+  text-decoration: underline #424242;
+}
+
+/*************/
+/* LEFT BLOCK */
+/*************/
+/* For my name on the left side */
+#name h1 {
+  font-size: 5em!important;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
 /* Social menu icons under the name */
 #social-menu a {
   padding-left: 20px;
   padding-right: 0;
-  color: #BCBCBC;
+  color: #033649;
   font-size: 2.8em;
 }
 /* Social menu icons under the name when hovered */
-#social-menu a:hover {
-  color: #FF9900;
-}
+/* #social-menu a:hover {
+  color: #036564;
+} */
 
-/* Site-wide links */
-.link {
-  color: #3299BB;
-}
-
-.link a:hover {
-  color: #3299BB;
-  text-decoration: underline #FF9900;
+/**************/
+/* RIGHT BLOCK */
+/**************/
+/* Home page specific */
+#tags {
+  color: #E8DDCB;
+  font-size: 2.3em;
 }
