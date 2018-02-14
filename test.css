@@ -1,9 +1,8 @@
 body {
   height: 100vh !important;
-  
   /* The Color settings */
   font-family: 'Merriweather', serif;
-  background-color: #031634;
+  background-color: #282223;
 }
 
 /* All headers */
@@ -13,9 +12,13 @@ body {
 header {
   font-family: 'Sofia', cursive;
   /* font-weight: 100; */
-  color: #CDB380;
+  color: #F7F8EA;
   margin: 0;
   padding: 0;
+}
+
+footer {
+  padding-bottom: 10px;
 }
 
 
@@ -27,14 +30,21 @@ header {
 /*********/
 
 /* Site-wide links */
-.link a {
-  color: #D4D4D4;
+a {
+  color: #AE9B87;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: transparent 2px dotted;
+
+}
+a:hover, a:active {
+  color: #DAC9AD;
+  border-bottom: #789E92 2px dotted;
 }
 
-.link a:hover {
-  color: #00B5B5;
-  text-decoration: underline #424242;
-}
+ /* a:hover, .nav-link a:active {
+  
+} */
 
 /*************/
 /* LEFT BLOCK */
@@ -48,21 +58,54 @@ header {
 }
 /* Social menu icons under the name */
 #social-menu a {
-  padding-left: 20px;
-  padding-right: 0;
-  color: #033649;
-  font-size: 2.8em;
+  padding: 1.5rem .5rem;
+  color: #AE9B87;
+  font-size: 2.5rem;
 }
 /* Social menu icons under the name when hovered */
-/* #social-menu a:hover {
-  color: #036564;
-} */
+#social-menu a:hover {
+  color: #DAC9AD;
+  border-bottom: none !important;
+}
 
 /**************/
 /* RIGHT BLOCK */
 /**************/
 /* Home page specific */
 #tags {
-  color: #E8DDCB;
-  font-size: 2.3em;
+  color: #789E92;
+  font-size: 2.5em;
 }
+
+
+/*********/
+/* Footer */
+/*********/
+footer {
+  margin-top: 1.5rem;
+}
+footer nav .nav-link {
+  padding: 0 0;
+}
+
+footer nav .nav-item {
+  padding: .5rem 1rem;
+}
+
+/*
+Media Queries
+
+@media (max-width: 768px) { 
+  body {
+    height: 100%!important;
+  }
+
+  header {
+    font-size: .5em;
+    align-items: flex-start;
+  }
+  #tags {
+    font-size: 1em;
+  }
+ }
+*/
