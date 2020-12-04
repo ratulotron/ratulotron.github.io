@@ -1,0 +1,58 @@
+body {
+  overflow-y: scroll;
+}
+
+.container {
+  height: 100%;
+  width: 80vw;
+}
+
+.content {
+  font-family: "EB Garamond", serif;
+}
+
+#sidebar {
+  position: fixed;
+  top: 10vh;
+  left: 10vw;
+}
+
+#right {
+  height: 40vh;
+  width: 45vw;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  top: 20vh;
+  right: 10vw;
+}
+
+/* COMPONENTS */
+#header {
+  overflow-x: visible;
+  width: 80vw;
+}
+
+#sidebar .title {
+  font-family: "Bungee Shade", cursive;
+  font-size: 6rem;
+  font-weight: normal;
+}
+
+#divider {
+  padding: 0;
+  height: 0.15rem;
+}
+
+#sidebar .subtitle {
+  font-family: "Bungee", cursive;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+#social-links {
+  font-family: "Quicksand", sans-serif;
+
+  position: fixed;
+  bottom: 10vh;
+}
