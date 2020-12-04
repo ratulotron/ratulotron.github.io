@@ -1,58 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=EB+Garamond:wght@400;500;700&family=Quicksand:wght@400;500;700&display=swap");
+
+/*****************
+  Basic framing 
+*****************/
+
 body {
-  overflow-y: scroll;
+  margin: 0;
+  background-color: #eee8d5;
+  height: 100vh;
 }
 
-.container {
-  height: 100%;
-  width: 80vw;
+.site-header {
+  width: 84vw;
+  margin: 0 auto;
 }
+.site-title {
+  margin-left: 2vw;
+}
+
+/* .main { */
+/* width: 80vw; */
+/* align-items: center; */
+/* font-family: "EB Garamond", serif; */
+/* font-size: 1.5rem; */
+/* margin: 5vh auto; */
+/* } */
 
 .content {
-  font-family: "EB Garamond", serif;
-}
-
-#sidebar {
-  position: fixed;
-  top: 10vh;
-  left: 10vw;
-}
-
-#right {
-  height: 40vh;
-  width: 45vw;
-  position: fixed;
-  overflow-x: hidden;
-  overflow-y: auto;
-  top: 20vh;
-  right: 10vw;
-}
-
-/* COMPONENTS */
-#header {
-  overflow-x: visible;
   width: 80vw;
+  margin: 0 auto;
+  font-family: "EB Garamond", serif;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10vh;
+  height: 100%;
 }
 
-#sidebar .title {
+.site-divider {
+  height: 0.1rem;
+  background-color: black;
+  width: 85vw;
+  /* margin: 1vh 0; */
+  margin: 0;
+}
+
+.left {
+  /* flex-grow: 0;
+  flex-shrink: 0; */
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right {
+  /* flex-basis: 50%; */
+  /* overflow-y: scroll;
+  height: 100%; */
+  overflow: hidden;
+  flex-grow: 1;
+  flex-basis: 40vw;
+  position: relative;
+}
+
+.inner-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+}
+/*******************
+  Elements styling
+********************/
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.site-title {
+  /* width: 30vw; */
+  font-size: 4rem;
   font-family: "Bungee Shade", cursive;
-  font-size: 6rem;
-  font-weight: normal;
+  font-weight: 400;
+  margin-top: 10vh;
+  margin-bottom: 2vh;
 }
-
-#divider {
-  padding: 0;
-  height: 0.15rem;
-}
-
-#sidebar .subtitle {
+.site-subtitle {
+  /* width: 30vw; */
+  font-size: 1.9rem;
+  font-weight: 100;
   font-family: "Bungee", cursive;
-  font-size: 3rem;
-  font-weight: normal;
+
+  margin-bottom: 10vh;
+  margin-top: 2vh;
 }
 
-#social-links {
-  font-family: "Quicksand", sans-serif;
-
-  position: fixed;
+.social-menu {
+  position: absolute;
   bottom: 10vh;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.social-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section-title {
+  margin-top: 4vh;
+  margin-bottom: 1vh;
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: "Bungee", cursive;
 }
