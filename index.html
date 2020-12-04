@@ -7,366 +7,311 @@
 
   <!-- <meta http-equiv="refresh" content="3"> -->
   <title>Document</title>
+
+  <!-- scripts -->
   <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+  <!-- style -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=EB+Garamond&family=Quicksand:wght@500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-  <style>
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    ::-webkit-scrollbar {
-      display: none;
-    }
+  <link rel="stylesheet" href="style.css">
 
-    body {
-      -ms-overflow-style: none;
-      /* IE and Edge */
-      scrollbar-width: none;
-      /* Firefox */
-
-    }
-
-    .container {
-      height: 100vh;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    #header {
-      height: 20vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-    }
-
-    #header hr {
-      margin: 0;
-    }
-
-    #social-links {
-      height: 20vh;
-    }
-
-    #main {
-      height: 80vh;
-    }
-
-    #left {
-      padding-left: 0;
-    }
-
-    #left header {
-      padding-bottom: 55vh;
-    }
-
-    #right {
-      overflow-y: scroll;
-    }
-
-    .columns {
-      margin: 0;
-    }
-
-    .column {
-      padding-bottom: 0;
-    }
-
-    .column#left {
-      padding-top: 0;
-      margin-top: 1.5rem;
-    }
-
-  </style>
 </head>
+
 
 <body>
   <div class="container is-fullhd">
-    <header id="header">
-      <h1 class="title">Ratul Minhaz</h1>
-      <hr>
-    </header>
-    <section class="columns" id="main">
-      <section class="column is-one-third is-flex is-flex-direction-column is-justify-content-space-between" id="left">
-        <header>
-          <h2 class="subtitle">Data Engineer based in Berlin</h2>
-        </header>
-        <ul class="" id="social-links">
-          <li><a href="#">facebook</a></li>
-          <li><a href="#">linkedin</a></li>
-          <li><a href="#">email</a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </section>
+    <section id="sidebar">
+      <header id="header">
+        <h1 class="title">Ratul<br>Minhaz</h1>
+        <hr class="has-background-dark" id="divider">
+      </header>
+      <h2 class="subtitle">Data Engineer <br> based in Berlin</h2>
+      <ul id="social-links">
+        <li><a href="#">facebook</a></li>
+        <li><a href="#">linkedin</a></li>
+        <li><a href="#">email</a></li>
+        <li><a href="#"></a></li>
+      </ul>
 
-      <section class="column" id="right">
-        <article>
-          <p>
-            Ratul Minhaz is a Bangladeshi software crafter currently living in Berlin, Germany. Over the
-            past 4
-            years he had explored different facets of software development. At the moment he is focused on
-            building
-            data solutions and bridging product development with data science.
-          </p>
-        </article>
-        <article>
-          <header>
-            <h4 class="is-size-4">Philosophy</h4>
-          </header>
-          <p>
-            Finding right causes to work for has been central to Ratul’s goals, let it be professional or
-            volunteer.
-          </p>
-        </article>
-        <article>
-          <header>
-            <h4 class="is-size-4">
-              Timeline
-            </h4>
-          </header>
-          <p>
-            Left home to explore Germany2020Shifted towards data engineering from backend dev2019Represented
-            Mentors Without
-            Borders in discussions for collaboration with local NGOs2019Graduated as a CS major!2017Quit
-            volunteering to finish
-            undergrad2016Started career in software development as an intern2015Fell in love with
-            Python!2014Joined Mozilla as
-            contributor engagement volunteer and ReMo2013Started volunteering at CommunityAction as social
-            worker2012
-          </p>
-        </article>
-        <article>
-          <header>
-            <h4 class="is-size-4">About</h4>
-          </header>
-          <p>Ratul
-            Minhaz, or less known as his birth name Minhazur Rahman, was born and raised in Dhaka,
-            Bangladesh.
-            As a curious kid,
-            along with his brother he used to break and rebuild all their toys. Eventually in high school
-            when
-            he stumbled upon a
-            C++ book, he found his new hobby of building software. It was a no brainer for him to get into a
-            computer science
-            program for undergrad, however the initial kickback from hardcore CS theoretical courses took of
-            a
-            few notches off of
-            his excitement. He found inspiration once again when he joined the local chapter of Mozilla
-            Foundation and did community
-            engagement for Student Ambassadors and Firefox OS Dev programs for couple of years. He started
-            using
-            Ratul Minhaz as his
-            community persona during the talks he took, as a combination of his nick name and first name. He
-            joined a marketing
-            agency as a web developer during his third year at the university and started his career as a
-            software crafter. After
-            working on full stack projects for a while his concentrated on backend development only, making
-            Python and Django his
-            main choice of tools. He considers himself a life long learner and loves to explore product
-            development as an art method
-            rather than being stuck with one specific area only.
-          </p>
-        </article>
-        <article>
-          <p>
-            Ratul Minhaz is a Bangladeshi software crafter currently living in Berlin, Germany. Over the
-            past 4
-            years he had explored different facets of software development. At the moment he is focused on
-            building
-            data solutions and bridging product development with data science.
-          </p>
-        </article>
-        <article>
-          <header>
-            <h4 class="is-size-4">Philosophy</h4>
-          </header>
-          <p>
-            Finding right causes to work for has been central to Ratul’s goals, let it be professional or
-            volunteer.
-          </p>
-        </article>
-        <article>
-          <header>
-            <h4 class="is-size-4">
-              Timeline
-            </h4>
-          </header>
-          <p>
-            Left home to explore Germany2020Shifted towards data engineering from backend dev2019Represented
-            Mentors Without
-            Borders in discussions for collaboration with local NGOs2019Graduated as a CS major!2017Quit
-            volunteering to finish
-            undergrad2016Started career in software development as an intern2015Fell in love with
-            Python!2014Joined Mozilla as
-            contributor engagement volunteer and ReMo2013Started volunteering at CommunityAction as social
-            worker2012
-          </p>
-        </article>
-        <article>
-          <header>
-            <h4 class="is-size-4">About</h4>
-          </header>
-          <p>Ratul
-            Minhaz, or less known as his birth name Minhazur Rahman, was born and raised in Dhaka,
-            Bangladesh.
-            As a curious kid,
-            along with his brother he used to break and rebuild all their toys. Eventually in high school
-            when
-            he stumbled upon a
-            C++ book, he found his new hobby of building software. It was a no brainer for him to get into a
-            computer science
-            program for undergrad, however the initial kickback from hardcore CS theoretical courses took of
-            a
-            few notches off of
-            his excitement. He found inspiration once again when he joined the local chapter of Mozilla
-            Foundation and did community
-            engagement for Student Ambassadors and Firefox OS Dev programs for couple of years. He started
-            using
-            Ratul Minhaz as his
-            community persona during the talks he took, as a combination of his nick name and first name. He
-            joined a marketing
-            agency as a web developer during his third year at the university and started his career as a
-            software crafter. After
-            working on full stack projects for a while his concentrated on backend development only, making
-            Python and Django his
-            main choice of tools. He considers himself a life long learner and loves to explore product
-            development as an art method
-            rather than being stuck with one specific area only.
-          </p>
-        </article>
-        <article>
-          <p>
-            Ratul Minhaz is a Bangladeshi software crafter currently living in Berlin, Germany. Over the
-            past 4
-            years he had explored different facets of software development. At the moment he is focused on
-            building
-            data solutions and bridging product development with data science.
-          </p>
-        </article>
-        <article>
-          <header>
-            <h4 class="is-size-4">Philosophy</h4>
-          </header>
-          <p>
-            Finding right causes to work for has been central to Ratul’s goals, let it be professional or
-            volunteer.
-          </p>
-        </article>
-        <article>
-          <header>
-            <h4 class="is-size-4">
-              Timeline
-            </h4>
-          </header>
-          <p>
-            Left home to explore Germany2020Shifted towards data engineering from backend dev2019Represented
-            Mentors Without
-            Borders in discussions for collaboration with local NGOs2019Graduated as a CS major!2017Quit
-            volunteering to finish
-            undergrad2016Started career in software development as an intern2015Fell in love with
-            Python!2014Joined Mozilla as
-            contributor engagement volunteer and ReMo2013Started volunteering at CommunityAction as social
-            worker2012
-          </p>
-        </article>
-        <article>
-          <header>
-            <h4 class="is-size-4">About</h4>
-          </header>
-          <p>Ratul
-            Minhaz, or less known as his birth name Minhazur Rahman, was born and raised in Dhaka,
-            Bangladesh.
-            As a curious kid,
-            along with his brother he used to break and rebuild all their toys. Eventually in high school
-            when
-            he stumbled upon a
-            C++ book, he found his new hobby of building software. It was a no brainer for him to get into a
-            computer science
-            program for undergrad, however the initial kickback from hardcore CS theoretical courses took of
-            a
-            few notches off of
-            his excitement. He found inspiration once again when he joined the local chapter of Mozilla
-            Foundation and did community
-            engagement for Student Ambassadors and Firefox OS Dev programs for couple of years. He started
-            using
-            Ratul Minhaz as his
-            community persona during the talks he took, as a combination of his nick name and first name. He
-            joined a marketing
-            agency as a web developer during his third year at the university and started his career as a
-            software crafter. After
-            working on full stack projects for a while his concentrated on backend development only, making
-            Python and Django his
-            main choice of tools. He considers himself a life long learner and loves to explore product
-            development as an art method
-            rather than being stuck with one specific area only.
-          </p>
-        </article>
-        <article>
-          <p>
-            Ratul Minhaz is a Bangladeshi software crafter currently living in Berlin, Germany. Over the
-            past 4
-            years he had explored different facets of software development. At the moment he is focused on
-            building
-            data solutions and bridging product development with data science.
-          </p>
-        </article>
-        <article>
-          <header>
-            <h4 class="is-size-4">Philosophy</h4>
-          </header>
-          <p>
-            Finding right causes to work for has been central to Ratul’s goals, let it be professional or
-            volunteer.
-          </p>
-        </article>
-        <article>
-          <header>
-            <h4 class="is-size-4">
-              Timeline
-            </h4>
-          </header>
-          <p>
-            Left home to explore Germany2020Shifted towards data engineering from backend dev2019Represented
-            Mentors Without
-            Borders in discussions for collaboration with local NGOs2019Graduated as a CS major!2017Quit
-            volunteering to finish
-            undergrad2016Started career in software development as an intern2015Fell in love with
-            Python!2014Joined Mozilla as
-            contributor engagement volunteer and ReMo2013Started volunteering at CommunityAction as social
-            worker2012
-          </p>
-        </article>
-        <article>
-          <header>
-            <h4 class="is-size-4">About</h4>
-          </header>
-          <p>Ratul
-            Minhaz, or less known as his birth name Minhazur Rahman, was born and raised in Dhaka,
-            Bangladesh.
-            As a curious kid,
-            along with his brother he used to break and rebuild all their toys. Eventually in high school
-            when
-            he stumbled upon a
-            C++ book, he found his new hobby of building software. It was a no brainer for him to get into a
-            computer science
-            program for undergrad, however the initial kickback from hardcore CS theoretical courses took of
-            a
-            few notches off of
-            his excitement. He found inspiration once again when he joined the local chapter of Mozilla
-            Foundation and did community
-            engagement for Student Ambassadors and Firefox OS Dev programs for couple of years. He started
-            using
-            Ratul Minhaz as his
-            community persona during the talks he took, as a combination of his nick name and first name. He
-            joined a marketing
-            agency as a web developer during his third year at the university and started his career as a
-            software crafter. After
-            working on full stack projects for a while his concentrated on backend development only, making
-            Python and Django his
-            main choice of tools. He considers himself a life long learner and loves to explore product
-            development as an art method
-            rather than being stuck with one specific area only.
-          </p>
-        </article>
-
-      </section>
     </section>
+    <section class="content" id="right">
+      <section>
+        <article>
+          <p>
+            Ratul Minhaz is a Bangladeshi software crafter currently living in Berlin, Germany. Over the
+            past 4
+            years he had explored different facets of software development. At the moment he is focused on
+            building
+            data solutions and bridging product development with data science.
+          </p>
+        </article>
+        <article>
+          <header>
+            <h4>Philosophy</h4>
+          </header>
+          <p>
+            Finding right causes to work for has been central to Ratul’s goals, let it be professional or
+            volunteer.
+          </p>
+        </article>
+        <article>
+          <header>
+            <h4>
+              Timeline
+            </h4>
+          </header>
+          <p>
+            Left home to explore Germany2020Shifted towards data engineering from backend dev2019Represented
+            Mentors Without
+            Borders in discussions for collaboration with local NGOs2019Graduated as a CS major!2017Quit
+            volunteering to finish
+            undergrad2016Started career in software development as an intern2015Fell in love with
+            Python!2014Joined Mozilla as
+            contributor engagement volunteer and ReMo2013Started volunteering at CommunityAction as social
+            worker2012
+          </p>
+        </article>
+        <article>
+          <header>
+            <h4>About</h4>
+          </header>
+          <p>Ratul
+            Minhaz, or less known as his birth name Minhazur Rahman, was born and raised in Dhaka,
+            Bangladesh.
+            As a curious kid,
+            along with his brother he used to break and rebuild all their toys. Eventually in high school
+            when
+            he stumbled upon a
+            C++ book, he found his new hobby of building software. It was a no brainer for him to get into a
+            computer science
+            program for undergrad, however the initial kickback from hardcore CS theoretical courses took of
+            a
+            few notches off of
+            his excitement. He found inspiration once again when he joined the local chapter of Mozilla
+            Foundation and did community
+            engagement for Student Ambassadors and Firefox OS Dev programs for couple of years. He started
+            using
+            Ratul Minhaz as his
+            community persona during the talks he took, as a combination of his nick name and first name. He
+            joined a marketing
+            agency as a web developer during his third year at the university and started his career as a
+            software crafter. After
+            working on full stack projects for a while his concentrated on backend development only, making
+            Python and Django his
+            main choice of tools. He considers himself a life long learner and loves to explore product
+            development as an art method
+            rather than being stuck with one specific area only.
+          </p>
+        </article>
+        <article>
+          <p>
+            Ratul Minhaz is a Bangladeshi software crafter currently living in Berlin, Germany. Over the
+            past 4
+            years he had explored different facets of software development. At the moment he is focused on
+            building
+            data solutions and bridging product development with data science.
+          </p>
+        </article>
+        <article>
+          <header>
+            <h4>Philosophy</h4>
+          </header>
+          <p>
+            Finding right causes to work for has been central to Ratul’s goals, let it be professional or
+            volunteer.
+          </p>
+        </article>
+        <article>
+          <header>
+            <h4>
+              Timeline
+            </h4>
+          </header>
+          <p>
+            Left home to explore Germany2020Shifted towards data engineering from backend dev2019Represented
+            Mentors Without
+            Borders in discussions for collaboration with local NGOs2019Graduated as a CS major!2017Quit
+            volunteering to finish
+            undergrad2016Started career in software development as an intern2015Fell in love with
+            Python!2014Joined Mozilla as
+            contributor engagement volunteer and ReMo2013Started volunteering at CommunityAction as social
+            worker2012
+          </p>
+        </article>
+        <article>
+          <header>
+            <h4>About</h4>
+          </header>
+          <p>Ratul
+            Minhaz, or less known as his birth name Minhazur Rahman, was born and raised in Dhaka,
+            Bangladesh.
+            As a curious kid,
+            along with his brother he used to break and rebuild all their toys. Eventually in high school
+            when
+            he stumbled upon a
+            C++ book, he found his new hobby of building software. It was a no brainer for him to get into a
+            computer science
+            program for undergrad, however the initial kickback from hardcore CS theoretical courses took of
+            a
+            few notches off of
+            his excitement. He found inspiration once again when he joined the local chapter of Mozilla
+            Foundation and did community
+            engagement for Student Ambassadors and Firefox OS Dev programs for couple of years. He started
+            using
+            Ratul Minhaz as his
+            community persona during the talks he took, as a combination of his nick name and first name. He
+            joined a marketing
+            agency as a web developer during his third year at the university and started his career as a
+            software crafter. After
+            working on full stack projects for a while his concentrated on backend development only, making
+            Python and Django his
+            main choice of tools. He considers himself a life long learner and loves to explore product
+            development as an art method
+            rather than being stuck with one specific area only.
+          </p>
+        </article>
+        <article>
+          <p>
+            Ratul Minhaz is a Bangladeshi software crafter currently living in Berlin, Germany. Over the
+            past 4
+            years he had explored different facets of software development. At the moment he is focused on
+            building
+            data solutions and bridging product development with data science.
+          </p>
+        </article>
+        <article>
+          <header>
+            <h4>Philosophy</h4>
+          </header>
+          <p>
+            Finding right causes to work for has been central to Ratul’s goals, let it be professional or
+            volunteer.
+          </p>
+        </article>
+        <article>
+          <header>
+            <h4>
+              Timeline
+            </h4>
+          </header>
+          <p>
+            Left home to explore Germany2020Shifted towards data engineering from backend dev2019Represented
+            Mentors Without
+            Borders in discussions for collaboration with local NGOs2019Graduated as a CS major!2017Quit
+            volunteering to finish
+            undergrad2016Started career in software development as an intern2015Fell in love with
+            Python!2014Joined Mozilla as
+            contributor engagement volunteer and ReMo2013Started volunteering at CommunityAction as social
+            worker2012
+          </p>
+        </article>
+        <article>
+          <header>
+            <h4>About</h4>
+          </header>
+          <p>Ratul
+            Minhaz, or less known as his birth name Minhazur Rahman, was born and raised in Dhaka,
+            Bangladesh.
+            As a curious kid,
+            along with his brother he used to break and rebuild all their toys. Eventually in high school
+            when
+            he stumbled upon a
+            C++ book, he found his new hobby of building software. It was a no brainer for him to get into a
+            computer science
+            program for undergrad, however the initial kickback from hardcore CS theoretical courses took of
+            a
+            few notches off of
+            his excitement. He found inspiration once again when he joined the local chapter of Mozilla
+            Foundation and did community
+            engagement for Student Ambassadors and Firefox OS Dev programs for couple of years. He started
+            using
+            Ratul Minhaz as his
+            community persona during the talks he took, as a combination of his nick name and first name. He
+            joined a marketing
+            agency as a web developer during his third year at the university and started his career as a
+            software crafter. After
+            working on full stack projects for a while his concentrated on backend development only, making
+            Python and Django his
+            main choice of tools. He considers himself a life long learner and loves to explore product
+            development as an art method
+            rather than being stuck with one specific area only.
+          </p>
+        </article>
+        <article>
+          <p>
+            Ratul Minhaz is a Bangladeshi software crafter currently living in Berlin, Germany. Over the
+            past 4
+            years he had explored different facets of software development. At the moment he is focused on
+            building
+            data solutions and bridging product development with data science.
+          </p>
+        </article>
+        <article>
+          <header>
+            <h4>Philosophy</h4>
+          </header>
+          <p>
+            Finding right causes to work for has been central to Ratul’s goals, let it be professional or
+            volunteer.
+          </p>
+        </article>
+        <article>
+          <header>
+            <h4>
+              Timeline
+            </h4>
+          </header>
+          <p>
+            Left home to explore Germany2020Shifted towards data engineering from backend dev2019Represented
+            Mentors Without
+            Borders in discussions for collaboration with local NGOs2019Graduated as a CS major!2017Quit
+            volunteering to finish
+            undergrad2016Started career in software development as an intern2015Fell in love with
+            Python!2014Joined Mozilla as
+            contributor engagement volunteer and ReMo2013Started volunteering at CommunityAction as social
+            worker2012
+          </p>
+        </article>
+        <article>
+          <header>
+            <h4>About</h4>
+          </header>
+          <p>Ratul
+            Minhaz, or less known as his birth name Minhazur Rahman, was born and raised in Dhaka,
+            Bangladesh.
+            As a curious kid,
+            along with his brother he used to break and rebuild all their toys. Eventually in high school
+            when
+            he stumbled upon a
+            C++ book, he found his new hobby of building software. It was a no brainer for him to get into a
+            computer science
+            program for undergrad, however the initial kickback from hardcore CS theoretical courses took of
+            a
+            few notches off of
+            his excitement. He found inspiration once again when he joined the local chapter of Mozilla
+            Foundation and did community
+            engagement for Student Ambassadors and Firefox OS Dev programs for couple of years. He started
+            using
+            Ratul Minhaz as his
+            community persona during the talks he took, as a combination of his nick name and first name. He
+            joined a marketing
+            agency as a web developer during his third year at the university and started his career as a
+            software crafter. After
+            working on full stack projects for a while his concentrated on backend development only, making
+            Python and Django his
+            main choice of tools. He considers himself a life long learner and loves to explore product
+            development as an art method
+            rather than being stuck with one specific area only.
+          </p>
+        </article>
+      </section>
+
+
+    </section>
+
   </div>
 </body>
 
