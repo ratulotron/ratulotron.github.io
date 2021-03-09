@@ -46,6 +46,7 @@ fields:
   default: Ratul Minhaz
 pages:
 - content/posts/2015-03-14-writing-for-myself.md
+- content/posts/2015-09-14-confessions-as-a-programmer.md
 - content/posts/2015-10-04-musings-about-friendship.md
 - content/posts/2015-11-26-sentiment-analysis.md
 - content/posts/2016-06-30-datasci-intro-1-bn.md
