@@ -1,13 +1,16 @@
 ---
 categories:
-  - Tips
-date: 2015-04-15T11:03:31.000Z
+- tips
+date: 2015-04-15T11:03:31.000+00:00
 description: Solution to .gitignore file not ignoring
-draft: false
 tags:
-  - git
-  - tips
+- git
+- cli
 title: If Gitignore does not ignore
+updated: 2021-03-09 3:18 PM
+author: Ratul Minhaz
+layout: ''
+
 ---
 Sometimes after changing your .gitignore the new (un)ignored files don't get get behind the scenes, as you would have expected. The reason behind this is you have already committed the files that you added to .gitignore and now git is tracking the files. Unless you delete them git will keep an eye on any changes on those files as it would do with any other. To get the new .gitignore rule registered with the repo you will have to manually remove tho file(s) from git's cache. So here is what you need to do:
 
@@ -37,4 +40,3 @@ Tada, problem solved! If you ever want to undo this, just add the file to git:
 ``` shell
 git add <file> 
 ```
-

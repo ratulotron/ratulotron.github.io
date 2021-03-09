@@ -46,6 +46,7 @@ fields:
   default: Ratul Minhaz
 pages:
 - content/posts/2015-03-14-writing-for-myself.md
+- content/posts/2015-04-15-if-gitignore-does-not-ignore.md
 - content/posts/2015-09-14-confessions-as-a-programmer.md
 - content/posts/2015-10-04-musings-about-friendship.md
 - content/posts/2015-11-26-sentiment-analysis.md
