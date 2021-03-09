@@ -5,7 +5,6 @@ date: 2015-10-04T00:46:39.000+00:00
 description: ''
 categories:
 - rants
-updated: 2021-03-09 3:14 PM
 tags:
 - friendship
 author: Ratul Minhaz

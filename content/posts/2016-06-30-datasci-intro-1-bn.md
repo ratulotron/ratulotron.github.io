@@ -4,15 +4,13 @@ title: ডেটা সাইন্সে হাতে খড়ি - ১
 permalink: datasci-intro-1-bn
 date: 2016-06-30
 author: Ratul Minhaz
-summary: Introductory data analysis and visualization
 categories:
 - tutorial
 tags:
 - python
 - data science
 published: true
-updated: 2021-03-09 3:12 PM
-description: ''
+description: Introductory data analysis and visualization
 
 ---
 নির্বাচনের সময়টায় সবার মাঝে সাড়া পড়ে যায় কাকে কে ভোট দিবে তা নিয়ে। আপনি হয়ত আপনার বন্ধু-বান্ধব আর পরিবারের সদস্যদের জিজ্ঞেস করেছেন মতামতের জন্য। মোটামুটি কাছের সবার কাছ থেকে মতামত নিয়ে মনে মনে একটা ধারণা তৈরী হয় আপনার: কে বেশি ভোট পেতে পারে, কেনই বা মানুষ তাকে ভোট দিতে বেশি আগ্রহী, কি কারণে হেরে যাওয়া দল কম ভোট পেলে ইত্যাদি। আপনি যদি কখনও এ কাজ বা এরকম মানুষের মতামত নিয়ে ধারণা তৈরী করার মত কিছু করে থাকেন, তাহলে বলা যায় আপনি ডেটা সাইন্স ব্যবহার করেছেন!

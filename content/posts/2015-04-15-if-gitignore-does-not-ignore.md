@@ -7,7 +7,6 @@ tags:
 - git
 - cli
 title: If Gitignore does not ignore
-updated: 2021-03-09 3:18 PM
 author: Ratul Minhaz
 layout: ''
 

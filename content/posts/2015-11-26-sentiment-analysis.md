@@ -5,7 +5,6 @@ date: 2015-11-26T13:03:31.000+00:00
 description: What sentiment analysis means
 categories:
 - writing
-updated: 2021-03-09 3:14 PM
 tags:
 - sentiment analysis
 - literature review

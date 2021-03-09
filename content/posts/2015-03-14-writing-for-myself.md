@@ -8,7 +8,6 @@ keywords:
 - sleep
 - writing
 title: Writing for myself
-updated: 2021-03-09 3:12 PM
 tags:
 - writing
 - self reflection

@@ -4,17 +4,15 @@ title: ডেটা সাইন্সে হাতে খড়ি - ২
 permalink: datasci-intro-2-bn
 date: 2016-06-30
 author: Ratul Minhaz
-summary: Introductory data analysis and visualization
 category:
 - Learning
 tags:
 - python
 - data science
 published: true
-updated: 2021-03-09 3:11 PM
 categories:
 - tutorial
-description: ''
+description: Introductory data analysis and visualization
 
 ---
 আজকের যুগে শ্রেফ ইন্টার্নেটে কানেকশন থাকলেই অজস্ররকমের ডেটা হাতের নাগালে চলে আসে। ওয়েবসাইটগুলো প্রতিনিয়ত অন্যান্য ওয়েবসাইটের সাথে তথ্য নিয়ে কথা বলতে থাকে। হয়ত মানুষের ভাষায় হয় না সে কথাগুলো, হয় বিভিন্ন API বা Application Programming Interface এর মাধ্যমে। ফেসবুক, টুইটার, গুগল ইত্যাদির API ব্যবহার করে আমরা এখন হরেক রকমের তথ্য পেতে পারি।

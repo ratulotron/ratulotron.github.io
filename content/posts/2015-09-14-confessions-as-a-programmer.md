@@ -6,7 +6,6 @@ description: Impatience and programming is a dangerous combination.
 categories:
 - rants
 permalink: thoughts-on-sicp
-updated: 2021-03-09 3:16 PM
 tags:
 - writing
 - coding

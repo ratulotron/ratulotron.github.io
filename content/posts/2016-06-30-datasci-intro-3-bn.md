@@ -4,15 +4,13 @@ title: ডেটা সাইন্সে হাতে খড়ি - ৩
 permalink: datasci-intro-3-bn
 date: 2016-06-30
 author: Ratul Minhaz
-summary: Introductory data analysis and visualization
 categories:
 - tutorial
 tags:
 - python
 - data science
 published: true
-updated: 2021-03-09 3:10 PM
-description: ''
+description: 'Introductory data analysis and visualization'
 
 ---
 API দিয়ে অনায়াসে অনেক অনেক তথ্য সংগ্রহ করতে পারা যেমন অনেক কাজের একটা ব্যাপার কিন্তু তেমনি মাঝে মাঝে এত তথ্য নিয়ে বেসামাল অবস্থায় পড়তে হয়। দেখা যায় যে কোন তথ্য হয়ত আমরা যেমনভাবে চাই তেমন ভাবে নেই, যেমন এই প্রোজেক্টের ক্ষেত্রে আমাদের দরকার অ্যাকাউন্টের বয়স, কিন্তু আমরা পাচ্ছি অ্যাকাউন্ট তৈরীর তারিখ। তাই তথ্য সংগ্রহের পরের ধাপ হল তথ্য বিশ্লেষণ এবং পরিপাটি করা।
