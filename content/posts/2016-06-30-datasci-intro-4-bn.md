@@ -5,11 +5,14 @@ permalink: datasci-intro-4-bn
 date: 2016-06-30T00:00:00.000+00:00
 author: Ratul Minhaz
 summary: Introductory data analysis and visualization
-categories: []
+categories:
+- tutorial
 tags:
 - python
 - data science
 published: true
+updated: 2021-03-09 3:08 PM
+description: ''
 
 ---
 কোন কিছু হ্রাস-বৃদ্ধির হার বোঝার জন্য সবচেয়ে সহজ উপায় হল গ্রাফ আঁকা। স্কুলে-জীবনে লাভ-ক্ষতি বোঝার জন্য আমরা যে গ্রাফ এঁকেছি, সেই একই গ্রাফ দিয়ে নির্বাচনে কার অগ্রগতি বেশি-কম তা বোঝা যায় সহজে। ডেটা সাইন্সের ভাষায় এভাবে গ্রাফের মাধ্যমে তথ্যকে চিত্ররুপে দেখানোকে বলা হয় ভিজুয়ালাইজেশন। পাইথনের কিছু চমৎকার লাইব্রেরী আছে ভিজুয়ালাইজেশনের জন্য, আমরা ব্যবহার করব [Plotly](https://plot.ly/).
