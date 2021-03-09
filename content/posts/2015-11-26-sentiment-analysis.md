@@ -1,13 +1,17 @@
 ---
 layout: post
-title:  "Sentiment Analysis: An Intertwinement of Disciplines"
-date:   2015-11-26 13:03:31
+title: 'Sentiment Analysis: An Intertwinement of Disciplines'
+date: 2015-11-26T13:03:31.000+00:00
 description: What sentiment analysis means
 categories:
-- Writings
-# permalink:
----
+- writing
+updated: 2021-03-09 3:14 PM
+tags:
+- sentiment analysis
+- literature review
+author: Ratul Minhaz
 
+---
 How often do you get the urge to know what others think about you, that is, your actions and preferences? No matter what the number is, you are not alone. Humans as individuals, have always been interested in knowing the opinion of the people around them. Should I talk to her? Is it a good idea to buy that car? Who should I vote? These are only the simplest examples of opinion related questions that arise in our minds every single day. Getting a nod from your best friend, a positive gesture from your dad or a better campaign slogan helps a lot to answer these questions. Similar questions exist not only in our personal lives but in the academia, business and governments as well. The hunting ground for opinions on these questions used to be friends and family, acquaintances, consumer reports et cetera.
 
 But have you ever wondered how this scenario has turned out to be in the post web era? During the last decade, mining for public opinion has gotten a lot organized, thanks to the abundance of information in the web. This is what we call opinion mining, otherwise known as sentiment analysis.
