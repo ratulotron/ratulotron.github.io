@@ -3,17 +3,31 @@ label: Blog post
 hide_body: false
 fields:
 - type: text
-  name: layout
-  label: layout
-- type: text
   name: title
   label: title
 - type: datetime
   name: date
   label: date
 - type: text
+  name: layout
+  label: layout
+- type: text
   name: description
   label: description
 - type: list
   name: categories
   label: categories
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
+- name: draft
+  type: boolean
+  label: draft
+  default: true
+- name: author
+  type: text
+  config:
+    required: false
+  label: author
+  default: Ratul Minhaz
