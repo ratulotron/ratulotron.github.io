@@ -8,6 +8,19 @@ fields:
 - type: datetime
   name: date
   label: date
+  config:
+    export_format: YYYY-MM-DD h:mm A
+- name: updated
+  type: datetime
+  label: updated
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+    export_format: YYYY-MM-DD h:mm A
+  default: now
 - type: text
   name: layout
   label: layout
