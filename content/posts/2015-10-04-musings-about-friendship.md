@@ -1,13 +1,16 @@
 ---
 layout: post
-title:  Musings about friendship
-date:   2015-10-04 00:46:39
-description:
+title: Musings about friendship
+date: 2015-10-04T00:46:39.000+00:00
+description: ''
 categories:
-- Thoughts
-# permalink: 
----
+- rants
+updated: 2021-03-09 3:14 PM
+tags:
+- friendship
+author: Ratul Minhaz
 
+---
 As I see it, you can make friends in only two ways: one is a emotional journey
 where all your personal firewalls break down and you almost know how the other
 person feels like. Another way is through gradually increasing appreciation for
@@ -33,4 +36,3 @@ defending their friends even though they did something really bad.
 Sadness is, when you realize that your emotions and rationality don't complement
 each other in your relationships. That's when you start losing ties with your
 friend. Mostly it goes unnoticed, but the process is painful anyway.
-
