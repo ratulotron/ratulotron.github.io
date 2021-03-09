@@ -1,16 +1,21 @@
 ---
 categories:
-  - Thoughts
-date: 2015-03-14 00:03:17
+- rants
+date: 2015-03-14T00:03:17.000+00:00
 description: Why I should write more often
-draft: false
 keywords:
-  - thoughts
-  - sleep
-  - writing
-title:  Writing for myself
----
+- thoughts
+- sleep
+- writing
+title: Writing for myself
+updated: 2021-03-09 3:12 PM
+tags:
+- writing
+- self reflection
+author: Ratul Minhaz
+layout: ''
 
+---
 It’s 1:49AM and I can’t sleep. It’s a very usual thing for me, I guess. I have
 developed this habit of staying up at night a few years ago. I don’t really
 remember how I got this habit, surely not from studying. I used to talk to
