@@ -9,7 +9,8 @@ tags:
 updated: 2021-03-09 3:13 PM
 layout: ''
 description: ''
-categories: []
+categories:
+- tips
 
 ---
 Trying to set up Sass with Ember can be quiet problematic if you are using a version manager for Node. For example I was using a version manager called 'n' and could not integrate Sass in anyway with my Ember app. It all boiled down to my Ember installation not finding libraries needed to compile Sass. These two modules were the reason of the problem: node-gyp and node-sass.
