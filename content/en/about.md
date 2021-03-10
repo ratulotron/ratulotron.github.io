@@ -1,9 +1,7 @@
 +++
-title = "About"
-date = "2019-01-25"
+title = "Hi there!"
+# date = "2019-01-25"
 +++
-
-# Hi there
 
 I am Ratul Minhaz, a Berlin based Data Engineer who sometimes plays the ukulele and dabbles in writing. I had been exploring different facets of software development for a while now and it has been an amazing journey. Right now I am focusing on building data solutions and bridging product develppment with data science!
 

@@ -1,5 +1,5 @@
 baseurl = "/"
-languageCode = "en-us"
+languageCode = "en"
 defaultContentLanguage = "en"
 copyright = "Everything is mine"
 theme = "terminal"
@@ -53,6 +53,7 @@ paginate = 5
 
 [languages]
   [languages.en]
+    contentDir = "content/en"
     languageName = "English"
     title = 'Ratul.rants(about="xyz")'
     subtitle = "Ratul Minhaz's thoughts on life, universe and everything else"
@@ -64,37 +65,35 @@ paginate = 5
     readOtherPosts = "Read other posts"
     missingContentMessage = "Page not found..."
     missingBackButtonLabel = "Back to home page"
-    weight = 0
-
+    weight = 1
     [languages.en.params.logo]
       logoText = 'Ratul.rants(about="xyz")'
       logoHomeLink = "/"
-
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "home"
         name = "Home"
         url = "/"
-        weight = 0
+        weight = 1
       [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
         url = "/about"
-        weight = 1
+        weight = 2
       [[languages.en.menu.main]]
         identifier = "categories"
         name = "Categories"
         url = "/categories"
-        weight = 2
+        weight = 3
       [[languages.en.menu.main]]
         identifier = "tags"
         name = "Tags"
         url = "/tags"
-        weight = 3
-
+        weight = 4
   [languages.bn]
-    languageName = "Bengali"
-    title = 'Ratul.rants(about="xyz")'
+    contentDir = "content/bn"
+    languageName = "বাংলা"
+    title = 'AARatul.rants(about="xyz")'
     subtitle = "রাতুলের চিন্তাভাবনা জীবন, জগত এবং বাকি সব নিয়ে"
     owner = "রাতুল মিনহাজ"
     keywords = "ব্লগ"
@@ -104,12 +103,10 @@ paginate = 5
     readOtherPosts = "অন্য লেখা পড়ুন"
     missingContentMessage = "পাতাটি পাওয়া যায় নি..."
     missingBackButtonLabel = "নীড়ে ফিরুন"
-    weight = 1
-
+    weight = 2
     [languages.bn.params.logo]
       logoText = 'Ratul.rants(about="xyz")'
       logoHomeLink = "/"
-
     [languages.bn.menu]
       [[languages.bn.menu.main]]
         identifier = "home"
