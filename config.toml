@@ -1,130 +1,128 @@
 baseurl = "/"
-languageCode = "en"
-defaultContentLanguage = "en"
 copyright = "Everything is mine"
-theme = "terminal"
+defaultContentLanguage = "en"
+languageCode = "en"
 paginate = 5
+theme = "terminal"
 
 [params]
-  # dir name of your main content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+# dir name of your main content (default is `content/posts`).
+# the list of set content will show up on your index page (baseurl).
+contentTypeName = "posts"
 
-  # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "green"
+# ["orange", "blue", "red", "green", "pink"]
+themeColor = "green"
 
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+# if you set this to 0, only submenu trigger will be visible
+showMenuItems = 2
 
-  # show selector to switch language
-  showLanguageSelector = true
+# show selector to switch language
+showLanguageSelector = true
 
-  # set theme to full screen width
-  fullWidthTheme = false
+# set theme to full screen width
+fullWidthTheme = false
 
-  # center theme with default width
-  centerTheme = false
+# center theme with default width
+centerTheme = false
 
-  # set a custom favicon (default is a `themeColor` square)
-  # favicon = "favicon.ico"
+# set a custom favicon (default is a `themeColor` square)
+# favicon = "favicon.ico"
 
-  # set post to show the last updated
-  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = true
-  enableGitInfo = true
-  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
-  # updatedDatePrefix = "Updated"
+# set post to show the last updated
+# If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+enableGitInfo = true
+showLastUpdated = true
+# Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+# updatedDatePrefix = "Updated"
 
-  # set all headings to their default size (depending on browser settings)
-  # it's set to `true` by default
-  # oneHeadingSize = false
+# set all headings to their default size (depending on browser settings)
+# it's set to `true` by default
+# oneHeadingSize = false
 
 [params.twitter]
-  # set Twitter handles for Twitter cards
-  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
-  # do not include @
-  creator = "ratulotron"
-  site = ""
-
+# set Twitter handles for Twitter cards
+# see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
+# do not include @
+creator = "ratulotron"
+site = ""
 
 [params.navigation]
-  help = "Help"
-
+help = "Help"
 
 [languages]
-  [languages.en]
-    contentDir = "content/en"
-    languageName = "English"
-    title = 'Ratul.rants(about="xyz")'
-    subtitle = "Ratul Minhaz's thoughts on life, universe and everything else"
-    owner = "Ratul Minhaz"
-    keywords = "blog"
-    copyright = "Ratul Minhaz"
-    menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    missingContentMessage = "Page not found..."
-    missingBackButtonLabel = "Back to home page"
-    weight = 1
-    [languages.en.params.logo]
-      logoText = 'Ratul.rants(about="xyz")'
-      logoHomeLink = "/"
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "home"
-        name = "Home"
-        url = "/"
-        weight = 1
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-        weight = 2
-      [[languages.en.menu.main]]
-        identifier = "categories"
-        name = "Categories"
-        url = "/categories"
-        weight = 3
-      [[languages.en.menu.main]]
-        identifier = "tags"
-        name = "Tags"
-        url = "/tags"
-        weight = 4
-  [languages.bn]
-    contentDir = "content/bn"
-    languageName = "বাংলা"
-    title = 'AARatul.rants(about="xyz")'
-    subtitle = "রাতুলের চিন্তাভাবনা জীবন, জগত এবং বাকি সব নিয়ে"
-    owner = "রাতুল মিনহাজ"
-    keywords = "ব্লগ"
-    copyright = "রাতুল মিনহাজ"
-    menuMore = "আরও দেখুন"
-    readMore = "আরও পড়ুন"
-    readOtherPosts = "অন্য লেখা পড়ুন"
-    missingContentMessage = "পাতাটি পাওয়া যায় নি..."
-    missingBackButtonLabel = "নীড়ে ফিরুন"
-    weight = 2
-    [languages.bn.params.logo]
-      logoText = 'Ratul.rants(about="xyz")'
-      logoHomeLink = "/"
-    [languages.bn.menu]
-      [[languages.bn.menu.main]]
-        identifier = "home"
-        name = "নীড়"
-        url = "/"
-        weight = 0
-      [[languages.bn.menu.main]]
-        identifier = "about"
-        name = "আমি"
-        url = "/about"
-        weight = 1
-      [[languages.bn.menu.main]]
-        identifier = "categories"
-        name = "ক্যাটেগোরি"
-        url = "/categories"
-        weight = 2
-      [[languages.bn.menu.main]]
-        identifier = "tags"
-        name = "ট্যাগ"
-        url = "/tags"
-        weight = 3
+[languages.en]
+contentDir = "content/en"
+copyright = "Ratul Minhaz"
+keywords = "blog"
+languageName = "English"
+menuMore = "Show more"
+missingBackButtonLabel = "Back to home page"
+missingContentMessage = "Page not found..."
+owner = "Ratul Minhaz"
+readMore = "Read more"
+readOtherPosts = "Read other posts"
+subtitle = "Ratul Minhaz's thoughts on life, universe and everything else"
+title = 'Ratul.rants(about="xyz")'
+weight = 1
+[languages.en.params.logo]
+logoHomeLink = "/"
+logoText = 'Ratul.rants(about="xyz")'
+[languages.en.menu]
+[[languages.en.menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+[[languages.en.menu.main]]
+identifier = "about"
+name = "About"
+url = "/about"
+weight = 2
+[[languages.en.menu.main]]
+identifier = "categories"
+name = "Categories"
+url = "/categories"
+weight = 3
+[[languages.en.menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags"
+weight = 4
+[languages.bn]
+contentDir = "content/bn"
+copyright = "রাতুল মিনহাজ"
+keywords = "ব্লগ"
+languageName = "বাংলা"
+menuMore = "আরও দেখুন"
+missingBackButtonLabel = "নীড়ে ফিরুন"
+missingContentMessage = "পাতাটি পাওয়া যায় নি..."
+owner = "রাতুল মিনহাজ"
+readMore = "আরও পড়ুন"
+readOtherPosts = "অন্য লেখা পড়ুন"
+subtitle = "রাতুলের চিন্তাভাবনা জীবন, জগত এবং বাকি সব নিয়ে"
+title = 'AARatul.rants(about="xyz")'
+weight = 2
+[languages.bn.params.logo]
+logoHomeLink = "/"
+logoText = 'Ratul.rants(about="xyz")'
+[languages.bn.menu]
+[[languages.bn.menu.main]]
+identifier = "home"
+name = "নীড়"
+url = "/"
+weight = 0
+[[languages.bn.menu.main]]
+identifier = "about"
+name = "আমি"
+url = "/about"
+weight = 1
+[[languages.bn.menu.main]]
+identifier = "categories"
+name = "ক্যাটেগোরি"
+url = "/categories"
+weight = 2
+[[languages.bn.menu.main]]
+identifier = "tags"
+name = "ট্যাগ"
+url = "/tags"
+weight = 3
