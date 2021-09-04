@@ -7,11 +7,6 @@ sections:
 - type: heading
   label: English
 - type: directory
-  path: content/en
-  label: Pages
-  create: all
-  match: "*"
-- type: directory
   path: content/en/posts
   label: Posts
   create: all
