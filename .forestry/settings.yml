@@ -15,7 +15,7 @@ sections:
   path: content/en/posts
   label: Posts
   create: all
-  match: "*"
+  match: "**/*"
   templates:
   - blog-post
 - type: heading
