@@ -1,4 +1,261 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>data science on AARatul.rants(about="xyz")</title><link>/bn/tags/data-science/</link><description>Recent content in data science on AARatul.rants(about="xyz")</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>রাতুল মিনহাজ</copyright><lastBuildDate>Thu, 30 Jun 2016 00:00:00 +0000</lastBuildDate><atom:link href="/bn/tags/data-science/index.xml" rel="self" type="application/rss+xml"/><item><title>ডেটা সাইন্সে হাতে খড়ি - ১</title><link>/bn/posts/2016-06-30-datasci-intro-1-bn/</link><pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate><guid>/bn/posts/2016-06-30-datasci-intro-1-bn/</guid><description>নির্বাচনের সময়টায় সবার মাঝে সাড়া পড়ে যায় কাকে কে ভোট দিবে তা নিয়ে। আপনি হয়ত আপনার বন্ধু-বান্ধব আর পরিবারের সদস্যদের জিজ্ঞেস করেছেন মতামতের জন্য। মোটামুটি কাছের সবার কাছ থেকে মতামত নিয়ে মনে মনে একটা ধারণা তৈরী হয় আপনার: কে বেশি ভোট পেতে পারে, কেনই বা মানুষ তাকে ভোট দিতে বেশি আগ্রহী, কি কারণে হেরে যাওয়া দল কম ভোট পেলে ইত্যাদি। আপনি যদি কখনও এ কাজ বা এরকম মানুষের মতামত নিয়ে ধারণা তৈরী করার মত কিছু করে থাকেন, তাহলে বলা যায় আপনি ডেটা সাইন্স ব্যবহার করেছেন!</description></item><item><title>ডেটা সাইন্সে হাতে খড়ি - ২</title><link>/bn/posts/2016-06-30-datasci-intro-2-bn/</link><pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate><guid>/bn/posts/2016-06-30-datasci-intro-2-bn/</guid><description>আজকের যুগে শ্রেফ ইন্টার্নেটে কানেকশন থাকলেই অজস্ররকমের ডেটা হাতের নাগালে চলে আসে। ওয়েবসাইটগুলো প্রতিনিয়ত অন্যান্য ওয়েবসাইটের সাথে তথ্য নিয়ে কথা বলতে থাকে। হয়ত মানুষের ভাষায় হয় না সে কথাগুলো, হয় বিভিন্ন API বা Application Programming Interface এর মাধ্যমে। ফেসবুক, টুইটার, গুগল ইত্যাদির API ব্যবহার করে আমরা এখন হরেক রকমের তথ্য পেতে পারি।
-এই টিউটোরিয়ালটি ডেটা সাইন্সে হাতে খড়ি সিরিজের দ্বিতীয় পর্ব। অন্যান্য পর্ব:1. [প্রস্তুতি]({{ site.url }}/datasci-intro-1-bn)2. [ডেটা সংগ্রহ]({{ site.url }}/datasci-intro-2-bn) (&amp;lt;&amp;ndash; আপনি এখন এখানে)3.</description></item><item><title>ডেটা সাইন্সে হাতে খড়ি - ৩</title><link>/bn/posts/2016-06-30-datasci-intro-3-bn/</link><pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate><guid>/bn/posts/2016-06-30-datasci-intro-3-bn/</guid><description>API দিয়ে অনায়াসে অনেক অনেক তথ্য সংগ্রহ করতে পারা যেমন অনেক কাজের একটা ব্যাপার কিন্তু তেমনি মাঝে মাঝে এত তথ্য নিয়ে বেসামাল অবস্থায় পড়তে হয়। দেখা যায় যে কোন তথ্য হয়ত আমরা যেমনভাবে চাই তেমন ভাবে নেই, যেমন এই প্রোজেক্টের ক্ষেত্রে আমাদের দরকার অ্যাকাউন্টের বয়স, কিন্তু আমরা পাচ্ছি অ্যাকাউন্ট তৈরীর তারিখ। তাই তথ্য সংগ্রহের পরের ধাপ হল তথ্য বিশ্লেষণ এবং পরিপাটি করা।
-এই টিউটোরিয়ালটি ডেটা সাইন্সে হাতে খড়ি সিরিজের তৃতীয় পর্ব। অন্যান্য পর্ব:1.</description></item><item><title>ডেটা সাইন্সে হাতে খড়ি - ৪</title><link>/bn/posts/2016-06-30-datasci-intro-4-bn/</link><pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate><guid>/bn/posts/2016-06-30-datasci-intro-4-bn/</guid><description>কোন কিছু হ্রাস-বৃদ্ধির হার বোঝার জন্য সবচেয়ে সহজ উপায় হল গ্রাফ আঁকা। স্কুলে-জীবনে লাভ-ক্ষতি বোঝার জন্য আমরা যে গ্রাফ এঁকেছি, সেই একই গ্রাফ দিয়ে নির্বাচনে কার অগ্রগতি বেশি-কম তা বোঝা যায় সহজে। ডেটা সাইন্সের ভাষায় এভাবে গ্রাফের মাধ্যমে তথ্যকে চিত্ররুপে দেখানোকে বলা হয় ভিজুয়ালাইজেশন। পাইথনের কিছু চমৎকার লাইব্রেরী আছে ভিজুয়ালাইজেশনের জন্য, আমরা ব্যবহার করব Plotly.
-এই টিউটোরিয়ালটি ডেটা সাইন্সে হাতে খড়ি সিরিজের তৃতীয় পর্ব। অন্যান্য পর্ব:1. [প্রস্তুতি]({{ site.url }}/datasci-intro-1-bn)2. [ডেটা সংগ্রহ]({{ site.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>data science on AARatul.rants(about="xyz")</title><link>/bn/tags/data-science/</link><description>Recent content in data science on AARatul.rants(about="xyz")</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>রাতুল মিনহাজ</copyright><lastBuildDate>Thu, 30 Jun 2016 00:00:00 +0000</lastBuildDate><atom:link href="/bn/tags/data-science/index.xml" rel="self" type="application/rss+xml"/><item><title>ডেটা সাইন্সে হাতে খড়ি - ১</title><link>/bn/posts/2016-06-30-datasci-intro-1-bn/</link><pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate><guid>/bn/posts/2016-06-30-datasci-intro-1-bn/</guid><description>নির্বাচনের সময়টায় সবার মাঝে সাড়া পড়ে যায় কাকে কে ভোট দিবে তা নিয়ে। আপনি হয়ত আপনার বন্ধু-বান্ধব আর পরিবারের সদস্যদের জিজ্ঞেস করেছেন মতামতের জন্য। মোটামুটি কাছের সবার কাছ থেকে মতামত নিয়ে মনে মনে একটা ধারণা তৈরী হয় আপনার: কে বেশি ভোট পেতে পারে, কেনই বা মানুষ তাকে ভোট দিতে বেশি আগ্রহী, কি কারণে হেরে যাওয়া দল কম ভোট পেলে ইত্যাদি। আপনি যদি কখনও এ কাজ বা এরকম মানুষের মতামত নিয়ে ধারণা তৈরী করার মত কিছু করে থাকেন, তাহলে বলা যায় আপনি ডেটা সাইন্স ব্যবহার করেছেন!</description><content>&lt;p>নির্বাচনের সময়টায় সবার মাঝে সাড়া পড়ে যায় কাকে কে ভোট দিবে তা নিয়ে। আপনি হয়ত আপনার বন্ধু-বান্ধব আর পরিবারের সদস্যদের জিজ্ঞেস করেছেন মতামতের জন্য। মোটামুটি কাছের সবার কাছ থেকে মতামত নিয়ে মনে মনে একটা ধারণা তৈরী হয় আপনার: কে বেশি ভোট পেতে পারে, কেনই বা মানুষ তাকে ভোট দিতে বেশি আগ্রহী, কি কারণে হেরে যাওয়া দল কম ভোট পেলে ইত্যাদি। আপনি যদি কখনও এ কাজ বা এরকম মানুষের মতামত নিয়ে ধারণা তৈরী করার মত কিছু করে থাকেন, তাহলে বলা যায় আপনি ডেটা সাইন্স ব্যবহার করেছেন!&lt;/p>
+&lt;p>&lt;em>এই টিউটোরিয়ালটি ডেটা সাইন্সে হাতে খড়ি সিরিজের প্রথম পর্ব। অন্যান্য পর্ব:&lt;/em>&lt;!-- raw HTML omitted -->
+&lt;em>1. [প্রস্তুতি]({{ site.url }}/datasci-intro-1-bn) (&amp;lt;&amp;ndash; আপনি এখন এখানে)&lt;/em>&lt;!-- raw HTML omitted -->
+&lt;em>2. [ডেটা সংগ্রহ]({{ site.url }}/datasci-intro-2-bn)&lt;/em>&lt;!-- raw HTML omitted -->
+&lt;em>3. [বিশ্লেষণ]({{ site.url }}/datasci-intro-3-bn)&lt;/em>&lt;!-- raw HTML omitted -->
+&lt;em>4. [ভিজুয়ালাইজেশন]({{ site.url }}/datasci-intro-4-bn)&lt;/em>&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;h3 id="জনশট-ক">জিনিশটা কি?&lt;/h3>
+&lt;p>ডেটা সাইন্স তাহলে আসলে কি?&lt;/p>
+&lt;ul>
+&lt;li>তথ্য সংগ্রহ করা,&lt;/li>
+&lt;li>সেগুলো প্রোগ্রামেটিক উপায়ে বিশ্লেষণ করা,&lt;/li>
+&lt;li>বিশ্লেষণের ফল সহজবোদ্ধভাবে উপস্থাপন করা,&lt;/li>
+&lt;li>এবং ভবিষ্যতের পূর্বাভাষ দেবার চেষ্টা করা&lt;/li>
+&lt;/ul>
+&lt;p>এই ধাপগুলোর সমন্বয়ই ডেটা সাইন্স। নির্বাচনের উদাহরণটা হয়ত একটু ছোট-ই হয়ে গেল, কিন্তু বইয়ের ভাষায় এটা অবশ্যই ডেটা সাইন্স। আপনি আপনার পরিচিতির গন্ডির মধ্যে সবার মতামত সংগ্রহ করছেন, তারপর সেগুলোকে বিশ্লেষণ করছেন মনে মনে। বিশ্লেষণের সাথে সাথে একটা মানসিক গ্রাফ-ও তৈরী হয়ে যাচ্ছে, কে এগিয়ে আছে আর কে পিছিয়ে আছে তা নিয়ে। সেটা অনুসারে আবার আপনি নির্বাচনের ফলাফল কি হতে পারে তা অনুমাণ করার চেষ্টা করছেন। একজন ডেটা সাইন্টিস্টের কাজই তো এ-ই!&lt;/p>
+&lt;p>ডেটা সাইন্টিস্টের সংঙা হিসাবে আমার কাছে সবচেয়ে যুতসই লাগে এটা: যিনি আর দশজন সফটয়্যার নির্মাতার চেয়ে ভাল পরিসংখ্যান পারেন এবং যে কোন পরিসংখ্যানবিদের চেয়ে ভাল সফটয়্যার বানাতে পারেন, তিনি-ই ডেটা সাইন্টিস্ট!&lt;/p>
+&lt;h3 id="লকষয">লক্ষ্য&lt;/h3>
+&lt;p>এই টিউটোরিয়ালে আমরা ছোট একটা প্রোজেক্ট করার মাধ্যমে ডেটা সাইন্সের ধাপগুলো: ডেটা কালেকশন, অ্যানালাইসিস এবং ভিজুয়ালাইজেশনের সাথে পরিচিত হব। আমরা GitHub এর API ব্যবহার করে কিছু ইউজারের তথ্য কালেক্ট করব। তারপর পাইথন দিয়ে অ্যানালাইসিস করে বের করব অ্যাকাউন্ট তৈরীর পর কে সবচেয়ে বেশি সক্রিয় ছিল। সবশেষে ভিজুয়ালাইজেশন করব Plot.ly নামে একটা সাইট দিয়ে। প্রোজেক্ট শেষে আপনার এমন একটা গ্রাফ তৈরী করার অভিজ্ঞতা হবে:&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>আপনি যদি আগেই পাইথন দিয়ে কিছু ছোটখাট প্রোজেক্ট করে থাকেন, তাহলে হয়ত পরের ধাপগুলো না অনুসরণ করলেও চলবে। তবে ভার্চুয়াল এনভায়ারনমেন্ট সম্বন্ধে ধারণা না থাকলে পড়ে দেখতে পারেন বাকিটুকু।&lt;/p>
+&lt;h3 id="পরসতত">প্রস্তুতি&lt;/h3>
+&lt;p>কোডিং করতে নেমে পড়ার আগে আপনার কম্পিউটারে দরকারি সব সফটয়্যার ইন্সটল করা আছে কি না দেখে নিন। আপনার লাগবে-&lt;/p>
+&lt;ul>
+&lt;li>Python 3&lt;/li>
+&lt;li>&lt;a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/">Virtualenv and virtualenvwrapper&lt;/a>&lt;/li>
+&lt;li>Sublime Text 3 বা অন্য যে কোন কোডিং করার এডিটর।&lt;/li>
+&lt;/ul>
+&lt;p>পুরো প্রোজেক্টটার কোডিং করব উবুন্তু ১৬.০৪-এ, তাই পাইথন আলাদা করে ইন্সটল করার কোন ঝামেলা নেই। আপনার যদি এর আগের কোন ভার্শন থাকে তবে কোডগুলো python এর বদলে python3 দিয়ে রান করতে হতে পারে কমান্ড লাইনে। আপনি উইন্ডোজ ব্যবহার করলে চিন্তার কোন কারণ নেই, আপনি অনায়াসে পাইথন ব্যবহার করা শুরু করতে পারবেন। আপনাকে শুধু একটা ছোট্ট কাজ করতে হবে: উইন্ডোজ বাদ দিয়ে যে কোন লিনাক্সে চলে আসতে হবে।&lt;/p>
+&lt;p>&lt;strong>ভার্চুয়াল এনভায়ারনমেন্ট&lt;/strong>&lt;!-- raw HTML omitted -->
+আপনি যদি কখনও একাধিক পাইথন প্রোজেক্টের মধ্যে ভার্শন ডিপেন্ডেন্সির সমস্যায় পড়ে থাকেন আগে, তাহলে হয়ত বা ভার্চুয়াল এনভায়ারনমেন্ট ব্যবহার করতে হয়েছিল আপনাকে সমাধানের জন্য। Virtualenv এবং virtualenvwrapper খুবই কাজে আসে যখন হরেক রকমের মডিউলের বিভিন্ন ভার্শন দিয়ে অনেকগুলো পাইথন প্রোজেক্ট করার চেষ্টা করবেন আপনি। এগুলো ইন্সটল করা না থাকলে &lt;a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/">এখান&lt;/a> থেকে জেনে নিন কিভাবে করবেন। তারপর আমাদের প্রোজেক্টের জন্য একটা ভার্চুয়াল এনভায়ারনমেন্ট তৈরী করে নিন:&lt;/p>
+&lt;p>{% highlight bash %}
+mkvirtualenv scraping
+workon scraping
+{% endhighlight %}&lt;/p>
+&lt;p>&lt;strong>টেক্সট এডিটর&lt;/strong>&lt;!-- raw HTML omitted -->
+কোডিং করে সাবলাইম টেক্সটের চেয়ে বেশি আরাম আর কোন এডিটরে পাওয়া যায় কি না আমার জানা নেই। আপনি সরাসরি ওদের &lt;a href="https://www.sublimetext.com/3">সাইটে&lt;/a> গিয়ে লেটেস্ট ভার্শন নামিয়ে নিন যদি ইন্সটল করা না থাকে। চাইলে পাইথন কোডিংয়ের জন্য কাজে আসবে এমন প্লাগিন-ও &lt;a href="https://dbader.org/blog/setting-up-sublime-text-for-python-development">ইন্সটল&lt;/a> করতে পারেন, কিন্তু এই প্রোজেক্টের জন্য তেমন কোন দরকার নেই।&lt;/p>
+&lt;p>এতটুক পর্যন্ত করা হয়ে গেলে [ডেটা সংগ্রহ (পর্ব ২)]({{ site.url }}/datasci-intro-2-bn) করার দিকে মনোযোগ দেয়া যায় এখন।&lt;/p></content></item><item><title>ডেটা সাইন্সে হাতে খড়ি - ২</title><link>/bn/posts/2016-06-30-datasci-intro-2-bn/</link><pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate><guid>/bn/posts/2016-06-30-datasci-intro-2-bn/</guid><description>আজকের যুগে শ্রেফ ইন্টার্নেটে কানেকশন থাকলেই অজস্ররকমের ডেটা হাতের নাগালে চলে আসে। ওয়েবসাইটগুলো প্রতিনিয়ত অন্যান্য ওয়েবসাইটের সাথে তথ্য নিয়ে কথা বলতে থাকে। হয়ত মানুষের ভাষায় হয় না সে কথাগুলো, হয় বিভিন্ন API বা Application Programming Interface এর মাধ্যমে। ফেসবুক, টুইটার, গুগল ইত্যাদির API ব্যবহার করে আমরা এখন হরেক রকমের তথ্য পেতে পারি।
+এই টিউটোরিয়ালটি ডেটা সাইন্সে হাতে খড়ি সিরিজের দ্বিতীয় পর্ব। অন্যান্য পর্ব:1. [প্রস্তুতি]({{ site.url }}/datasci-intro-1-bn)2. [ডেটা সংগ্রহ]({{ site.url }}/datasci-intro-2-bn) (&amp;lt;&amp;ndash; আপনি এখন এখানে)3.</description><content>&lt;p>আজকের যুগে শ্রেফ ইন্টার্নেটে কানেকশন থাকলেই অজস্ররকমের ডেটা হাতের নাগালে চলে আসে। ওয়েবসাইটগুলো প্রতিনিয়ত অন্যান্য ওয়েবসাইটের সাথে তথ্য নিয়ে কথা বলতে থাকে। হয়ত মানুষের ভাষায় হয় না সে কথাগুলো, হয় বিভিন্ন API বা Application Programming Interface এর মাধ্যমে। ফেসবুক, টুইটার, গুগল ইত্যাদির API ব্যবহার করে আমরা এখন হরেক রকমের তথ্য পেতে পারি।&lt;/p>
+&lt;p>&lt;em>এই টিউটোরিয়ালটি ডেটা সাইন্সে হাতে খড়ি সিরিজের দ্বিতীয় পর্ব। অন্যান্য পর্ব:&lt;/em>&lt;!-- raw HTML omitted -->
+&lt;em>1. [প্রস্তুতি]({{ site.url }}/datasci-intro-1-bn)&lt;/em>&lt;!-- raw HTML omitted -->
+&lt;em>2. [ডেটা সংগ্রহ]({{ site.url }}/datasci-intro-2-bn) (&amp;lt;&amp;ndash; আপনি এখন এখানে)&lt;/em>&lt;!-- raw HTML omitted -->
+&lt;em>3. [বিশ্লেষণ এবং ভিজুয়ালাইজেশন]({{ site.url }}/datasci-intro-3-bn)&lt;/em>&lt;!-- raw HTML omitted -->
+&lt;em>4. [ভিজুয়ালাইজেশন]({{ site.url }}/datasci-intro-4-bn)&lt;/em>&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;h3 id="কথয়-পব-ডট">কোথায় পাব ডেটা?&lt;/h3>
+&lt;p>আপনি কি জানেন যে আপনার স্মার্টফোনে জমা থাকা কয়েক মাসের তথ্য বিশ্লেষণ করে বলে দেয়া যাবে আপনি কাল সারাদিন কি করবেন? আসলে এতটা আত্মবিশ্বাসের সাথেও বলতে পারছি না যে একেবারে নিখুঁত হবে তা। কিন্তু ভেবে দেখুন, আপনার ফোন কিন্তু আপনার দৈনন্দিন জীবনের প্রতিটা ধাপই জানে। আপনি সকালবেলা ক&amp;rsquo;টার সময় প্রথম ফেসবুকে ঢুকছেন বা ইন্টার্নেটে কানেক্ট করছেন তা থেকে ধারণা করা যেতে পারে আপনি কখন ঘুম থেকে উঠেন প্রতিদিন। হাঁটতে কষ্ট লাগে অনেক? আপনি যে কত বড় অলস তা আপনার ফোনের জিপিএস তথ্য বিশ্লেষণ করলেই টের পাওয়া যাবে‌।&lt;/p>
+&lt;p>বুঝতেই পারছেন এক স্মার্টফোন থেকেই রাজ্যের যত ডেটা কালেকশন করা সম্ভব। কিন্তু এটাই একমাত্র উৎস নয়। হাজার রকমের ওয়েবসাইট এবং সার্ভিস ইন্টার্নেটে জাল বিছিয়ে রেখেছে তথ্য পারাপারের। খুবই সাধারণ একটা উদাহরণ হল ফেসবুক ব্যবহার করে কোন ওয়েবসাইটে লগিন করা, কোন রকমের রেজিস্ট্রেশন না করেই। এই ব্যাপারটা সম্ভব হয়েছে API নামে একটা প্রযুক্তির কারণে। API যে শুধু তথ্য শেয়ার করাই সহজ করে দেয় তা না, এর আরও অনেক কাজ আছে। আগ্রহী হলে গুগল করে জেনে নিতে পারেন। ফেসবুক, টুইটার, গুগল ইত্যাদি পরিচিত নাম ছাড়াও আর কি কি API আছে ব্যবহার করার মত তা জেনে নিতে পারেন &lt;a href="http://www.programmableweb.com/">Programmable Web&lt;/a> সাইটটা থেকে। ওখানে মোটামুটি ১৩ হাজারেরও বেশি API এর বর্ণনা দেয়া আছে।&lt;/p>
+&lt;p>এই টিউটোরিয়ালের জন্য আমরা কোড শেয়ার করার সাইট &lt;a href="http://github.com">GitHub&lt;/a> এর API নিয়ে পরীক্ষা-নিরীক্ষা করব। GitHub আগে কখনও ব্যবহার না করে থাকলে এখনই একটা অ্যাকাউন্ট খুলে আপনার সব কোড push করে দিন। আপনার কোড যেমন সবসময় নিরাপদ থাকবে ওখানে, তেমনি যে কেউ আপনার হাতের কাজ দেখতে পারবে।&lt;/p>
+&lt;h3 id="গটহবর-api-পরখ-কর">গিটহাবের API পরখ করা&lt;/h3>
+&lt;p>যেসব সাইটের API থাকে তারা সাধারণত বিস্তারিত ডকুমেন্টেশন লিখে রাখে যাতে মানুষ সহজেই তাদের API দিয়ে কাজের এবং মজার জিনিশ-পাতি বানাতে পারে। গিটহাবের &lt;a href="https://developer.github.com/">API documentation&lt;/a> এ খুবই সহজে এবং সোজা-সাপ্টা ভাষায় বলে দেয়া আছে কিভাবে কোন ঠিকানায় গিয়ে কড়া নাড়লে কি তথ্য পাওয়া যাবে। ব্রাউজারে নতুন ট্যাবে এই ঠিকানায় যান: _&lt;a href="https://api.github.com/users/%7Busername%7D_,">https://api.github.com/users/{username}_,&lt;/a> username এর যায়গায় আপনার ইউজারনেম দিতে পারেন। আমি পাইথনের আব্বাজান গুইদো ভ্যান রসামের ইউজারনেম ব্যবহার করলাম: &lt;a href="https://api.github.com/users/gvanrossum">https://api.github.com/users/gvanrossum&lt;/a>&lt;/p>
+&lt;p>{% highlight json %}
+{
+&amp;ldquo;login&amp;rdquo;: &amp;ldquo;gvanrossum&amp;rdquo;,
+&amp;ldquo;id&amp;rdquo;: 2894642,
+&amp;ldquo;avatar_url&amp;rdquo;: &amp;ldquo;&lt;a href="https://avatars.githubusercontent.com/u/2894642?v=3%22,">https://avatars.githubusercontent.com/u/2894642?v=3&amp;quot;,&lt;/a>
+&amp;ldquo;gravatar_id&amp;rdquo;: &amp;ldquo;&amp;rdquo;,
+&amp;ldquo;url&amp;rdquo;: &amp;ldquo;&lt;a href="https://api.github.com/users/gvanrossum%22,">https://api.github.com/users/gvanrossum&amp;quot;,&lt;/a>
+&amp;ldquo;html_url&amp;rdquo;: &amp;ldquo;&lt;a href="https://github.com/gvanrossum%22,">https://github.com/gvanrossum&amp;quot;,&lt;/a>
+&amp;ldquo;type&amp;rdquo;: &amp;ldquo;User&amp;rdquo;,
+&amp;ldquo;site_admin&amp;rdquo;: false,
+&amp;ldquo;name&amp;rdquo;: &amp;ldquo;Guido van Rossum&amp;rdquo;,
+&amp;ldquo;company&amp;rdquo;: &amp;ldquo;Dropbox&amp;rdquo;,
+&amp;ldquo;blog&amp;rdquo;: &amp;ldquo;&lt;a href="http://python.org/~guido/%22,">http://python.org/~guido/&amp;quot;,&lt;/a>
+&amp;ldquo;location&amp;rdquo;: &amp;ldquo;San Francisco Bay Area&amp;rdquo;,
+&amp;ldquo;email&amp;rdquo;: &amp;ldquo;&lt;a href="mailto:guido@python.org">guido@python.org&lt;/a>&amp;rdquo;,
+&amp;ldquo;hireable&amp;rdquo;: null,
+&amp;ldquo;bio&amp;rdquo;: null,
+&amp;ldquo;public_repos&amp;rdquo;: 4,
+&amp;ldquo;public_gists&amp;rdquo;: 5,
+&amp;ldquo;followers&amp;rdquo;: 911,
+&amp;ldquo;following&amp;rdquo;: 0,
+&amp;ldquo;created_at&amp;rdquo;: &amp;ldquo;2012-11-26T18:46:40Z&amp;rdquo;,
+&amp;ldquo;updated_at&amp;rdquo;: &amp;ldquo;2015-12-23T18:35:37Z&amp;rdquo;
+}
+{% endhighlight %}&lt;/p>
+&lt;p>আপনার ব্রাইজারে কাঁটায় কাঁটায় একই তথ্য আসতে হবে এমন না। তবে যা দেখতে পাবেন ওই ঠিকানায় গেলে তার গঠন এমনই। কয়েকটা লাইন পড়লেই বুঝতে পারবেন যে গুইদো'র গিটহাব অ্যাকাউন্টের অনেক তথ্য পেয়ে গেছেন আপনি। তার অ্যাকাউন্টটি কবে তৈরী করা হয়েছিল, গিটহাবে কয়টি রেপোজিটরি বা পাবলিক প্রোজেক্ট আছে তার, এমন কি কতজন মানুষকে তিনি ফলো করছেন তাও এখন আমরা জেনে গেছি। খালি একটা লিংকে গিয়েই কিভাবে এত কিছু পেয়ে গেলেন তাহলে? এখানে যা হয়েছে তা হল-&lt;/p>
+&lt;ul>
+&lt;li>আপনার ব্রাউজার &lt;code>api.github.com&lt;/code> ঠিকানাটায় গিয়ে কড়া নেড়েছে&lt;/li>
+&lt;li>কড়া নাড়ার সময় বলে দিয়েছে, users যারা আছে তাদের মধ্যে &lt;code>gvanrossum&lt;/code> ইউজারনেমের বান্দার তথ্য আমার চাই
+জবাবে গিটহাবের API সার্ভার গুইদোর অ্যাকাউন্টের যত তথ্য জনসাধারণের জন্য উন্মুক্ত, সব আপনাকে পাঠিয়ে দিয়েছে। পাঠানোর সময় তথ্যগুলো গৎ বাঁধা লেখা হিসাবে না পাঠিয়ে &lt;a href="http://www.json.org">JSON&lt;/a>(JavaScript Object Notation) ফরমেটে পাঠিয়েছে যাতে একটা নিদ্রিষ্ট কাঠামো বজায় রাখা যায়। এখানে প্রতিটা তথ্য key-value জোড়া হিসাবে আছে, তাই জিনিশটা পাইথনের dictionary ডেটা টাইপের মতন বলা যায়।&lt;/li>
+&lt;/ul>
+&lt;h3 id="তথয-সগরহ-কর">তথ্য সংগ্রহ করা&lt;/h3>
+&lt;p>&lt;strong>কার তথ্য নিব?&lt;/strong>&lt;!-- raw HTML omitted -->
+ব্রাইজার থেকে যেমন API দিয়ে তথ্য দেখলাম, এখন আমরা পাইথন দিয়ে এই কাজ করব প্রোগ্রামেটিক ভাবে। তাছাড়া বিশ্লেষণ করতে গেলে শুধু একজনের তথ্য হলেও চলবে না, কয়েকটা গিটহাব অ্যাকাউন্টের বিভিন্ন রকমের তথ্য লাগবে। আমরা ক&amp;rsquo;জন বড় মাপের পাইথন ডেভেলপারের অ্যাকাউন্ট নিয়ে করব অ্যানালাইসিস, আমি এদের বানানো মডিউল, টুল এবং রিসোর্সগুলো প্রায় প্রতিদিনই আমার কাজে আসে।&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/kennethreitz">কেনেথ রিটজ&lt;/a>, &lt;code>requests&lt;/code> মডিউলের রচয়িতা এবং Python Software Foundation এর ফেলো&lt;/li>
+&lt;li>&lt;a href="https://github.com/mitsuhiko">আর্মিন রনেশার&lt;/a>, &lt;code>flask-sqlalchemy&lt;/code> মডিউলের রচয়িতা এবং Pocoo Team এর সদস্য,&lt;/li>
+&lt;li>&lt;a href="https://github.com/jkbrzt">ইয়াকুব রজতোৎসিল&lt;/a>, &lt;code>httpie&lt;/code> টুলের নির্মাতা,&lt;/li>
+&lt;li>&lt;a href="https://github.com/nvbn">ভ্লাদিমির ইয়াকোভলেভ&lt;/a>, &lt;code>thefuck&lt;/code> টুলের নির্মাতা,&lt;/li>
+&lt;li>&lt;a href="https://github.com/donnemartin">ডন মার্টিন&lt;/a>, ডেটা সাইন্সের জন্য পাইথন রিসোর্সের বিশাল &lt;a href="https://github.com/donnemartin/data-science-ipython-notebooks">তালিকা&lt;/a> মেইনটেইন করেন&lt;/li>
+&lt;/ul>
+&lt;p>এই তিনজন পাইথনিয়ারের গিটহাব অ্যাকাউন্টে রেপোজিটরি এবং ফলোয়ারের সংখ্যা, অ্যাকাউন্ট তৈরীর তারিখ বের করে জমা রাখব। কোডের শুরুতেই এদের ইউজারনেমগুলো একটা লিস্টে রেখে দেই।&lt;/p>
+&lt;p>{% highlight python %}
+users = [&amp;lsquo;kennethreitz&amp;rsquo;, &amp;lsquo;mitsuhiko&amp;rsquo;, &amp;lsquo;jkbrzt&amp;rsquo;, &amp;lsquo;nvbn&amp;rsquo;, &amp;lsquo;donnemartin&amp;rsquo;]
+{% endhighlight %}&lt;/p>
+&lt;p>ব্রাউজারে আমরা যেমন গিটহাবের API এর ঠিকানা &lt;code>api.github.com/users&lt;/code> এ গিয়ে গুইদোর তথ্য পেয়েছিলাম, আমাদের কোড থেকেও তেমনি এইখানে তথ্য চাইতে হবে। এই ঠিকানাটাও রেখে দেয়া দরকার:&lt;/p>
+&lt;p>{% highlight python %}
+baseurl = &amp;ldquo;&lt;a href="https://api.github.com/users/%22">https://api.github.com/users/&amp;quot;&lt;/a>
+{% endhighlight %}&lt;/p>
+&lt;p>API url এ গুইদোর অ্যাকাউন্টের অনেক রকমের তথ্য পেয়েছিলাম আমরা, এই মুহূর্তে এত কিছু দরকার নেই। আমাদের লক্ষ অ্যাকাউন্ট তৈরীর পর থেকে আজ পর্যন্ত কতগুলো পাবলিক রেপোজিটোরি বা প্রোজেক্ট তৈরী করেছে মোট ইউজাররা তা বিশ্লেষণ করা। তাই আপাতত শুধু public_repos এবং created_at এই দুই তথ্য দরকার আমাদের। এছাড়া login, id, html_url এগুলো-ও জমা রাখব বাড়তি তথ্য হিসাবে। এই প্রোপার্টিগুলো আরেকটা লিস্টে রাখি:&lt;/p>
+&lt;p>{% highlight python %}
+properties = [&amp;lsquo;login&amp;rsquo;, &amp;lsquo;id&amp;rsquo;, &amp;lsquo;html_url&amp;rsquo;, &amp;lsquo;public_repos&amp;rsquo;, &amp;lsquo;created_at&amp;rsquo;]
+{% endhighlight %}&lt;/p>
+&lt;p>&lt;strong>পরীক্ষা-নিরীক্ষা&lt;/strong>&lt;!-- raw HTML omitted -->
+এখন পরীক্ষা করে দেখি পাইথন থেকে কিভাবে গিটহাবের API এর সাথে কথা বলা যায়। কথা বলা- এই কথাটার মানে ওয়েব অ্যাপের ভাষায় request করা। এর জন্য যুতসই নামের একটা মডিউল-ও আছে পাইথনে: &lt;code>requests&lt;/code>। মডিউলটা ইন্সটল &lt;code>pip install requests&lt;/code> কমান্ড দিয়ে ইন্সটল করে ফেলেন।&lt;/p>
+&lt;p>আমাদের প্রথম ইউজার হল facebook, তাই ফেসবুকের জন্য পুরা API ঠিকানা হবে baseurl + users[0], বা &amp;ldquo;&lt;a href="https://api.github.com/users/facebook%22">https://api.github.com/users/facebook&amp;quot;&lt;/a>. &lt;code>requests&lt;/code> দিয়ে এই ঠিকানায় এক্সেস করতে আপনার কোডে এই লাইনগুলা যোগ করুন:&lt;/p>
+&lt;p>{% highlight python %}
+current_page = baseurl + users[0]
+response = requests.get(current_page)
+page_info = response.json()
+print(page_info)
+{% endhighlight %}&lt;/p>
+&lt;p>এই কোড রান করার আগে সবার আগে ‍&lt;code>import requests&lt;/code> যোগ করে নিন। রান করলে এক গাদা লেখা দেখা যাবে টার্মিনালে, ভয় পাওয়ার কোন কারণ নেই, এটাই স্বাভাবিক। খেয়াল করলে দেখবেন গুইদো'র ইউজার পেজে গিয়ে আমরা যা দেখেছিলাম, এগুলো সেরকমই। এখন লাইন বাই লাইন দেখি কি কাজ হচ্ছে।&lt;/p>
+&lt;p>{% highlight python %}
+page_info = response.json()
+print
+{% endhighlight %}&lt;/p>
+&lt;p>প্রথমে &lt;code>request.get()&lt;/code> ব্যবহার করে GitHub এর সার্ভারে আমরা একটা HTTP GET request করছি। রিকোয়েস্টে দিচ্ছি ফেসবুকের ইউজারনেম। এই রিকোয়েস্টের বিপরীতে গিটহাব যা দিচ্ছে আমাদের সেটা রাখছি ‍&lt;code>response&lt;/code> এ।&lt;/p>
+&lt;p>{% highlight python %}
+page_info = response.json()
+print(page_info)
+{% endhighlight %}&lt;/p>
+&lt;p>&lt;code>response&lt;/code> এর ভেতর এখন JSON ফরমেটে ফেসবুকের তথ্য আছে, এছাড়া HTTP GET request এর জবাবে কিছু বিশেষ তথ্য-ও আছে। JSON data টা আলাদা করে &lt;code>page_info&lt;/code>-এ রাখছি এবং প্রিন্ত করছি।&lt;/p>
+&lt;p>যা-ই হোক, এভাবে একসাথে সব তথ্য আমাদের কোন কাজেই আসবে না। তাই আমরা &amp;ldquo;name&amp;rdquo;, &amp;ldquo;id&amp;rdquo;, &amp;ldquo;html_url&amp;rdquo; এগুলো আলাদা ভাবে প্রিন্ট করে দেখতে চাই। আর সবগুলো ইউজারনেমের তথ্য দেখতে হলে রিকোয়েস্ট-টা একটা ফর লুপের ভেতর রাখতে হবে। লুপটা হবে এমন:&lt;/p>
+&lt;p>{% highlight python %}
+for username in users:
+current_page = baseurl + username
+response = requests.get(current_page)
+page_info = response.json()
+for property in properties:
+print(&amp;quot;{} : {}&amp;quot;.format(property, page_info[property]))
+print('')
+{% endhighlight %}&lt;/p>
+&lt;p>এই কোড রান করলে টার্মিনালে সুন্দরমত ফরমেটেড-ভাবে এরকম তথ্য দেখতে পাব:&lt;/p>
+&lt;p>{% highlight python %}
+print(page_info[&amp;ldquo;name&amp;rdquo;])
+print(page_info[&amp;ldquo;id&amp;rdquo;])
+print(page_info[&amp;ldquo;html_url&amp;rdquo;])
+{% endhighlight %}&lt;/p>
+&lt;p>এইবার রান করলে &amp;lsquo;kennethreitz&amp;rsquo;, &amp;lsquo;mitsuhiko&amp;rsquo;, &amp;lsquo;jkbrzt&amp;rsquo; তিনটা ইউজারনেমের জন্যই সবগুলো প্রোপার্টি প্রিন্ট করে দেখাবে।&lt;/p>
+&lt;p>API দিয়ে তথ্য সংগ্রহ করতে হয় কীভাবে তার সম্বন্ধে আপনার একটা মোটামুটি ধারণা হয়ে যাবার কথা এতটুক পর্যন্ত কোড করলে। [ডেটা বিশ্লেষণ (পর্ব ৩)]({{ site.url}}/datasci-intro-3-bn)-এ এই তথ্য অ্যানালাইসিস করে বের করব কোন অ্যাকাউন্ট থেকে সবচেয়ে বেশি রেপোজিটরি তৈরী করা হয়েছে অ্যাকাউন্টের বয়সের তুলনায়। এ পর্বের সম্পূর্ণ কোড এখানে:&lt;/p>
+&lt;!-- raw HTML omitted --></content></item><item><title>ডেটা সাইন্সে হাতে খড়ি - ৩</title><link>/bn/posts/2016-06-30-datasci-intro-3-bn/</link><pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate><guid>/bn/posts/2016-06-30-datasci-intro-3-bn/</guid><description>API দিয়ে অনায়াসে অনেক অনেক তথ্য সংগ্রহ করতে পারা যেমন অনেক কাজের একটা ব্যাপার কিন্তু তেমনি মাঝে মাঝে এত তথ্য নিয়ে বেসামাল অবস্থায় পড়তে হয়। দেখা যায় যে কোন তথ্য হয়ত আমরা যেমনভাবে চাই তেমন ভাবে নেই, যেমন এই প্রোজেক্টের ক্ষেত্রে আমাদের দরকার অ্যাকাউন্টের বয়স, কিন্তু আমরা পাচ্ছি অ্যাকাউন্ট তৈরীর তারিখ। তাই তথ্য সংগ্রহের পরের ধাপ হল তথ্য বিশ্লেষণ এবং পরিপাটি করা।
+এই টিউটোরিয়ালটি ডেটা সাইন্সে হাতে খড়ি সিরিজের তৃতীয় পর্ব। অন্যান্য পর্ব:1.</description><content>&lt;p>API দিয়ে অনায়াসে অনেক অনেক তথ্য সংগ্রহ করতে পারা যেমন অনেক কাজের একটা ব্যাপার কিন্তু তেমনি মাঝে মাঝে এত তথ্য নিয়ে বেসামাল অবস্থায় পড়তে হয়। দেখা যায় যে কোন তথ্য হয়ত আমরা যেমনভাবে চাই তেমন ভাবে নেই, যেমন এই প্রোজেক্টের ক্ষেত্রে আমাদের দরকার অ্যাকাউন্টের বয়স, কিন্তু আমরা পাচ্ছি অ্যাকাউন্ট তৈরীর তারিখ। তাই তথ্য সংগ্রহের পরের ধাপ হল তথ্য বিশ্লেষণ এবং পরিপাটি করা।&lt;/p>
+&lt;p>&lt;em>এই টিউটোরিয়ালটি ডেটা সাইন্সে হাতে খড়ি সিরিজের তৃতীয় পর্ব। অন্যান্য পর্ব:&lt;/em>&lt;!-- raw HTML omitted -->
+&lt;em>1. [প্রস্তুতি]({{ site.url }}/datasci-intro-1-bn)&lt;/em>&lt;!-- raw HTML omitted -->
+&lt;em>2. [ডেটা সংগ্রহ]({{ site.url }}/datasci-intro-2-bn)&lt;/em>&lt;!-- raw HTML omitted -->
+&lt;em>3. [বিশ্লেষণ]({{ site.url }}/datasci-intro-3-bn) (&amp;lt;&amp;ndash; আপনি এখন এখানে)&lt;/em>&lt;!-- raw HTML omitted -->
+&lt;em>4. [ভিজুয়ালাইজেশন]({{ site.url }}/datasci-intro-4-bn)&lt;/em>&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;p>গত পর্বে আমরা দেখেছি গিটহাবের API ব্যবহার করে কিভাবে ইউজারদের পাবলিক ডেটা সংগ্রহ করা যায়। পর্বের শেষে আমরা যে কোডটি লিখেছিলাম তা দিয়ে ইউজারদের নাম, আইডি, প্রোফাইলের ঠিকানা, পাবলিক রেপোজিটরির সংখ্যা এবং অ্যাকাউন্ট তৈরীর তারিখ জানতে পেরেছিলাম। এ পর্বে এই তথ্যগুলো বিশ্লেষণ করব আমরা।&lt;/p>
+&lt;h3 id="তথয-বশলষণ">তথ্য বিশ্লেষণ&lt;/h3>
+&lt;p>পর্ব ২ এর &lt;a href="https://gist.github.com/mnzr/30fbd4e6fd3177a53f83">কোডটি&lt;/a> চালালে টার্মিনালে এভাবে ইউজারদের তথ্য দেখানোর কথা:
+{% highlight none %}
+name: Kenneth Reitz
+id: 119893
+html_url: &lt;a href="https://github.com/kennethreitz">https://github.com/kennethreitz&lt;/a>
+public_repos: 87
+created_at: 2009-08-26T21:17:47Z
+{% endhighlight %}&lt;/p>
+&lt;p>এই তথ্য পর্যবেক্ষণ করে কিছু পয়েন্ট বের করা সম্ভব:&lt;/p>
+&lt;ul>
+&lt;li>আর্মিন সবার আগে অ্যাকাউন্ট তৈরী করেছে (২০০৮ সালে)&lt;/li>
+&lt;li>সবচেয়ে কম প্রোজেক্ট আছে ডনের (২৫টি প্রোজেক্ট)&lt;/li>
+&lt;li>প্রোজেক্ট করার হার সবচেয়ে কম ইয়াকুবের (বছর প্রতি ৭টি)&lt;/li>
+&lt;/ul>
+&lt;p>আমাদের মূল লক্ষ্য ছিল অ্যাকাউন্টের বয়সের তুলনায় কার কতগুলো প্রোজেক্ট আছে তার গ্রাফ বানানো, X-axis বরাবর থাকবে রেপোজিটরির সংখ্যা আর Y-axis বরাবর বয়স। API থেকে পাওয়া তথ্য দেখে আমরা বলেই দিতে পারছি কে কবে তৈরী করেছে অ্যাকাউন্ট, কিন্তু কম্পিউটার তো আর সেটা পারে না। &lt;code>created_at&lt;/code> এর মানগুলো খেয়াল করলে দেখবেন তারিখ এবং সময়ে দুটোই একসাথে একটা স্ট্রিং হিসাবে পাচ্ছি আমরা। এই স্ট্রিংটাকে পাইথনের বিল্টিন datetime ফরমেটে নিলে তারিখ এবং সাল আলাদা করা যাবে। এরকম স্ট্রিং থেকে তারিখ বের করতে &lt;code>dateutil&lt;/code> মডিউল থেকে তারিখের parser.parse() ব্যবহার করা হয়। সাল বের করার পর বর্তমান সাল থেকে বিয়োগ করে অ্যাকাউন্টের বয়স বের করা তো মামুলি ব্যাপার, ক্লাস টু এর বাচ্চাও বলে দিতে পারবে। বর্তমান সাল পাওয়া যাবে &lt;code>datetime.date&lt;/code> মডিউলের ‍ &lt;code>today()&lt;/code> ফাংশনটায়।&lt;/p>
+&lt;p>সবার আগে মডিউলগুলো যোগ করুন কোডের শুরুতে:‌
+{% highlight python %}
+import dateutil
+from datetime.date import today
+{% endhighlight %}&lt;/p>
+&lt;p>&lt;code>users&lt;/code> এর লুপ শুরুর আগে বর্তমান তারিখ জমা রাখুন:
+{% highlight python %}
+now = today()
+{% endhighlight %}&lt;/p>
+&lt;p>তারপর &lt;code>properties&lt;/code> এর লুপটার পর &lt;code>created_at&lt;/code> এর পার্সিং এবং বয়স বের করুন:
+{% highlight python %}
+date = dateutil.parser.parse(page_info[&amp;ldquo;created_at&amp;rdquo;])
+age = (now.year - creation_date.year)
+print(&amp;ldquo;age: {}&amp;quot;.format(age))&lt;/p>
+&lt;p>{% endhighlight %}&lt;/p>
+&lt;p>এবার কোড রান করলে প্রতিটা ইউজারের তথ্যের শেষে &lt;code>age&lt;/code> দেখা যাবে এভাবে:
+{% highlight none %}
+name: Kenneth Reitz
+id: 119893
+html_url: &lt;a href="https://github.com/kennethreitz">https://github.com/kennethreitz&lt;/a>
+public_repos: 87
+created_at: 2009-08-26T21:17:47Z
+age: 7
+{% endhighlight %}&lt;/p>
+&lt;p>এ পর্যন্ত করা হয়ে গেলে গ্রাফ করার জন্য যা যা দরকার ছিল তথ্য, সবই আমাদের বের করা হয়ে গেছে। কেনেথ, আর্মিন আর ইয়াকুবের মোট পাবলিক রেপোজিটরি যথাক্রমে ৮৭টি, ১৪৩টি এবং ৪৩টি। এগুলো X-axis এর মান। অন্য দিকে তাদের অ্যাকাউন্টের বয়স যথাক্রমে ৭ বছর, ৮ বছর এবং ৬ বছর। এগুলো আমাদের গ্রাফের Y-axis এর মান। এখন শুধু বাকি [ডেটা ভিজুয়ালাইজেশন (পর্ব ৪)]({{ site.url }}/datasci-intro-4-bn) এ গ্রাফটা বানানো! এ পর্বের সম্পূর্ণ কোড এখানে:&lt;/p>
+&lt;!-- raw HTML omitted --></content></item><item><title>ডেটা সাইন্সে হাতে খড়ি - ৪</title><link>/bn/posts/2016-06-30-datasci-intro-4-bn/</link><pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate><guid>/bn/posts/2016-06-30-datasci-intro-4-bn/</guid><description>কোন কিছু হ্রাস-বৃদ্ধির হার বোঝার জন্য সবচেয়ে সহজ উপায় হল গ্রাফ আঁকা। স্কুলে-জীবনে লাভ-ক্ষতি বোঝার জন্য আমরা যে গ্রাফ এঁকেছি, সেই একই গ্রাফ দিয়ে নির্বাচনে কার অগ্রগতি বেশি-কম তা বোঝা যায় সহজে। ডেটা সাইন্সের ভাষায় এভাবে গ্রাফের মাধ্যমে তথ্যকে চিত্ররুপে দেখানোকে বলা হয় ভিজুয়ালাইজেশন। পাইথনের কিছু চমৎকার লাইব্রেরী আছে ভিজুয়ালাইজেশনের জন্য, আমরা ব্যবহার করব Plotly.
+এই টিউটোরিয়ালটি ডেটা সাইন্সে হাতে খড়ি সিরিজের তৃতীয় পর্ব। অন্যান্য পর্ব:1. [প্রস্তুতি]({{ site.url }}/datasci-intro-1-bn)2. [ডেটা সংগ্রহ]({{ site.</description><content>&lt;p>কোন কিছু হ্রাস-বৃদ্ধির হার বোঝার জন্য সবচেয়ে সহজ উপায় হল গ্রাফ আঁকা। স্কুলে-জীবনে লাভ-ক্ষতি বোঝার জন্য আমরা যে গ্রাফ এঁকেছি, সেই একই গ্রাফ দিয়ে নির্বাচনে কার অগ্রগতি বেশি-কম তা বোঝা যায় সহজে। ডেটা সাইন্সের ভাষায় এভাবে গ্রাফের মাধ্যমে তথ্যকে চিত্ররুপে দেখানোকে বলা হয় ভিজুয়ালাইজেশন। পাইথনের কিছু চমৎকার লাইব্রেরী আছে ভিজুয়ালাইজেশনের জন্য, আমরা ব্যবহার করব &lt;a href="https://plot.ly/">Plotly&lt;/a>.&lt;/p>
+&lt;p>&lt;em>এই টিউটোরিয়ালটি ডেটা সাইন্সে হাতে খড়ি সিরিজের তৃতীয় পর্ব। অন্যান্য পর্ব:&lt;/em>&lt;!-- raw HTML omitted -->
+&lt;em>1. [প্রস্তুতি]({{ site.url }}/datasci-intro-1-bn)&lt;/em>&lt;!-- raw HTML omitted -->
+&lt;em>2. [ডেটা সংগ্রহ]({{ site.url }}/datasci-intro-2-bn)&lt;/em>&lt;!-- raw HTML omitted -->
+&lt;em>3. [বিশ্লেষণ]({{ site.url }}/datasci-intro-3-bn)&lt;/em>&lt;!-- raw HTML omitted -->
+&lt;em>4. [ভিজুয়ালাইজেশন]({{ site.url }}/datasci-intro-4-bn) (&amp;lt;&amp;ndash; আপনি এখন এখানে)&lt;/em>&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;h3 id="গরফ-বনন">গ্রাফ বানানো&lt;/h3>
+&lt;p>&lt;strong>X আর Y এক্সিসের মান&lt;/strong>&lt;!-- raw HTML omitted -->
+আমাদের গ্রাফে X axis এ বসার কথা মোট রেপোজিটরির সংখ্যার, আর Y axis এ অ্যাকাউন্টের বয়স। Plotly এর জন্য এই দুই axis এর মানগুলো দুটি লিস্টে রাখতে হবে। একই সাথে গ্রাফে ইউজারদের প্রতিটি বিন্দুর জন্য নাম-ও দিতে হবে, আমরা বিন্দুর নামের জন্য ইউজারদের প্রোফাইলের নাম ব্যবহার করব। &lt;code>users&lt;/code> লুপের আগে এজন্য তিনটি লিস্ট করুন:&lt;/p>
+&lt;p>{% highlight python %}
+repositories = []
+ages = []
+names = []
+{% endhighlight %}&lt;/p>
+&lt;p>এবং &lt;code>users&lt;/code> লুপের ভেতর শেষের দিকে এগুলো যোগ করুন যাতে প্রতি ইউজারের জন্য অ্যাকাউন্টের বয়স, রেপোজিটরির সংখ্যা এবং নাম লিস্টগুলোয় জমা হয়:&lt;/p>
+&lt;p>{% highlight python %}
+ages.append(age)
+repositories.append(page_info[&amp;ldquo;public_repos&amp;rdquo;])
+names.append(page_info[&amp;ldquo;name&amp;rdquo;])
+{% endhighlight %}&lt;/p>
+&lt;p>&lt;strong>Plotly দিয়ে প্লটিং করা&lt;/strong>&lt;!-- raw HTML omitted -->
+গ্রাফ বানানোর জন্য যেসব তথ্য দরকার ছিল আমাদের সব এখন আমাদের হাতে আছে। এবার আসল গ্রাফটা বানানোর পালা। আমরা Plotly নামে একটা লাইব্রেরী দিয়ে গ্রাফ বানাব, কারণ এটা দিয়ে বানানো গ্রাফ সহজেই ব্রাউজারে দেখা যায়। শুধু তাই না, ইচ্ছা করলে Plotly এর সাইটে-ও আপনার গ্রাফ সেভ করে রাখতে এবং অন্যদের সাথে শেয়ার করতে পারেন। &lt;code>pip install plotly&lt;/code> কমান্ড দিয়ে ইন্সটল করে নিন মডিউলটি। এই মডিউলটি কিভাবে ব্যবহার করা যায় তা জানতে &lt;a href="https://plot.ly/python/">ডকুমেন্টেশন&lt;/a> পড়ুন।&lt;/p>
+&lt;p>Plotly দিয়ে তৈরী গ্রাফে দুইটা কম্পোনেন্ট থাকে: layout এবং figure. Layout এ বলে দেয়া থাকে গ্রাফটার বিভিন্ন প্রোপার্টিজ যেমন গ্রাফের নাম, X ও Y axis এর রং ও নাম ইত্যাদি। অন্যদিকে আমাদের গ্রাফটা হবে এক ধরণের scatter graph। তাই এই সব উপাদান ইম্পোর্ট করতে হবে আগে:&lt;/p>
+&lt;p>{% highlight python %}
+import plotly
+from plotly.graph_objs import Scatter, Layout, Figure
+{% endhighlight %}&lt;/p>
+&lt;p>গ্রাফে যত ধরণের অবজেক্ট আছে, বার চার্ট, লাইন, কিংবা পাই চার্ট সবই data নামে একটা লিস্টে রাখতে হবে &lt;code>users&lt;/code> ফর লুপের পর যোগ করুন:&lt;/p>
+&lt;p>{% highlight python %}
+data = [Scatter(
+x = repositories,
+y = ages,
+mode = &amp;lsquo;markers+text&amp;rsquo;,
+text = names,
+textposition = &amp;lsquo;top&amp;rsquo;
+)
+]
+{% endhighlight %}&lt;/p>
+&lt;p>এ প্রোজেক্টে শুধু একটি Scatter অবজেক্ট আছে, যার x axis বরাবর repositories list এর মানগুলো, y axis বরাবর ages list এর মানগুলো থাকবে এবং প্রতিটি বিন্দুর নাম হবে names list এর নামগুলো।&lt;/p>
+&lt;p>এবার গ্রাফের টাইটেল এবং অক্ষগুলোর নাম-ও দেয়া যায়। একই সাথে গ্রাফের লেআউট-টা একটু কাস্টোমাইজ করা যাক। এই কোড দেখে ভয় পাবার কিছু নেই, আসমান থেকে তুলে আনি নি এগুলো। সবই ডকুমেন্টেশনে খুঁজে পাবেন।&lt;/p>
+&lt;p>{% highlight python %}
+layout = Layout(
+title = &amp;lsquo;Number of repositories on Github versus account age&amp;rsquo;,
+xaxis = dict(
+title = &amp;lsquo;Number of repositories&amp;rsquo;,
+titlefont = dict(
+family = &amp;lsquo;Courier New, monospace&amp;rsquo;,
+size = 18,
+color = &amp;lsquo;grey&amp;rsquo;
+),
+linecolor = &amp;lsquo;green&amp;rsquo;,
+),
+yaxis = dict(
+title = &amp;lsquo;Age of account (in years)&amp;rsquo;,
+titlefont = dict(
+family = &amp;lsquo;Courier New, monospace&amp;rsquo;,
+size = 18,
+color = &amp;lsquo;grey&amp;rsquo;
+),
+linecolor = &amp;lsquo;green&amp;rsquo;,
+),
+)
+{% endhighlight %}&lt;/p>
+&lt;p>এখন শুধু বাকি প্লট তৈরী করা। Plotly তে লেআউট এবং ডেটা এক করে ফিগার তৈরী করা হয়, যা থেকে প্লট বানানো হয়। Plotly এর আরেকটা বড় সুবিধা হল প্লট বানানোর সাথে সাথেই HTML ফরমেটে গ্রাফ পাওয়া যায়, যা যে কারও সাথে শেয়ার করতে পারবেন আপনি। আমি এই ফাইলটার নাম দিয়েছি repository-vs-year.html&lt;/p>
+&lt;p>{% highlight python %}
+figure = Figure(data=data, layout=layout)
+plotly.offline.plot(figure, filename=&amp;lsquo;repository-vs-year.html&amp;rsquo;)
+{% endhighlight %}&lt;/p>
+&lt;p>এখন স্ক্রিপ্টটা রান করলে কমান্ড লাইনে ইউজারদের বিভিন্ন তথ্য দেখা যাবে, সবশেষে ব্রাউজারে নিজ থেকেই একটা ট্যাব খুলে গ্রাফটা দেখাবে। আপনি যদি সবগুলো ধাপ ঠিক ঠাক অনুসরণ করে থাকেন আপনার গ্রাফটা এমন হবে:&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>ব্যাস, আপনি এখন একজন ডেটা সাইন্টিস্ট হয়ে গেলেন! পরবর্তিতে আশা করি নিজ থেকে যে কোন প্রয়োজনীয়তায় গ্রাফ তৈরী করতে পারবেন। সবসময় মনে রাখবেন একটা কথা: Google এবং ডকুমেন্টেশন আপনার সবচেয়ে বড় বন্ধু। সব কিছুর জন্য আপনার প্রয়োজনীয়তা অনুসারে টিউটোরিয়াল নাও পাওয়া যেতে পারে, তখন এই দুটি-ই আপনাকে ডেটা সাইন্সের বিভিন্ন কাজ করতে সাহায্য করবে।&lt;/p></content></item></channel></rss>
