@@ -4,13 +4,15 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: English
 - type: directory
-  path: content
+  path: content/en
   label: Pages
   create: all
   match: "*"
 - type: directory
-  path: content/**/posts
+  path: content/en/posts
   label: Posts
   create: all
   match: "**/*"
