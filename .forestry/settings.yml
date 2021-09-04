@@ -7,6 +7,11 @@ sections:
 - type: heading
   label: English
 - type: directory
+  path: content/en
+  label: Pages
+  create: documents
+  match: "*"
+- type: directory
   path: content/en/posts
   label: Posts
   create: all
@@ -16,17 +21,17 @@ sections:
 - type: heading
   label: Bangla
 - type: directory
+  path: content/bn
+  label: Pages
+  create: documents
+  match: "*"
+- type: directory
   path: content/bn/posts
   label: Posts
   create: all
   match: "*"
   templates:
   - blog-post
-- type: directory
-  path: content/en
-  label: Pages
-  create: documents
-  match: "*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
