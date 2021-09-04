@@ -18,6 +18,15 @@ sections:
   match: "*"
   templates:
   - blog-post
+- type: heading
+  label: Bangla
+- type: directory
+  path: content/bn/posts
+  label: Posts
+  create: all
+  match: "*"
+  templates:
+  - blog-post
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
