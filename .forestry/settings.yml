@@ -29,7 +29,7 @@ sections:
   path: content/bn/posts
   label: Posts
   create: all
-  match: "*"
+  match: "**/*"
   templates:
   - blog-post
 upload_dir: static/uploads
