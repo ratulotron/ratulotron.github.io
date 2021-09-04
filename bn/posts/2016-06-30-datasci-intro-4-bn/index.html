@@ -1,24 +1,126 @@
-<!doctype html><html lang=bn><head><title>ডেটা সাইন্সে হাতে খড়ি - ৪ :: AARatul.rants(about="xyz")</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="কোন কিছু হ্রাস-বৃদ্ধির হার বোঝার জন্য সবচেয়ে সহজ উপায় হল গ্রাফ আঁকা। স্কুলে-জীবনে লাভ-ক্ষতি বোঝার জন্য আমরা যে গ্রাফ এঁকেছি, সেই একই গ্রাফ দিয়ে নির্বাচনে কার অগ্রগতি বেশি-কম তা বোঝা যায় সহজে। ডেটা সাইন্সের ভাষায় এভাবে গ্রাফের মাধ্যমে তথ্যকে চিত্ররুপে দেখানোকে বলা হয় ভিজুয়ালাইজেশন। পাইথনের কিছু চমৎকার লাইব্রেরী আছে ভিজুয়ালাইজেশনের জন্য, আমরা ব্যবহার করব Plotly.
-এই টিউটোরিয়ালটি ডেটা সাইন্সে হাতে খড়ি সিরিজের তৃতীয় পর্ব। অন্যান্য পর্ব:1. [প্রস্তুতি]({{ site.url }}/datasci-intro-1-bn)2. [ডেটা সংগ্রহ]({{ site."><meta name=keywords content="ব্লগ"><meta name=robots content="noodp"><link rel=canonical href=/bn/posts/2016-06-30-datasci-intro-4-bn/><link rel=stylesheet href=/assets/style.css><link rel=stylesheet href=/assets/green.css><link rel=apple-touch-icon href=/img/apple-touch-icon-192x192.png><link rel="shortcut icon" href=/img/favicon/green.png><meta name=twitter:card content="summary"><meta name=twitter:site content><meta name=twitter:creator content="Ratul Minhaz"><meta property="og:locale" content="bn"><meta property="og:type" content="article"><meta property="og:title" content="ডেটা সাইন্সে হাতে খড়ি - ৪"><meta property="og:description" content="Introductory data analysis and visualization"><meta property="og:url" content="/bn/posts/2016-06-30-datasci-intro-4-bn/"><meta property="og:site_name" content="AARatul.rants(about=&#34;xyz&#34;)"><meta property="og:image" content="/img/favicon/green.png"><meta property="og:image:width" content="2048"><meta property="og:image:height" content="1024"><meta property="article:section" content="tutorial"><meta property="article:published_time" content="2016-06-30 00:00:00 +0000 UTC"></head><body class=green><div class="container headings--one-size"><header class=header><div class=header__inner><div class=header__logo><a href=/><div class=logo>Ratul.rants(about="xyz")</div></a></div><div class=menu-trigger>menu</div></div><nav class=menu><ul class="menu__inner menu__inner--desktop"><li><a href=/about>আমি</a></li><li><a href=/categories>ক্যাটেগোরি</a></li><ul class=menu__sub-inner><li class=menu__sub-inner-more-trigger>আরও দেখুন ▾</li><ul class="menu__sub-inner-more hidden"><li><a href=/tags>ট্যাগ</a></li><li><a href=/>নীড়</a></li></ul></ul><div class=spacer></div><ul class=language-selector><ul class=language-selector-current><li>বাংলা ▾</li></ul><ul class="language-selector__more hidden"><li><a href=/>English</a></li><li><a href=/bn/>বাংলা</a></li></ul></ul></ul><ul class="menu__inner menu__inner--mobile"><li><a href=/about>আমি</a></li><li><a href=/categories>ক্যাটেগোরি</a></li><li><a href=/tags>ট্যাগ</a></li><li><a href=/>নীড়</a></li><hr><li><a href=/>English</a></li><li><a href=/bn/>বাংলা</a></li></ul></nav></header><div class=content><div class=post><h1 class=post-title><a href=/bn/posts/2016-06-30-datasci-intro-4-bn/>ডেটা সাইন্সে হাতে খড়ি - ৪</a></h1><div class=post-meta><span class=post-date>2016-06-30 [Updated: 2016-06-30]</span>
-<span class=post-author>:: Ratul Minhaz</span></div><span class=post-tags>#<a href=/bn/tags/python/>python</a>&nbsp;
-#<a href=/bn/tags/data-science/>data science</a>&nbsp;</span><div class=post-content><div><p>কোন কিছু হ্রাস-বৃদ্ধির হার বোঝার জন্য সবচেয়ে সহজ উপায় হল গ্রাফ আঁকা। স্কুলে-জীবনে লাভ-ক্ষতি বোঝার জন্য আমরা যে গ্রাফ এঁকেছি, সেই একই গ্রাফ দিয়ে নির্বাচনে কার অগ্রগতি বেশি-কম তা বোঝা যায় সহজে। ডেটা সাইন্সের ভাষায় এভাবে গ্রাফের মাধ্যমে তথ্যকে চিত্ররুপে দেখানোকে বলা হয় ভিজুয়ালাইজেশন। পাইথনের কিছু চমৎকার লাইব্রেরী আছে ভিজুয়ালাইজেশনের জন্য, আমরা ব্যবহার করব <a href=https://plot.ly/>Plotly</a>.</p><p><em>এই টিউটোরিয়ালটি ডেটা সাইন্সে হাতে খড়ি সিরিজের তৃতীয় পর্ব। অন্যান্য পর্ব:</em>
+<!doctype html><html lang=bn>
+<head>
+<title>ডেটা সাইন্সে হাতে খড়ি - ৪ :: AARatul.rants(about="xyz")</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="কোন কিছু হ্রাস-বৃদ্ধির হার বোঝার জন্য সবচেয়ে সহজ উপায় হল গ্রাফ আঁকা। স্কুলে-জীবনে লাভ-ক্ষতি বোঝার জন্য আমরা যে গ্রাফ এঁকেছি, সেই একই গ্রাফ দিয়ে নির্বাচনে কার অগ্রগতি বেশি-কম তা বোঝা যায় সহজে। ডেটা সাইন্সের ভাষায় এভাবে গ্রাফের মাধ্যমে তথ্যকে চিত্ররুপে দেখানোকে বলা হয় ভিজুয়ালাইজেশন। পাইথনের কিছু চমৎকার লাইব্রেরী আছে ভিজুয়ালাইজেশনের জন্য, আমরা ব্যবহার করব Plotly.
+এই টিউটোরিয়ালটি ডেটা সাইন্সে হাতে খড়ি সিরিজের তৃতীয় পর্ব। অন্যান্য পর্ব:1. [প্রস্তুতি]({{ site.url }}/datasci-intro-1-bn)2. [ডেটা সংগ্রহ]({{ site.">
+<meta name=keywords content="ব্লগ">
+<meta name=robots content="noodp">
+<link rel=canonical href=/bn/posts/2016-06-30-datasci-intro-4-bn/>
+<link rel=stylesheet href=/assets/style.css>
+<link rel=stylesheet href=/assets/green.css>
+<link rel=apple-touch-icon href=/img/apple-touch-icon-192x192.png>
+<link rel="shortcut icon" href=/img/favicon/green.png>
+<meta name=twitter:card content="summary">
+<meta name=twitter:site content>
+<meta name=twitter:creator content="Ratul Minhaz">
+<meta property="og:locale" content="bn">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ডেটা সাইন্সে হাতে খড়ি - ৪">
+<meta property="og:description" content="Introductory data analysis and visualization">
+<meta property="og:url" content="/bn/posts/2016-06-30-datasci-intro-4-bn/">
+<meta property="og:site_name" content="AARatul.rants(about=&#34;xyz&#34;)">
+<meta property="og:image" content="/img/favicon/green.png">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+<meta property="article:section" content="tutorial">
+<meta property="article:published_time" content="2016-06-30 00:00:00 +0000 UTC">
+</head>
+<body class=green>
+<div class="container headings--one-size">
+<header class=header>
+<div class=header__inner>
+<div class=header__logo>
+<a href=/>
+<div class=logo>
+Ratul.rants(about="xyz")
+</div>
+</a>
+</div>
+<div class=menu-trigger>menu</div>
+</div>
+<nav class=menu>
+<ul class="menu__inner menu__inner--desktop">
+<li><a href=/about>আমি</a></li>
+<li><a href=/categories>ক্যাটেগোরি</a></li>
+<ul class=menu__sub-inner>
+<li class=menu__sub-inner-more-trigger>আরও দেখুন ▾</li>
+<ul class="menu__sub-inner-more hidden">
+<li><a href=/tags>ট্যাগ</a></li>
+<li><a href=/>নীড়</a></li>
+</ul>
+</ul>
+<div class=spacer></div>
+<ul class=language-selector>
+<ul class=language-selector-current>
+<li>বাংলা ▾</li>
+</ul>
+<ul class="language-selector__more hidden">
+<li><a href=/>English</a></li>
+<li><a href=/bn/>বাংলা</a></li>
+</ul>
+</ul>
+</ul>
+<ul class="menu__inner menu__inner--mobile">
+<li><a href=/about>আমি</a></li>
+<li><a href=/categories>ক্যাটেগোরি</a></li>
+<li><a href=/tags>ট্যাগ</a></li>
+<li><a href=/>নীড়</a></li>
+<hr>
+<li>
+<a href=/>English</a>
+</li>
+<li>
+<a href=/bn/>বাংলা</a>
+</li>
+</ul>
+</nav>
+</header>
+<div class=content>
+<div class=post>
+<h1 class=post-title>
+<a href=/bn/posts/2016-06-30-datasci-intro-4-bn/>ডেটা সাইন্সে হাতে খড়ি - ৪</a></h1>
+<div class=post-meta>
+<span class=post-date>
+2016-06-30 [Updated: 2016-06-30]
+</span>
+<span class=post-author>:: Ratul Minhaz</span>
+</div>
+<span class=post-tags>
+#<a href=/bn/tags/python/>python</a>&nbsp;
+#<a href=/bn/tags/data-science/>data science</a>&nbsp;
+</span>
+<div class=post-content><div>
+<p>কোন কিছু হ্রাস-বৃদ্ধির হার বোঝার জন্য সবচেয়ে সহজ উপায় হল গ্রাফ আঁকা। স্কুলে-জীবনে লাভ-ক্ষতি বোঝার জন্য আমরা যে গ্রাফ এঁকেছি, সেই একই গ্রাফ দিয়ে নির্বাচনে কার অগ্রগতি বেশি-কম তা বোঝা যায় সহজে। ডেটা সাইন্সের ভাষায় এভাবে গ্রাফের মাধ্যমে তথ্যকে চিত্ররুপে দেখানোকে বলা হয় ভিজুয়ালাইজেশন। পাইথনের কিছু চমৎকার লাইব্রেরী আছে ভিজুয়ালাইজেশনের জন্য, আমরা ব্যবহার করব <a href=https://plot.ly/>Plotly</a>.</p>
+<p><em>এই টিউটোরিয়ালটি ডেটা সাইন্সে হাতে খড়ি সিরিজের তৃতীয় পর্ব। অন্যান্য পর্ব:</em>
 <em>1. [প্রস্তুতি]({{ site.url }}/datasci-intro-1-bn)</em>
 <em>2. [ডেটা সংগ্রহ]({{ site.url }}/datasci-intro-2-bn)</em>
 <em>3. [বিশ্লেষণ]({{ site.url }}/datasci-intro-3-bn)</em>
-<em>4. [ভিজুয়ালাইজেশন]({{ site.url }}/datasci-intro-4-bn) (&lt;&ndash; আপনি এখন এখানে)</em></p><h3 id=গরফ-বনন>গ্রাফ বানানো<a href=#গরফ-বনন class=hanchor arialabel=Anchor>&#8983;</a></h3><p><strong>X আর Y এক্সিসের মান</strong>
-আমাদের গ্রাফে X axis এ বসার কথা মোট রেপোজিটরির সংখ্যার, আর Y axis এ অ্যাকাউন্টের বয়স। Plotly এর জন্য এই দুই axis এর মানগুলো দুটি লিস্টে রাখতে হবে। একই সাথে গ্রাফে ইউজারদের প্রতিটি বিন্দুর জন্য নাম-ও দিতে হবে, আমরা বিন্দুর নামের জন্য ইউজারদের প্রোফাইলের নাম ব্যবহার করব। <code>users</code> লুপের আগে এজন্য তিনটি লিস্ট করুন:</p><p>{% highlight python %}
+<em>4. [ভিজুয়ালাইজেশন]({{ site.url }}/datasci-intro-4-bn) (&lt;&ndash; আপনি এখন এখানে)</em></p>
+<h3 id=গরফ-বনন>গ্রাফ বানানো<a href=#গরফ-বনন class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<p><strong>X আর Y এক্সিসের মান</strong>
+আমাদের গ্রাফে X axis এ বসার কথা মোট রেপোজিটরির সংখ্যার, আর Y axis এ অ্যাকাউন্টের বয়স। Plotly এর জন্য এই দুই axis এর মানগুলো দুটি লিস্টে রাখতে হবে। একই সাথে গ্রাফে ইউজারদের প্রতিটি বিন্দুর জন্য নাম-ও দিতে হবে, আমরা বিন্দুর নামের জন্য ইউজারদের প্রোফাইলের নাম ব্যবহার করব। <code>users</code> লুপের আগে এজন্য তিনটি লিস্ট করুন:</p>
+<p>{% highlight python %}
 repositories = []
 ages = []
 names = []
-{% endhighlight %}</p><p>এবং <code>users</code> লুপের ভেতর শেষের দিকে এগুলো যোগ করুন যাতে প্রতি ইউজারের জন্য অ্যাকাউন্টের বয়স, রেপোজিটরির সংখ্যা এবং নাম লিস্টগুলোয় জমা হয়:</p><p>{% highlight python %}
+{% endhighlight %}</p>
+<p>এবং <code>users</code> লুপের ভেতর শেষের দিকে এগুলো যোগ করুন যাতে প্রতি ইউজারের জন্য অ্যাকাউন্টের বয়স, রেপোজিটরির সংখ্যা এবং নাম লিস্টগুলোয় জমা হয়:</p>
+<p>{% highlight python %}
 ages.append(age)
 repositories.append(page_info[&ldquo;public_repos&rdquo;])
 names.append(page_info[&ldquo;name&rdquo;])
-{% endhighlight %}</p><p><strong>Plotly দিয়ে প্লটিং করা</strong>
-গ্রাফ বানানোর জন্য যেসব তথ্য দরকার ছিল আমাদের সব এখন আমাদের হাতে আছে। এবার আসল গ্রাফটা বানানোর পালা। আমরা Plotly নামে একটা লাইব্রেরী দিয়ে গ্রাফ বানাব, কারণ এটা দিয়ে বানানো গ্রাফ সহজেই ব্রাউজারে দেখা যায়। শুধু তাই না, ইচ্ছা করলে Plotly এর সাইটে-ও আপনার গ্রাফ সেভ করে রাখতে এবং অন্যদের সাথে শেয়ার করতে পারেন। <code>pip install plotly</code> কমান্ড দিয়ে ইন্সটল করে নিন মডিউলটি। এই মডিউলটি কিভাবে ব্যবহার করা যায় তা জানতে <a href=https://plot.ly/python/>ডকুমেন্টেশন</a> পড়ুন।</p><p>Plotly দিয়ে তৈরী গ্রাফে দুইটা কম্পোনেন্ট থাকে: layout এবং figure. Layout এ বলে দেয়া থাকে গ্রাফটার বিভিন্ন প্রোপার্টিজ যেমন গ্রাফের নাম, X ও Y axis এর রং ও নাম ইত্যাদি। অন্যদিকে আমাদের গ্রাফটা হবে এক ধরণের scatter graph। তাই এই সব উপাদান ইম্পোর্ট করতে হবে আগে:</p><p>{% highlight python %}
+{% endhighlight %}</p>
+<p><strong>Plotly দিয়ে প্লটিং করা</strong>
+গ্রাফ বানানোর জন্য যেসব তথ্য দরকার ছিল আমাদের সব এখন আমাদের হাতে আছে। এবার আসল গ্রাফটা বানানোর পালা। আমরা Plotly নামে একটা লাইব্রেরী দিয়ে গ্রাফ বানাব, কারণ এটা দিয়ে বানানো গ্রাফ সহজেই ব্রাউজারে দেখা যায়। শুধু তাই না, ইচ্ছা করলে Plotly এর সাইটে-ও আপনার গ্রাফ সেভ করে রাখতে এবং অন্যদের সাথে শেয়ার করতে পারেন। <code>pip install plotly</code> কমান্ড দিয়ে ইন্সটল করে নিন মডিউলটি। এই মডিউলটি কিভাবে ব্যবহার করা যায় তা জানতে <a href=https://plot.ly/python/>ডকুমেন্টেশন</a> পড়ুন।</p>
+<p>Plotly দিয়ে তৈরী গ্রাফে দুইটা কম্পোনেন্ট থাকে: layout এবং figure. Layout এ বলে দেয়া থাকে গ্রাফটার বিভিন্ন প্রোপার্টিজ যেমন গ্রাফের নাম, X ও Y axis এর রং ও নাম ইত্যাদি। অন্যদিকে আমাদের গ্রাফটা হবে এক ধরণের scatter graph। তাই এই সব উপাদান ইম্পোর্ট করতে হবে আগে:</p>
+<p>{% highlight python %}
 import plotly
 from plotly.graph_objs import Scatter, Layout, Figure
-{% endhighlight %}</p><p>গ্রাফে যত ধরণের অবজেক্ট আছে, বার চার্ট, লাইন, কিংবা পাই চার্ট সবই data নামে একটা লিস্টে রাখতে হবে <code>users</code> ফর লুপের পর যোগ করুন:</p><p>{% highlight python %}
+{% endhighlight %}</p>
+<p>গ্রাফে যত ধরণের অবজেক্ট আছে, বার চার্ট, লাইন, কিংবা পাই চার্ট সবই data নামে একটা লিস্টে রাখতে হবে <code>users</code> ফর লুপের পর যোগ করুন:</p>
+<p>{% highlight python %}
 data = [Scatter(
 x = repositories,
 y = ages,
@@ -27,7 +129,10 @@ text = names,
 textposition = &lsquo;top&rsquo;
 )
 ]
-{% endhighlight %}</p><p>এ প্রোজেক্টে শুধু একটি Scatter অবজেক্ট আছে, যার x axis বরাবর repositories list এর মানগুলো, y axis বরাবর ages list এর মানগুলো থাকবে এবং প্রতিটি বিন্দুর নাম হবে names list এর নামগুলো।</p><p>এবার গ্রাফের টাইটেল এবং অক্ষগুলোর নাম-ও দেয়া যায়। একই সাথে গ্রাফের লেআউট-টা একটু কাস্টোমাইজ করা যাক। এই কোড দেখে ভয় পাবার কিছু নেই, আসমান থেকে তুলে আনি নি এগুলো। সবই ডকুমেন্টেশনে খুঁজে পাবেন।</p><p>{% highlight python %}
+{% endhighlight %}</p>
+<p>এ প্রোজেক্টে শুধু একটি Scatter অবজেক্ট আছে, যার x axis বরাবর repositories list এর মানগুলো, y axis বরাবর ages list এর মানগুলো থাকবে এবং প্রতিটি বিন্দুর নাম হবে names list এর নামগুলো।</p>
+<p>এবার গ্রাফের টাইটেল এবং অক্ষগুলোর নাম-ও দেয়া যায়। একই সাথে গ্রাফের লেআউট-টা একটু কাস্টোমাইজ করা যাক। এই কোড দেখে ভয় পাবার কিছু নেই, আসমান থেকে তুলে আনি নি এগুলো। সবই ডকুমেন্টেশনে খুঁজে পাবেন।</p>
+<p>{% highlight python %}
 layout = Layout(
 title = &lsquo;Number of repositories on Github versus account age&rsquo;,
 xaxis = dict(
@@ -49,9 +154,42 @@ color = &lsquo;grey&rsquo;
 linecolor = &lsquo;green&rsquo;,
 ),
 )
-{% endhighlight %}</p><p>এখন শুধু বাকি প্লট তৈরী করা। Plotly তে লেআউট এবং ডেটা এক করে ফিগার তৈরী করা হয়, যা থেকে প্লট বানানো হয়। Plotly এর আরেকটা বড় সুবিধা হল প্লট বানানোর সাথে সাথেই HTML ফরমেটে গ্রাফ পাওয়া যায়, যা যে কারও সাথে শেয়ার করতে পারবেন আপনি। আমি এই ফাইলটার নাম দিয়েছি repository-vs-year.html</p><p>{% highlight python %}
+{% endhighlight %}</p>
+<p>এখন শুধু বাকি প্লট তৈরী করা। Plotly তে লেআউট এবং ডেটা এক করে ফিগার তৈরী করা হয়, যা থেকে প্লট বানানো হয়। Plotly এর আরেকটা বড় সুবিধা হল প্লট বানানোর সাথে সাথেই HTML ফরমেটে গ্রাফ পাওয়া যায়, যা যে কারও সাথে শেয়ার করতে পারবেন আপনি। আমি এই ফাইলটার নাম দিয়েছি repository-vs-year.html</p>
+<p>{% highlight python %}
 figure = Figure(data=data, layout=layout)
 plotly.offline.plot(figure, filename=&lsquo;repository-vs-year.html&rsquo;)
-{% endhighlight %}</p><p>এখন স্ক্রিপ্টটা রান করলে কমান্ড লাইনে ইউজারদের বিভিন্ন তথ্য দেখা যাবে, সবশেষে ব্রাউজারে নিজ থেকেই একটা ট্যাব খুলে গ্রাফটা দেখাবে। আপনি যদি সবগুলো ধাপ ঠিক ঠাক অনুসরণ করে থাকেন আপনার গ্রাফটা এমন হবে:</p><p>ব্যাস, আপনি এখন একজন ডেটা সাইন্টিস্ট হয়ে গেলেন! পরবর্তিতে আশা করি নিজ থেকে যে কোন প্রয়োজনীয়তায় গ্রাফ তৈরী করতে পারবেন। সবসময় মনে রাখবেন একটা কথা: Google এবং ডকুমেন্টেশন আপনার সবচেয়ে বড় বন্ধু। সব কিছুর জন্য আপনার প্রয়োজনীয়তা অনুসারে টিউটোরিয়াল নাও পাওয়া যেতে পারে, তখন এই দুটি-ই আপনাকে ডেটা সাইন্সের বিভিন্ন কাজ করতে সাহায্য করবে।</p></div></div><div class=pagination><div class=pagination__title><span class=pagination__title-h>অন্য লেখা পড়ুন</span><hr></div><div class=pagination__buttons><span class="button previous"><a href=/bn/posts/2016-06-30-datasci-intro-3-bn/><span class=button__icon>←</span>
-<span class=button__text>ডেটা সাইন্সে হাতে খড়ি - ৩</span></a></span></div></div></div></div><footer class=footer><div class=footer__inner><div class="copyright copyright--user"><span>রাতুল মিনহাজ</span>
-<span>:: Theme made by <a href=https://twitter.com/panr>panr</a></span></div></div></footer><script src=/assets/main.js></script><script src=/assets/prism.js></script><script src=/assets/languageSelector.js></script></div></body></html>
+{% endhighlight %}</p>
+<p>এখন স্ক্রিপ্টটা রান করলে কমান্ড লাইনে ইউজারদের বিভিন্ন তথ্য দেখা যাবে, সবশেষে ব্রাউজারে নিজ থেকেই একটা ট্যাব খুলে গ্রাফটা দেখাবে। আপনি যদি সবগুলো ধাপ ঠিক ঠাক অনুসরণ করে থাকেন আপনার গ্রাফটা এমন হবে:</p>
+<p>ব্যাস, আপনি এখন একজন ডেটা সাইন্টিস্ট হয়ে গেলেন! পরবর্তিতে আশা করি নিজ থেকে যে কোন প্রয়োজনীয়তায় গ্রাফ তৈরী করতে পারবেন। সবসময় মনে রাখবেন একটা কথা: Google এবং ডকুমেন্টেশন আপনার সবচেয়ে বড় বন্ধু। সব কিছুর জন্য আপনার প্রয়োজনীয়তা অনুসারে টিউটোরিয়াল নাও পাওয়া যেতে পারে, তখন এই দুটি-ই আপনাকে ডেটা সাইন্সের বিভিন্ন কাজ করতে সাহায্য করবে।</p>
+</div></div>
+<div class=pagination>
+<div class=pagination__title>
+<span class=pagination__title-h>অন্য লেখা পড়ুন</span>
+<hr>
+</div>
+<div class=pagination__buttons>
+<span class="button previous">
+<a href=/bn/posts/2016-06-30-datasci-intro-3-bn/>
+<span class=button__icon>←</span>
+<span class=button__text>ডেটা সাইন্সে হাতে খড়ি - ৩</span>
+</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<footer class=footer>
+<div class=footer__inner>
+<div class="copyright copyright--user">
+<span>রাতুল মিনহাজ</span>
+<span>:: Theme made by <a href=https://twitter.com/panr>panr</a></span>
+</div>
+</div>
+</footer>
+<script src=/assets/main.js></script>
+<script src=/assets/prism.js></script>
+<script src=/assets/languageSelector.js></script>
+</div>
+</body>
+</html>
