@@ -27,6 +27,11 @@ sections:
   match: "*"
   templates:
   - blog-post
+- type: directory
+  path: content/en
+  label: Pages
+  create: documents
+  match: "*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
