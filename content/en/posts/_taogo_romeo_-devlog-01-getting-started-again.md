@@ -6,6 +6,6 @@ description = ""
 draft = true
 layout = "post"
 tags = ["projects", "rants"]
-title = "_taogo_romeo_ Devlog 01: Getting Started Again"
+title = "_taogo_romeo_ devlog 01: Getting Started Again"
 
 +++
