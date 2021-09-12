@@ -21,4 +21,4 @@ Honestly I don't even know how many times I have had this conversation with myse
 
 : Mission abort: the project structure looks completely alien now!
 
-I haven't ever been a projects guy, even if I wanted to. I like to code, craft pieces of software and my day job as a backend developer used to allow me sate that appetite.
+I haven't ever been a projects guy, even if I wanted to. I like to code, craft pieces of software and my day job as a backend developer used to allow me sate that appetite. Perhaps this is why I haven't felt the urge to make something again until I was well into my new role as a data engineer. Being a data engineer now allowed me to play around a lot different set of tools, concepts and architectures, but they aren't software projects and doesn't really represent a well encapsulated problem that can be solved within a predefined parameters. I am not complaining about my role at all but I do miss the rigorous process of making a well oiled product that users can be benefitted from and has a scope of expanding in terms of usability.
