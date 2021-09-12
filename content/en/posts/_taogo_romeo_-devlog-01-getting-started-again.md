@@ -20,3 +20,5 @@ Honestly I don't even know how many times I have had this conversation with myse
 : Am I sure I actually want to continue this?
 
 : Mission abort: the project structure looks completely alien now!
+
+I haven't ever been a projects guy, even if I wanted to. I like to code, craft pieces of software and my day job as a backend developer used to allow me sate that appetite.
