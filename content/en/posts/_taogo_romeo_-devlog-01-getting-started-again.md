@@ -1,6 +1,6 @@
 +++
 author = "Ratul Minhaz"
-categories = ["Devlog"]
+categories = ["devlog"]
 date = 2021-09-11T22:00:00Z
 description = ""
 draft = true
