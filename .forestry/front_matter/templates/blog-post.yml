@@ -33,3 +33,5 @@ fields:
     required: false
   label: author
   default: Ratul Minhaz
+pages:
+- content/en/posts/_taogo_romeo_-devlog-01-getting-started-again.md
