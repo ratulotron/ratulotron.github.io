@@ -46,20 +46,20 @@ workon scraping
 &lt;p>বুঝতেই পারছেন এক স্মার্টফোন থেকেই রাজ্যের যত ডেটা কালেকশন করা সম্ভব। কিন্তু এটাই একমাত্র উৎস নয়। হাজার রকমের ওয়েবসাইট এবং সার্ভিস ইন্টার্নেটে জাল বিছিয়ে রেখেছে তথ্য পারাপারের। খুবই সাধারণ একটা উদাহরণ হল ফেসবুক ব্যবহার করে কোন ওয়েবসাইটে লগিন করা, কোন রকমের রেজিস্ট্রেশন না করেই। এই ব্যাপারটা সম্ভব হয়েছে API নামে একটা প্রযুক্তির কারণে। API যে শুধু তথ্য শেয়ার করাই সহজ করে দেয় তা না, এর আরও অনেক কাজ আছে। আগ্রহী হলে গুগল করে জেনে নিতে পারেন। ফেসবুক, টুইটার, গুগল ইত্যাদি পরিচিত নাম ছাড়াও আর কি কি API আছে ব্যবহার করার মত তা জেনে নিতে পারেন &lt;a href="http://www.programmableweb.com/">Programmable Web&lt;/a> সাইটটা থেকে। ওখানে মোটামুটি ১৩ হাজারেরও বেশি API এর বর্ণনা দেয়া আছে।&lt;/p>
 &lt;p>এই টিউটোরিয়ালের জন্য আমরা কোড শেয়ার করার সাইট &lt;a href="http://github.com">GitHub&lt;/a> এর API নিয়ে পরীক্ষা-নিরীক্ষা করব। GitHub আগে কখনও ব্যবহার না করে থাকলে এখনই একটা অ্যাকাউন্ট খুলে আপনার সব কোড push করে দিন। আপনার কোড যেমন সবসময় নিরাপদ থাকবে ওখানে, তেমনি যে কেউ আপনার হাতের কাজ দেখতে পারবে।&lt;/p>
 &lt;h3 id="গটহবর-api-পরখ-কর">গিটহাবের API পরখ করা&lt;/h3>
-&lt;p>যেসব সাইটের API থাকে তারা সাধারণত বিস্তারিত ডকুমেন্টেশন লিখে রাখে যাতে মানুষ সহজেই তাদের API দিয়ে কাজের এবং মজার জিনিশ-পাতি বানাতে পারে। গিটহাবের &lt;a href="https://developer.github.com/">API documentation&lt;/a> এ খুবই সহজে এবং সোজা-সাপ্টা ভাষায় বলে দেয়া আছে কিভাবে কোন ঠিকানায় গিয়ে কড়া নাড়লে কি তথ্য পাওয়া যাবে। ব্রাউজারে নতুন ট্যাবে এই ঠিকানায় যান: _&lt;a href="https://api.github.com/users/%7Busername%7D_,">https://api.github.com/users/{username}_,&lt;/a> username এর যায়গায় আপনার ইউজারনেম দিতে পারেন। আমি পাইথনের আব্বাজান গুইদো ভ্যান রসামের ইউজারনেম ব্যবহার করলাম: &lt;a href="https://api.github.com/users/gvanrossum">https://api.github.com/users/gvanrossum&lt;/a>&lt;/p>
+&lt;p>যেসব সাইটের API থাকে তারা সাধারণত বিস্তারিত ডকুমেন্টেশন লিখে রাখে যাতে মানুষ সহজেই তাদের API দিয়ে কাজের এবং মজার জিনিশ-পাতি বানাতে পারে। গিটহাবের &lt;a href="https://developer.github.com/">API documentation&lt;/a> এ খুবই সহজে এবং সোজা-সাপ্টা ভাষায় বলে দেয়া আছে কিভাবে কোন ঠিকানায় গিয়ে কড়া নাড়লে কি তথ্য পাওয়া যাবে। ব্রাউজারে নতুন ট্যাবে এই ঠিকানায় যান: &lt;em>&lt;a href="https://api.github.com/users/%7Busername%7D">https://api.github.com/users/{username}&lt;/a>&lt;/em>, username এর যায়গায় আপনার ইউজারনেম দিতে পারেন। আমি পাইথনের আব্বাজান গুইদো ভ্যান রসামের ইউজারনেম ব্যবহার করলাম: &lt;a href="https://api.github.com/users/gvanrossum">https://api.github.com/users/gvanrossum&lt;/a>&lt;/p>
 &lt;p>{% highlight json %}
 {
 &amp;ldquo;login&amp;rdquo;: &amp;ldquo;gvanrossum&amp;rdquo;,
 &amp;ldquo;id&amp;rdquo;: 2894642,
-&amp;ldquo;avatar_url&amp;rdquo;: &amp;ldquo;&lt;a href="https://avatars.githubusercontent.com/u/2894642?v=3%22,">https://avatars.githubusercontent.com/u/2894642?v=3&amp;quot;,&lt;/a>
+&amp;ldquo;avatar_url&amp;rdquo;: &amp;ldquo;&lt;a href="https://avatars.githubusercontent.com/u/2894642?v=3%22">https://avatars.githubusercontent.com/u/2894642?v=3&amp;quot;&lt;/a>,
 &amp;ldquo;gravatar_id&amp;rdquo;: &amp;ldquo;&amp;rdquo;,
-&amp;ldquo;url&amp;rdquo;: &amp;ldquo;&lt;a href="https://api.github.com/users/gvanrossum%22,">https://api.github.com/users/gvanrossum&amp;quot;,&lt;/a>
-&amp;ldquo;html_url&amp;rdquo;: &amp;ldquo;&lt;a href="https://github.com/gvanrossum%22,">https://github.com/gvanrossum&amp;quot;,&lt;/a>
+&amp;ldquo;url&amp;rdquo;: &amp;ldquo;&lt;a href="https://api.github.com/users/gvanrossum%22">https://api.github.com/users/gvanrossum&amp;quot;&lt;/a>,
+&amp;ldquo;html_url&amp;rdquo;: &amp;ldquo;&lt;a href="https://github.com/gvanrossum%22">https://github.com/gvanrossum&amp;quot;&lt;/a>,
 &amp;ldquo;type&amp;rdquo;: &amp;ldquo;User&amp;rdquo;,
 &amp;ldquo;site_admin&amp;rdquo;: false,
 &amp;ldquo;name&amp;rdquo;: &amp;ldquo;Guido van Rossum&amp;rdquo;,
 &amp;ldquo;company&amp;rdquo;: &amp;ldquo;Dropbox&amp;rdquo;,
-&amp;ldquo;blog&amp;rdquo;: &amp;ldquo;&lt;a href="http://python.org/~guido/%22,">http://python.org/~guido/&amp;quot;,&lt;/a>
+&amp;ldquo;blog&amp;rdquo;: &amp;ldquo;&lt;a href="http://python.org/~guido/%22">http://python.org/~guido/&amp;quot;&lt;/a>,
 &amp;ldquo;location&amp;rdquo;: &amp;ldquo;San Francisco Bay Area&amp;rdquo;,
 &amp;ldquo;email&amp;rdquo;: &amp;ldquo;&lt;a href="mailto:guido@python.org">guido@python.org&lt;/a>&amp;rdquo;,
 &amp;ldquo;hireable&amp;rdquo;: null,

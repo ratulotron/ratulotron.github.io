@@ -102,20 +102,20 @@ Ratul.rants(about="xyz")
 <p>বুঝতেই পারছেন এক স্মার্টফোন থেকেই রাজ্যের যত ডেটা কালেকশন করা সম্ভব। কিন্তু এটাই একমাত্র উৎস নয়। হাজার রকমের ওয়েবসাইট এবং সার্ভিস ইন্টার্নেটে জাল বিছিয়ে রেখেছে তথ্য পারাপারের। খুবই সাধারণ একটা উদাহরণ হল ফেসবুক ব্যবহার করে কোন ওয়েবসাইটে লগিন করা, কোন রকমের রেজিস্ট্রেশন না করেই। এই ব্যাপারটা সম্ভব হয়েছে API নামে একটা প্রযুক্তির কারণে। API যে শুধু তথ্য শেয়ার করাই সহজ করে দেয় তা না, এর আরও অনেক কাজ আছে। আগ্রহী হলে গুগল করে জেনে নিতে পারেন। ফেসবুক, টুইটার, গুগল ইত্যাদি পরিচিত নাম ছাড়াও আর কি কি API আছে ব্যবহার করার মত তা জেনে নিতে পারেন <a href=http://www.programmableweb.com/>Programmable Web</a> সাইটটা থেকে। ওখানে মোটামুটি ১৩ হাজারেরও বেশি API এর বর্ণনা দেয়া আছে।</p>
 <p>এই টিউটোরিয়ালের জন্য আমরা কোড শেয়ার করার সাইট <a href=http://github.com>GitHub</a> এর API নিয়ে পরীক্ষা-নিরীক্ষা করব। GitHub আগে কখনও ব্যবহার না করে থাকলে এখনই একটা অ্যাকাউন্ট খুলে আপনার সব কোড push করে দিন। আপনার কোড যেমন সবসময় নিরাপদ থাকবে ওখানে, তেমনি যে কেউ আপনার হাতের কাজ দেখতে পারবে।</p>
 <h3 id=গটহবর-api-পরখ-কর>গিটহাবের API পরখ করা<a href=#গটহবর-api-পরখ-কর class=hanchor arialabel=Anchor>&#8983;</a> </h3>
-<p>যেসব সাইটের API থাকে তারা সাধারণত বিস্তারিত ডকুমেন্টেশন লিখে রাখে যাতে মানুষ সহজেই তাদের API দিয়ে কাজের এবং মজার জিনিশ-পাতি বানাতে পারে। গিটহাবের <a href=https://developer.github.com/>API documentation</a> এ খুবই সহজে এবং সোজা-সাপ্টা ভাষায় বলে দেয়া আছে কিভাবে কোন ঠিকানায় গিয়ে কড়া নাড়লে কি তথ্য পাওয়া যাবে। ব্রাউজারে নতুন ট্যাবে এই ঠিকানায় যান: _<a href=https://api.github.com/users/%7Busername%7D_,>https://api.github.com/users/{username}_,</a> username এর যায়গায় আপনার ইউজারনেম দিতে পারেন। আমি পাইথনের আব্বাজান গুইদো ভ্যান রসামের ইউজারনেম ব্যবহার করলাম: <a href=https://api.github.com/users/gvanrossum>https://api.github.com/users/gvanrossum</a></p>
+<p>যেসব সাইটের API থাকে তারা সাধারণত বিস্তারিত ডকুমেন্টেশন লিখে রাখে যাতে মানুষ সহজেই তাদের API দিয়ে কাজের এবং মজার জিনিশ-পাতি বানাতে পারে। গিটহাবের <a href=https://developer.github.com/>API documentation</a> এ খুবই সহজে এবং সোজা-সাপ্টা ভাষায় বলে দেয়া আছে কিভাবে কোন ঠিকানায় গিয়ে কড়া নাড়লে কি তথ্য পাওয়া যাবে। ব্রাউজারে নতুন ট্যাবে এই ঠিকানায় যান: <em><a href=https://api.github.com/users/%7Busername%7D>https://api.github.com/users/{username}</a></em>, username এর যায়গায় আপনার ইউজারনেম দিতে পারেন। আমি পাইথনের আব্বাজান গুইদো ভ্যান রসামের ইউজারনেম ব্যবহার করলাম: <a href=https://api.github.com/users/gvanrossum>https://api.github.com/users/gvanrossum</a></p>
 <p>{% highlight json %}
 {
 &ldquo;login&rdquo;: &ldquo;gvanrossum&rdquo;,
 &ldquo;id&rdquo;: 2894642,
-&ldquo;avatar_url&rdquo;: &ldquo;<a href="https://avatars.githubusercontent.com/u/2894642?v=3%22,">https://avatars.githubusercontent.com/u/2894642?v=3",</a>
+&ldquo;avatar_url&rdquo;: &ldquo;<a href="https://avatars.githubusercontent.com/u/2894642?v=3%22">https://avatars.githubusercontent.com/u/2894642?v=3"</a>,
 &ldquo;gravatar_id&rdquo;: &ldquo;&rdquo;,
-&ldquo;url&rdquo;: &ldquo;<a href=https://api.github.com/users/gvanrossum%22,>https://api.github.com/users/gvanrossum",</a>
-&ldquo;html_url&rdquo;: &ldquo;<a href=https://github.com/gvanrossum%22,>https://github.com/gvanrossum",</a>
+&ldquo;url&rdquo;: &ldquo;<a href=https://api.github.com/users/gvanrossum%22>https://api.github.com/users/gvanrossum"</a>,
+&ldquo;html_url&rdquo;: &ldquo;<a href=https://github.com/gvanrossum%22>https://github.com/gvanrossum"</a>,
 &ldquo;type&rdquo;: &ldquo;User&rdquo;,
 &ldquo;site_admin&rdquo;: false,
 &ldquo;name&rdquo;: &ldquo;Guido van Rossum&rdquo;,
 &ldquo;company&rdquo;: &ldquo;Dropbox&rdquo;,
-&ldquo;blog&rdquo;: &ldquo;<a href=http://python.org/~guido/%22,>http://python.org/~guido/",</a>
+&ldquo;blog&rdquo;: &ldquo;<a href=http://python.org/~guido/%22>http://python.org/~guido/"</a>,
 &ldquo;location&rdquo;: &ldquo;San Francisco Bay Area&rdquo;,
 &ldquo;email&rdquo;: &ldquo;<a href=mailto:guido@python.org>guido@python.org</a>&rdquo;,
 &ldquo;hireable&rdquo;: null,
