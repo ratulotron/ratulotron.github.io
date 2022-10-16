@@ -3,7 +3,6 @@ author = "Ratul Minhaz"
 categories = ["tech", "data"]
 date = 2022-10-15T22:00:00Z
 description = "A list of Youtube channels that cover a wide variety of Data Engineering topics"
-draft = true
 layout = ""
 tags = ["youtube", "data", "engineering", "tech", "list"]
 title = "Data Engineering Youtube channels you should follow"
