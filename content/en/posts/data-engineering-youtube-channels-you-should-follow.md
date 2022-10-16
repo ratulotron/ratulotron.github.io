@@ -1,6 +1,6 @@
 +++
 author = "Ratul Minhaz"
-categories = ["tech", "data"]
+categories = ["tech"]
 date = 2022-10-15T22:00:00Z
 description = "A list of Youtube channels that cover a wide variety of Data Engineering topics"
 layout = ""
