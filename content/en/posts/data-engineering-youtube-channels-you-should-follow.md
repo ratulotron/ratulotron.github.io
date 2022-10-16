@@ -10,5 +10,6 @@ title = "Data Engineering Youtube Channels You Should Follow"
 +++
 I have been following several Youtube channels that often cover different topics in Data Engineering, ranging from new tools to organization wide practices. I am compiling this list for my own reference and also for sharing with my peers:
 
+* [Seattle Data Guy - YouTube](https://www.youtube.com/c/SeattleDataGuy)
 * [Lander Analytics - YouTube](https://www.youtube.com/channel/UC2-hKemnrmVCH_29duyJ26A)
 * 
