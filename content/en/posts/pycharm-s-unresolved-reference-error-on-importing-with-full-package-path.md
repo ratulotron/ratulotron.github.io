@@ -28,4 +28,8 @@ For example, I have this project structure:
                 ├── __init__.py
                 └── configs.py
 
-In the `./src/leipipeline/dags/download_latest_lei.py` asdad
+In the `./src/lei_pipeline/dags/download_latest_lei.py` file, I imported the variable `LEI_URL_BASE_PATH` from `./src/lei_pipeline/utils/configs.py` in the following manner, including the full package path:
+
+![](/uploads/screenshot-2023-01-21-at-21-11-25.png)
+
+As you see, PyCharm marks the
