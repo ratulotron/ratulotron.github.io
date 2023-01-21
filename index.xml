@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ratul.rants(about="xyz")</title><link>/</link><description>Recent content on Ratul.rants(about="xyz")</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Ratul Minhaz</copyright><lastBuildDate>Sat, 15 Oct 2022 22:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Data Engineering Youtube Channels You Should Follow</title><link>/posts/data-engineering-youtube-channels-you-should-follow/</link><pubDate>Sat, 15 Oct 2022 22:00:00 +0000</pubDate><guid>/posts/data-engineering-youtube-channels-you-should-follow/</guid><description>I have been following several Youtube channels that often cover different topics in Data Engineering, ranging from new tools to organization wide practices. I am compiling this list for my own reference and also for sharing with my peers:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ratul.rants(about="xyz")</title><link>/</link><description>Recent content on Ratul.rants(about="xyz")</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Ratul Minhaz</copyright><lastBuildDate>Fri, 20 Jan 2023 23:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>PyCharm's 'Unresolved reference' error on importing with full package path</title><link>/posts/pycharm-s-unresolved-reference-error-on-importing-with-full-package-path/</link><pubDate>Fri, 20 Jan 2023 23:00:00 +0000</pubDate><guid>/posts/pycharm-s-unresolved-reference-error-on-importing-with-full-package-path/</guid><description>If you use full path in the imports of your Python project, sometimes PyCharm can have trouble identifying the project structure and mark the root package name as &amp;ldquo;Unresolved reference&amp;rdquo; error. This is likely to happen when when the project was created manually and/or uses a dependency manager like Poetry.
+For example, I have this project structure:
+. ├── Dockerfile ├── docker-compose.yml ├── poetry.lock ├── pyproject.toml └── src ├── .airflowignore └── lei_pipeline ├── __init__.</description><content>&lt;p>If you use full path in the imports of your Python project, sometimes PyCharm can have trouble identifying the project structure and mark the root package name as &amp;ldquo;Unresolved reference&amp;rdquo; error. This is likely to happen when when the project was created manually and/or uses a dependency manager like Poetry.&lt;/p>
+&lt;p>For example, I have this project structure:&lt;/p>
+&lt;pre>&lt;code>.
+├── Dockerfile
+├── docker-compose.yml
+├── poetry.lock
+├── pyproject.toml
+└── src
+├── .airflowignore
+└── lei_pipeline
+├── __init__.py
+├── dags
+│   ├── __init__.py
+│   └── download_latest_lei.py
+└── utils
+├── __init__.py
+└── configs.py
+&lt;/code>&lt;/pre>
+&lt;p>In the &lt;code>./src/lei_pipeline/dags/download_latest_lei.py&lt;/code> file, I imported the variable &lt;code>LEI_URL_BASE_PATH&lt;/code> from &lt;code>./src/lei_pipeline/utils/configs.py&lt;/code> in the following manner, including the full package path:&lt;/p>
+&lt;p>&lt;img src="/uploads/pycharm_project_root.png" alt="">&lt;/p>
+&lt;p>This worked just as intended in the Docker image I was building to run Airflow. In the image, this &lt;code>lei_pipeline&lt;/code> directory is copied to the &lt;code>/opt/airflow/dags/&lt;/code> directory and Airflow easily picks up the necessary files.&lt;/p>
+&lt;p>As you can see, PyCharm doesn&amp;rsquo;t consider the folder as a module, because it expects the module root to be the &lt;code>src&lt;/code> directory. So if the correct import path for this file would be &lt;code>src.lei_pipeline.utils.configs&lt;/code>. There can be many reasons why you wouldn&amp;rsquo;t use &lt;code>src&lt;/code> as your Python project&amp;rsquo;s root module, in my case I needed to have an &lt;code>.airflowignore&lt;/code> file in the root, and use the actual &lt;code>lei_pipeline&lt;/code> module to be imported in my Airflow Docker image&amp;rsquo;s &lt;code>dags&lt;/code> folder.&lt;/p>
+&lt;p>The solution to this is actually pretty simple. All I did was marked the &lt;code>src&lt;/code> directory as my project source root in PyCharm. Just right click on the root folder and from &amp;ldquo;Mark directory as&amp;rdquo; set &amp;ldquo;Source Root&amp;rdquo;:&lt;/p>
+&lt;p>&lt;img src="/uploads/pycharm_project_root_set.png" alt="">&lt;/p>
+&lt;p>Et voilà! For me this was enough for PyCharm to start accurately!&lt;/p>
+&lt;p>However, in some cases this might not be enough. PyCharm doesn&amp;rsquo;t always update it&amp;rsquo;s references, so you might need to force it to rebuild them. You can do this from &lt;code>File &amp;gt; Invalidate Caches&lt;/code>&lt;/p>
+&lt;p>Hopefully this helps someone who has been Googling as cluelessly as I did!&lt;/p></content></item><item><title>Data Engineering Youtube Channels You Should Follow</title><link>/posts/data-engineering-youtube-channels-you-should-follow/</link><pubDate>Sat, 15 Oct 2022 22:00:00 +0000</pubDate><guid>/posts/data-engineering-youtube-channels-you-should-follow/</guid><description>I have been following several Youtube channels that often cover different topics in Data Engineering, ranging from new tools to organization wide practices. I am compiling this list for my own reference and also for sharing with my peers:
 Seattle Data Guy - YouTube Lander Analytics - YouTube</description><content>&lt;p>I have been following several Youtube channels that often cover different topics in Data Engineering, ranging from new tools to organization wide practices. I am compiling this list for my own reference and also for sharing with my peers:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/c/SeattleDataGuy">Seattle Data Guy - YouTube&lt;/a>&lt;/li>
