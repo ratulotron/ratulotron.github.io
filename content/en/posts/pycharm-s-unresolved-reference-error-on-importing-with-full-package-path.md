@@ -33,4 +33,16 @@ In the `./src/lei_pipeline/dags/download_latest_lei.py` file, I imported the var
 
 ![](/uploads/pycharm_project_root.png)
 
-This is because PyCharm expects the module root to be the `src` directory. So if the correct import path for this file would be `src.lei_pipeline.utils.configs`. There can be many reasons why you wouldn't use `src` as your Python project's root module, in my case I needed to have an `.airflowignore` file in the root and use the actual `lei_pipeline` module in the Airflow Docker image.
+This worked just as intended in the Docker image I was building to run Airflow. In the image, this `lei_pipeline` directory is copied to the `/opt/airflow/dags/` directory and Airflow easily picks up the necessary files.
+
+As you can see, PyCharm doesn't consider the folder as a module, because it expects the module root to be the `src` directory. So if the correct import path for this file would be `src.lei_pipeline.utils.configs`. There can be many reasons why you wouldn't use `src` as your Python project's root module, in my case I needed to have an `.airflowignore` file in the root, and use the actual `lei_pipeline` module to be imported in my Airflow Docker image's `dags` folder.
+
+The solution to this is actually pretty simple. All I did was marked the `src` directory as my project source root in PyCharm. Just right click on the root folder and from "Mark directory as" set "Source Root":
+
+![](/uploads/pycharm_project_root_set.png)
+
+Et voilà! For me this was enough for PyCharm to start accurately!
+
+However, in some cases this might not be enough. PyCharm doesn't always update it's references, so you might need to force it to rebuild them. You can do this from `File > Invalidate Caches`
+
+Hopefully this helps someone who has been Googling as cluelessly as I did!
