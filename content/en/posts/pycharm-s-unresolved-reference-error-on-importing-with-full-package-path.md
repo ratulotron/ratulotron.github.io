@@ -3,7 +3,6 @@ author = "Ratul Minhaz"
 categories = ["tips", "tech"]
 date = 2023-01-20T23:00:00Z
 description = "PyCharm's 'Unresolved reference' error on importing with full package path"
-draft = true
 layout = ""
 tags = ["pycharm", "python"]
 title = "PyCharm's 'Unresolved reference' error on importing with full package path"
