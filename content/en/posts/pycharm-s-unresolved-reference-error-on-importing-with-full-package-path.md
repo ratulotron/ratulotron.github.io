@@ -31,6 +31,6 @@ For example, I have this project structure:
 
 In the `./src/lei_pipeline/dags/download_latest_lei.py` file, I imported the variable `LEI_URL_BASE_PATH` from `./src/lei_pipeline/utils/configs.py` in the following manner, including the full package path:
 
-![](/uploads/screenshot-2023-01-21-at-21-30-40.png)
+![](/uploads/pycharm_project_root.png)
 
 This is because PyCharm expects the module root to be the `src` directory. So if the correct import path for this file would be `src.lei_pipeline.utils.configs`. There can be many reasons why you wouldn't use `src` as your Python project's root module, in my case I needed to have an `.airflowignore` file in the root and use the actual `lei_pipeline` module in the Airflow Docker image.
