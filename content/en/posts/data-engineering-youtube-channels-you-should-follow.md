@@ -12,4 +12,5 @@ I have been following several Youtube channels that often cover different topics
 
 * [Seattle Data Guy - YouTube](https://www.youtube.com/c/SeattleDataGuy)
 * [Lander Analytics - YouTube](https://www.youtube.com/channel/UC2-hKemnrmVCH_29duyJ26A)
-* 
+
+Bloggers to follow: [https://medium.com/@thehippieandtheboss](https://medium.com/@thehippieandtheboss "https://medium.com/@thehippieandtheboss")
