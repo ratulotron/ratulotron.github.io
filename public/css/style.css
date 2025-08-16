@@ -97,13 +97,14 @@ h4 {
   font-weight: 400;
   margin-top: 120px;
   margin-bottom: 2vh;
+  line-height: 0.9;
 }
 .site-subtitle {
-  /* width: 30vw; */
+  width: 25vw;
   font-size: 1.9rem;
   font-weight: 100;
   font-family: "Bungee", cursive;
-
+  line-height: 1.2;
   margin-bottom: 10vh;
   margin-top: 2vh;
 }
@@ -148,6 +149,15 @@ article:nth-child(2) {
   margin-top: 10vh;
 }
 
+/* Blog page specific styling */
+.blog-content {
+  padding-top: 0 !important;
+}
+
+.blog-content .section-title {
+  margin-top: 2vh !important;
+}
+
 a {
   color: #268bd2;
   text-decoration: none;
@@ -166,6 +176,32 @@ a {
 /* Hide scrollbar for IE */
 * {
   -ms-overflow-style: none;
+}
+
+/* Navigation */
+.main-nav {
+  position: absolute;
+  top: 60vh;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  color: #268bd2;
+  text-decoration: none;
+  display: block;
+  padding-top: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
 }
 
 .timeline > div {
