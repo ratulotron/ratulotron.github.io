@@ -66,7 +66,8 @@ body {
 .inner-right {
   height: 14vh;
   padding-top: 40vh;
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
+  padding-bottom: 10vh;
 
   position: absolute;
   top: 0;
@@ -110,7 +111,7 @@ h4 {
 .social-menu {
   height: auto;
   position: absolute;
-  bottom: 120px;
+  top: 78vh;
   font-family: "Quicksand", sans-serif;
   font-size: 1rem;
   font-weight: 700;
@@ -127,12 +128,24 @@ h4 {
   text-align: center;
 }
 
+.down-pointer {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
 .section-title {
   margin-top: 4vh;
   margin-bottom: 1vh;
   font-size: 1rem;
   font-weight: 100;
   font-family: "Bungee", cursive;
+}
+
+/* Make Philosophy section start below viewport */
+article:nth-child(2) {
+  margin-top: 10vh;
 }
 
 a {
@@ -144,23 +157,29 @@ a {
   display: none;
 } */
 
-#timeline > div {
+.timeline > div {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 10px;
+  align-items: flex-start;
+  padding-bottom: 15px;
 }
 
 .year {
   padding-left: 10px;
+  padding-top: 3px;
   font-family: "Quicksand", sans-serif;
   font-size: 1rem;
   font-weight: 550;
   display: flex;
-  align-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
+  justify-content:last baseline;
+  min-width: fit-content;
 }
 
 .year i {
   size: 0.1rem;
   padding-right: 5px;
+  padding-top: 2px;
+  display: flex;
+  align-items: center;
 }
