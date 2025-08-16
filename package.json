@@ -1,0 +1,22 @@
+{
+  "name": "ratul-portfolio",
+  "version": "1.0.0",
+  "description": "Ratul Minhaz's Portfolio - Vue.js Version",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.5"
+  },
+  "keywords": ["portfolio", "vue", "personal-website"],
+  "author": "Ratul Minhaz",
+  "license": "MIT"
+}
