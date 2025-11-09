@@ -1,0 +1,13 @@
+<nav class="social-menu">
+  <ul class="social-menu__list">
+    {% for link in social %}
+    <li class="social-menu__item">
+      <a href="{{ link.url }}" class="social-menu__link"
+         {% if link.url.startsWith('http') %}target="_blank" rel="noopener noreferrer"{% endif %}>
+        <i class="{{ link.icon }} social-menu__icon"></i>
+        <span class="social-menu__text">{{ link.name }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

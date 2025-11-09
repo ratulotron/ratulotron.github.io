@@ -1,0 +1,55 @@
+---
+layout: layouts/base.njk
+---
+
+<main
+  class="main-content">
+  <!-- Introduction with scroll indicator -->
+  <section class="content-section content-section--intro">
+    <p class="intro__text">
+      {{ site.description }}
+    </p>
+    <div class="intro__scroll-indicator" aria-label="Scroll down for more content">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 1V11M6 11L1 6M6 11L11 6" stroke="#073642" stroke-width="1.5"/>
+      </svg>
+    </div>
+  </section>
+  <!-- Philosophy Section -->
+  {% if philosophy %}
+    <section class="content-section">
+      <h2 class="content-section__heading">Philosophy</h2>
+      <div class="content-section__text">
+        {{ philosophy | safe }}
+      </div>
+    </section>
+  {% endif %}
+  <!-- Timeline Section -->
+  {% if timeline.length > 0 %}
+    <section class="content-section">
+      <h2 class="content-section__heading">Timeline</h2>
+      <div class="timeline">
+        {% for entry in timeline %}
+          <article class="timeline__entry">
+            <p class="timeline__text">{{ entry.text | safe }}</p>
+            <div class="timeline__year">
+              <svg class="timeline__arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 6L1 6M1 6L6 11M1 6L6 1" stroke="#002b36" stroke-width="1.5"/>
+              </svg>
+              <time datetime="{{ entry.year }}">{{ entry.year }}</time>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+  <!-- About Section -->
+  {% if about %}
+    <section class="content-section">
+      <h2 class="content-section__heading">About</h2>
+      <div class="content-section__text">
+        {{ about | safe }}
+      </div>
+    </section>
+  {% endif %}
+</main>

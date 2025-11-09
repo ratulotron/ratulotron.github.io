@@ -1,0 +1,27 @@
+[
+  {
+    "name": "linkedin",
+    "url": "https://linkedin.com/in/minhazratul",
+    "icon": "fa-brands fa-linkedin"
+  },
+  {
+    "name": "github",
+    "url": "https://github.com/ratulotron",
+    "icon": "fa-brands fa-github"
+  },
+  {
+    "name": "facebook",
+    "url": "https://facebook.com/ratulotron",
+    "icon": "fa-brands fa-facebook"
+  },
+  {
+    "name": "résumé",
+    "url": "/resume.pdf",
+    "icon": "fa-solid fa-file-lines"
+  },
+  {
+    "name": "email",
+    "url": "mailto:hello@ratul.xyz",
+    "icon": "fa-solid fa-envelope"
+  }
+]

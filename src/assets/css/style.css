@@ -1,0 +1,482 @@
+/* ========================================
+   CSS CUSTOM PROPERTIES (Design Tokens)
+   ======================================== */
+
+:root {
+  /* Colors - Solarized Palette */
+  --color-base03: #002b36;    /* Primary text, dividers */
+  --color-base02: #073642;    /* Body text */
+  --color-base00: #657b83;    /* Muted text */
+  --color-base2: #eee8d5;     /* Background */
+  --color-blue: #268bd2;      /* Links, accents */
+
+  /* Typography */
+  --font-name: 'Bungee Shade', sans-serif;
+  --font-tagline: 'Bungee', sans-serif;
+  --font-heading: 'Bungee', sans-serif;
+  --font-body: 'EB Garamond', serif;
+  --font-link: 'Quicksand', sans-serif;
+  --font-ui: 'Quicksand', sans-serif;
+
+  /* Font Sizes */
+  --size-name: 96px;
+  --size-tagline: 48px;
+  --size-heading: 18px;
+  --size-body: 24px;
+  --size-link: 18px;
+  --size-ui: 18px;
+
+  /* Layout - converted to rem (base 16px) */
+  --canvas-width: 1440px;
+  --margin-left: 7.5rem;      /* 120px */
+  --margin-right: 7.5rem;     /* 120px */
+  --content-width: 40rem;     /* 640px */
+  --gap-section: 3.75rem;     /* 60px */
+  --gap-small: 0.3125rem;     /* 5px */
+  --gap-timeline: 0.625rem;   /* 10px */
+
+  /* Positioning */
+  --header-top: 5rem;     /* 66px */
+  --divider-gap: 1.5rem;         /* Gap between header elements */
+  --divider-height: 1.5px;      /* Divider line height */
+  --divider-top: calc(var(--header-top) + var(--size-name)*2 + var(--divider-gap)); /* 317px */
+  --initial-bottom-spacing: var(--header-top); /* Same as header-top for symmetry */
+}
+
+/* ========================================
+   RESET & BASE STYLES
+   ======================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px; /* Base for rem calculations */
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar completely - down arrow indicates scrollable content */
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Opera */
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  line-height: 1.5;
+  color: var(--color-base02);
+  background-color: var(--color-base2);
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+
+a {
+  color: var(--color-blue);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+/* ========================================
+   FIXED HEADER
+   ======================================== */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.site-header__background {
+  position: absolute;
+  top: 0;
+  left: var(--margin-left);
+  right: var(--margin-right);
+  height: var(--divider-top);
+  background-color: var(--color-base2);
+  border: 1px solid var(--color-base2);
+}
+
+.site-header__name {
+  position: absolute;
+  top: var(--header-top);
+  left: var(--margin-left);
+  font-family: var(--font-name);
+  font-size: var(--size-name);
+  font-weight: normal;
+  line-height: 1;
+  color: var(--color-base03);
+  width: 29.75rem; /* 476px */
+  margin: 0;
+}
+
+.site-header__tagline {
+  position: absolute;
+  top: calc(var(--header-top) + var(--size-name)*2 + var(--divider-gap)*2 + var(--divider-height, 1.5px));
+  left: var(--margin-left);
+  font-family: var(--font-tagline);
+  font-size: var(--size-tagline);
+  font-weight: normal;
+  line-height: 1;
+  color: var(--color-base03);
+  width: 28.5rem; /* 456px */
+  margin: 0;
+}
+
+.site-header__divider {
+  position: absolute;
+  top: var(--divider-top);
+  left: var(--margin-left);
+  right: var(--margin-right);
+  height: var(--divider-height);
+  background-color: var(--color-base03);
+  border: none;
+  border-radius: 10px;
+  margin: 0;
+}
+
+/* ========================================
+   FIXED SOCIAL MENU
+   ======================================== */
+
+.social-menu {
+  position: fixed;
+  /* Align top of social menu with first line of intro text */
+  /* Add half-leading plus small adjustment for perfect alignment */
+  top: calc(100vh - var(--initial-bottom-spacing) - 10rem + 0.575em);
+  left: var(--margin-left);
+  z-index: 50;
+}
+
+.social-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small);
+}
+
+.social-menu__link {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-small);
+  font-family: var(--font-link);
+  font-size: var(--size-link);
+  font-weight: 600;
+  color: var(--color-blue);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.social-menu__icon {
+  font-size: 18px;
+  width: 18px;
+  flex-shrink: 0;
+  display: inline-block;
+  text-align: center;
+}
+
+.social-menu__text {
+  line-height: 1;
+}
+
+/* ========================================
+   MAIN CONTENT (Scrollable)
+   ======================================== */
+
+.main-content {
+  position: relative;
+  right: var(--margin-right);
+  width: var(--content-width);
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-section);
+  padding-bottom: var(--initial-bottom-spacing);
+  /* Push content down so only intro is visible initially */
+  padding-top: calc(100vh - var(--initial-bottom-spacing) - 10rem);
+}
+
+/* ========================================
+   CONTENT SECTIONS
+   ======================================== */
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small);
+}
+
+.content-section__heading {
+  font-family: var(--font-heading);
+  font-size: var(--size-heading);
+  font-weight: normal;
+  line-height: 1.33; /* 24px line height */
+  color: var(--color-base00);
+  margin: 0;
+}
+
+.content-section__text {
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  font-weight: normal;
+  line-height: 1.5;
+  color: var(--color-base02);
+
+  & p {
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* ========================================
+   INTRO SECTION
+   ======================================== */
+
+.intro__text {
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  line-height: 1.5;
+  color: var(--color-base02);
+  margin: 0;
+}
+
+.intro__scroll-indicator {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: var(--gap-small);
+
+  & svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.content-section--intro {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-small);
+  align-items: flex-end;
+}
+
+/* ========================================
+   TIMELINE
+   ======================================== */
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-timeline);
+}
+
+.timeline__entry {
+  display: flex;
+  gap: var(--gap-small);
+  align-items: flex-end;
+}
+
+.timeline__text {
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  line-height: 1.5;
+  color: var(--color-base02);
+  margin: 0;
+}
+
+.timeline__link {
+  color: var(--color-blue);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.timeline__year {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-small);
+  padding: var(--gap-small);
+  flex-shrink: 0;
+
+  & time {
+    font-family: var(--font-ui);
+    font-size: var(--size-ui);
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--color-base03);
+  }
+}
+
+.timeline__arrow {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+
+}
+
+/* ========================================
+   CONTENT LINKS
+   ======================================== */
+
+.content-link {
+  color: var(--color-blue);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Large screens - center content with max margins */
+@media (min-width: 1600px) {
+  :root {
+    --margin-left: calc((100vw - var(--canvas-width)) / 2 + 7.5rem);
+    --margin-right: calc((100vw - var(--canvas-width)) / 2 + 7.5rem);
+  }
+}
+
+/* Medium screens - reduce margins proportionally */
+@media (max-width: 1440px) and (min-width: 1024px) {
+  :root {
+    --margin-left: 5rem;
+    --margin-right: 5rem;
+  }
+
+  .site-header__name {
+    font-size: 72px;
+  }
+
+  .site-header__tagline {
+    font-size: 36px;
+  }
+}
+
+/* Tablet and below - stack layout */
+@media (max-width: 1023px) {
+  :root {
+    --margin-left: 2rem;
+    --margin-right: 2rem;
+    --content-width: calc(100vw - 4rem);
+  }
+
+  .site-header__name {
+    font-size: 48px;
+  }
+
+  .site-header__tagline {
+    font-size: 24px;
+    top: 15rem;
+  }
+
+  .site-header__divider {
+    top: 19rem;
+  }
+
+  .site-header__background {
+    height: 19rem;
+  }
+
+  .social-menu {
+    position: static;
+    margin-top: 21rem;
+    margin-left: var(--margin-left);
+    margin-bottom: 2rem;
+  }
+
+  .main-content {
+    position: static;
+    margin: 0 var(--margin-right) 0 var(--margin-left);
+    width: auto;
+  }
+}
+
+/* Mobile - further reduce sizes */
+@media (max-width: 640px) {
+  :root {
+    --margin-left: 1rem;
+    --margin-right: 1rem;
+    --size-body: 18px;
+  }
+
+  .site-header__name {
+    font-size: 36px;
+  }
+
+  .site-header__tagline {
+    font-size: 18px;
+    top: 12rem;
+  }
+
+  .site-header__divider {
+    top: 15rem;
+  }
+
+  .site-header__background {
+    height: 15rem;
+  }
+
+  .social-menu {
+    margin-top: 17rem;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+a:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 2px;
+}
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
