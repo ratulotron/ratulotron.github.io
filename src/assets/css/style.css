@@ -18,29 +18,30 @@
   --font-link: 'Quicksand', sans-serif;
   --font-ui: 'Quicksand', sans-serif;
 
-  /* Font Sizes */
-  --size-name: 96px;
-  --size-tagline: 48px;
-  --size-heading: 18px;
-  --size-body: 24px;
-  --size-link: 18px;
-  --size-ui: 18px;
+  /* Font Sizes - Fluid typography using clamp(min, preferred, max) */
+  --size-name: clamp(36px, 6.67vw, 96px);        /* Scales 36-96px */
+  --size-tagline: clamp(18px, 3.33vw, 48px);     /* Scales 18-48px (half of name) */
+  --size-heading: clamp(16px, 1.25vw, 18px);     /* Scales 16-18px */
+  --size-body: clamp(18px, 1.67vw, 24px);        /* Scales 18-24px */
+  --size-link: clamp(16px, 1.25vw, 18px);        /* Scales 16-18px */
+  --size-ui: clamp(16px, 1.25vw, 18px);          /* Scales 16-18px */
 
-  /* Layout - converted to rem (base 16px) */
+  /* Layout - Fluid and proportional */
   --canvas-width: 1440px;
-  --margin-left: 7.5rem;      /* 120px */
-  --margin-right: 7.5rem;     /* 120px */
-  --content-width: 40rem;     /* 640px */
-  --gap-section: 3.75rem;     /* 60px */
-  --gap-small: 0.3125rem;     /* 5px */
-  --gap-timeline: 0.625rem;   /* 10px */
+  --margin-left: clamp(1rem, 8.33vw, 7.5rem);      /* Fluid margins: 16px-120px */
+  --margin-right: clamp(1rem, 8.33vw, 7.5rem);     /* Fluid margins: 16px-120px */
+  --content-width: clamp(20rem, 44.44vw, 40rem);   /* Fluid content: 320px-640px */
+  --gap-section: clamp(2rem, 4.17vw, 3.75rem);     /* Fluid gap: 32px-60px */
+  --gap-small: 0.3125rem;                           /* Fixed small gap */
+  --gap-timeline: 0.625rem;                         /* Fixed timeline gap */
 
-  /* Positioning */
-  --header-top: 5rem;     /* 66px */
-  --divider-gap: 1.5rem;         /* Gap between header elements */
-  --divider-height: 1.5px;      /* Divider line height */
-  --divider-top: calc(var(--header-top) + var(--size-name)*2 + var(--divider-gap)); /* 317px */
-  --initial-bottom-spacing: var(--header-top); /* Same as header-top for symmetry */
+  /* Positioning - Proportional to viewport */
+  --header-top: clamp(2rem, 4.58vw, 5rem);          /* Fluid: 32px-80px */
+  --divider-gap: clamp(1rem, 1.04vw, 1.5rem);       /* Fluid: 16px-24px */
+  --divider-height: 1.5px;                          /* Fixed divider */
+  --divider-top: calc(var(--header-top) + var(--size-name)*2 + var(--divider-gap));
+  --header-full-height: calc(var(--header-top) + var(--size-name)*2 + var(--divider-gap)*2 + var(--size-tagline)*2);
+  --initial-bottom-spacing: var(--header-top);      /* Match header-top for symmetry */
 }
 
 /* ========================================
@@ -138,7 +139,8 @@ ul {
   font-weight: normal;
   line-height: 1;
   color: var(--color-base03);
-  width: 28.5rem; /* 456px */
+  /* Constrain width to not overlap with content column */
+  max-width: calc(100vw - var(--margin-left) - var(--margin-right) - var(--content-width) - 2rem);
   margin: 0;
 }
 
@@ -214,7 +216,9 @@ ul {
   gap: var(--gap-section);
   padding-bottom: var(--initial-bottom-spacing);
   /* Push content down so only intro is visible initially */
-  padding-top: calc(100vh - var(--initial-bottom-spacing) - 10rem);
+  /* Add extra space to clear the fixed header completely */
+  padding-top: max(calc(100vh - var(--initial-bottom-spacing) - 10rem), calc(var(--divider-top) + 5rem));
+  margin-top: 0;
 }
 
 /* ========================================
@@ -359,7 +363,15 @@ ul {
    RESPONSIVE DESIGN
    ======================================== */
 
-/* Large screens - center content with max margins */
+/* Transition zone - add extra top padding to prevent overlap */
+@media (min-width: 1101px) and (max-width: 1300px) {
+  .main-content {
+    /* Use a safe fixed value that ensures clearance at these widths */
+    padding-top: max(calc(100vh - var(--initial-bottom-spacing) - 10rem), 30rem);
+  }
+}
+
+/* Large screens - center content within max canvas */
 @media (min-width: 1600px) {
   :root {
     --margin-left: calc((100vw - var(--canvas-width)) / 2 + 7.5rem);
@@ -367,88 +379,63 @@ ul {
   }
 }
 
-/* Medium screens - reduce margins proportionally */
-@media (max-width: 1440px) and (min-width: 1024px) {
-  :root {
-    --margin-left: 5rem;
-    --margin-right: 5rem;
-  }
-
-  .site-header__name {
-    font-size: 72px;
-  }
-
-  .site-header__tagline {
-    font-size: 36px;
-  }
-}
-
-/* Tablet and below - stack layout */
-@media (max-width: 1023px) {
-  :root {
-    --margin-left: 2rem;
-    --margin-right: 2rem;
-    --content-width: calc(100vw - 4rem);
-  }
-
-  .site-header__name {
-    font-size: 48px;
-  }
-
-  .site-header__tagline {
-    font-size: 24px;
-    top: 15rem;
-  }
-
-  .site-header__divider {
-    top: 19rem;
+/* Tablet and below - stack layout instead of side-by-side */
+@media (max-width: 1100px) {
+  /* Make header static/relative instead of fixed */
+  .site-header {
+    position: relative;
   }
 
   .site-header__background {
-    height: 19rem;
+    position: relative;
+    height: auto;
+    left: 0;
+    right: 0;
+    padding: var(--header-top) 0 var(--divider-gap) 0;
   }
 
-  .social-menu {
-    position: static;
-    margin-top: 21rem;
-    margin-left: var(--margin-left);
-    margin-bottom: 2rem;
-  }
-
-  .main-content {
-    position: static;
+  .site-header__name {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: calc(100% - var(--margin-left) - var(--margin-right));
+    max-width: 100%;
     margin: 0 var(--margin-right) 0 var(--margin-left);
-    width: auto;
-  }
-}
-
-/* Mobile - further reduce sizes */
-@media (max-width: 640px) {
-  :root {
-    --margin-left: 1rem;
-    --margin-right: 1rem;
-    --size-body: 18px;
-  }
-
-  .site-header__name {
-    font-size: 36px;
-  }
-
-  .site-header__tagline {
-    font-size: 18px;
-    top: 12rem;
   }
 
   .site-header__divider {
-    top: 15rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: var(--divider-gap) var(--margin-right) var(--divider-gap) var(--margin-left);
   }
 
-  .site-header__background {
-    height: 15rem;
+  .site-header__tagline {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: calc(100% - var(--margin-left) - var(--margin-right));
+    max-width: 100%;
+    margin: 0 var(--margin-right) 0 var(--margin-left);
   }
 
+  /* Stack social menu below header */
   .social-menu {
-    margin-top: 17rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 2rem var(--margin-left) 2rem var(--margin-left);
+  }
+
+  /* Make content full width and stack below */
+  .main-content {
+    position: relative;
+    right: auto;
+    margin: 0 var(--margin-right) var(--initial-bottom-spacing) var(--margin-left);
+    width: auto;
+    max-width: none;
+    padding-top: 0;
   }
 }
 
