@@ -6,7 +6,7 @@
     "start": "eleventy --serve",
     "build": "eleventy",
     "clean": "rm -rf _site",
-    "screenshot": "npm run build && node scripts/screenshot.js"
+    "design:capture": "npm run build && node docs/design/capture-design.js"
   },
   "repository": {
     "type": "git",

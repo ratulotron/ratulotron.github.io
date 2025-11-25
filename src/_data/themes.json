@@ -1,0 +1,189 @@
+{
+  "solarized": {
+    "name": "Solarized Light",
+    "description": "Professional and easy on the eyes - Default theme",
+    "colors": {
+      "primary": "#002b36",
+      "secondary": "#073642",
+      "muted": "#657b83",
+      "background": "#eee8d5",
+      "accent": "#268bd2"
+    }
+  },
+  "monochrome": {
+    "name": "Monochrome",
+    "description": "Classic black and white - Maximum contrast",
+    "colors": {
+      "primary": "#1a1a1a",
+      "secondary": "#333333",
+      "muted": "#666666",
+      "background": "#f5f5f5",
+      "accent": "#0066cc"
+    }
+  },
+  "ocean-breeze": {
+    "name": "Ocean Breeze",
+    "description": "Cool and professional - Based on Ocean Five",
+    "colors": {
+      "primary": "#00A0B0",
+      "secondary": "#6A4A3C",
+      "muted": "#CC333F",
+      "background": "#F5F5F0",
+      "accent": "#EDC951"
+    }
+  },
+  "earthy": {
+    "name": "Earthy",
+    "description": "Warm and grounded - Natural tones",
+    "colors": {
+      "primary": "#5E4A3C",
+      "secondary": "#7A6A53",
+      "muted": "#948C75",
+      "background": "#F5F1E8",
+      "accent": "#80BCA3"
+    }
+  },
+  "sunset": {
+    "name": "Sunset",
+    "description": "Warm and inviting - Based on Let Them Eat Cake",
+    "colors": {
+      "primary": "#774F38",
+      "secondary": "#5E3D2E",
+      "muted": "#9A7B6B",
+      "background": "#FAF6F0",
+      "accent": "#E08E79"
+    }
+  },
+  "mint-coral": {
+    "name": "Mint Coral",
+    "description": "Fresh and modern - Soft pastels",
+    "colors": {
+      "primary": "#3FB8AF",
+      "secondary": "#547980",
+      "muted": "#7FC7AF",
+      "background": "#F8F8F5",
+      "accent": "#FF9E9D"
+    }
+  },
+  "dark-mode": {
+    "name": "Dark Mode",
+    "description": "Easy on the eyes - Dark theme",
+    "colors": {
+      "primary": "#E8E8E8",
+      "secondary": "#C8C8C8",
+      "muted": "#999999",
+      "background": "#1a1a1a",
+      "accent": "#4ECDC4"
+    }
+  },
+  "lavender": {
+    "name": "Lavender Dreams",
+    "description": "Soft and elegant - Based on Clair de Lune",
+    "colors": {
+      "primary": "#413E4A",
+      "secondary": "#73626E",
+      "muted": "#9A8A94",
+      "background": "#FAF6F5",
+      "accent": "#B38184"
+    }
+  },
+  "dracula": {
+    "name": "Dracula",
+    "description": "Popular coding theme - Dark with vibrant accents",
+    "colors": {
+      "primary": "#F8F8F2",
+      "secondary": "#E0E0E0",
+      "muted": "#6272A4",
+      "background": "#282A36",
+      "accent": "#FF79C6"
+    }
+  },
+  "nord": {
+    "name": "Nord",
+    "description": "Arctic coding theme - Cool blues and grays",
+    "colors": {
+      "primary": "#2E3440",
+      "secondary": "#3B4252",
+      "muted": "#4C566A",
+      "background": "#ECEFF4",
+      "accent": "#88C0D0"
+    }
+  },
+  "nord-dark": {
+    "name": "Nord Dark",
+    "description": "Arctic coding theme - Dark variant",
+    "colors": {
+      "primary": "#ECEFF4",
+      "secondary": "#D8DEE9",
+      "muted": "#81A1C1",
+      "background": "#2E3440",
+      "accent": "#88C0D0"
+    }
+  },
+  "gruvbox": {
+    "name": "Gruvbox Light",
+    "description": "Retro coding theme - Warm and earthy",
+    "colors": {
+      "primary": "#3C3836",
+      "secondary": "#504945",
+      "muted": "#7C6F64",
+      "background": "#FBF1C7",
+      "accent": "#458588"
+    }
+  },
+  "one-dark": {
+    "name": "One Dark",
+    "description": "GitHub/Atom theme - Modern dark palette",
+    "colors": {
+      "primary": "#ABB2BF",
+      "secondary": "#9DA5B4",
+      "muted": "#5C6370",
+      "background": "#282C34",
+      "accent": "#61AFEF"
+    }
+  },
+  "tokyo-night": {
+    "name": "Tokyo Night",
+    "description": "Modern coding theme - Deep blue darkness",
+    "colors": {
+      "primary": "#C0CAF5",
+      "secondary": "#A9B1D6",
+      "muted": "#565F89",
+      "background": "#1A1B26",
+      "accent": "#7AA2F7"
+    }
+  },
+  "catppuccin": {
+    "name": "Catppuccin Latte",
+    "description": "Pastel coding theme - Soothing light palette",
+    "colors": {
+      "primary": "#4C4F69",
+      "secondary": "#5C5F77",
+      "muted": "#6C6F85",
+      "background": "#EFF1F5",
+      "accent": "#1E66F5"
+    }
+  },
+  "night-owl": {
+    "name": "Night Owl",
+    "description": "Accessibility-focused coding theme - Easy on eyes",
+    "colors": {
+      "primary": "#D6DEEB",
+      "secondary": "#B7C5D3",
+      "muted": "#637777",
+      "background": "#011627",
+      "accent": "#80A4C2"
+    }
+  },
+  "synthwave": {
+    "name": "Synthwave",
+    "description": "Retro futuristic theme - Neon and dark nights",
+    "colors": {
+      "primary": "#F9F871",
+      "secondary": "#FED2D1",
+      "muted": "#B084CC",
+      "background": "#2B213A",
+      "accent": "#FF6C11"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   // Copy static assets to output
   eleventyConfig.addPassthroughCopy("src/assets");
 
@@ -8,12 +8,13 @@ module.exports = function(eleventyConfig) {
   // Browser Sync configuration for local development
   eleventyConfig.setBrowserSyncConfig({
     files: [
+      "_site/**/*.html",
       "src/assets/css/**/*.css"
     ]
   });
 
   // Collections for blog posts
-  eleventyConfig.addCollection("posts", function(collectionApi) {
+  eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/content/blog/**/*.md");
   });
 

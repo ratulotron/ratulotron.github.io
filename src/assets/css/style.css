@@ -1,22 +1,254 @@
 /* ========================================
+   FONT DECLARATIONS
+   ======================================== */
+
+/* Current/Playful Scheme Fonts */
+@font-face {
+  font-family: 'Bungee';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/bungee.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bungee Shade';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/bungee-shade.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/eb-garamond.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/fonts/quicksand-500.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/quicksand-700.ttf') format('truetype');
+}
+
+/* Inter - Used in multiple schemes */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/inter-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/inter-bold.ttf') format('truetype');
+}
+
+/* IBM Plex Sans - Technical Scheme */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/ibm-plex-sans-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/ibm-plex-sans-bold.ttf') format('truetype');
+}
+
+/* IBM Plex Mono - Technical Scheme */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/ibm-plex-mono-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/fonts/ibm-plex-mono-semibold.ttf') format('truetype');
+}
+
+/* Work Sans - Professional Scheme */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/work-sans-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/work-sans-bold.ttf') format('truetype');
+}
+
+/* Source Code Pro - Professional & Elegant Schemes */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/source-code-pro-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/fonts/source-code-pro-semibold.ttf') format('truetype');
+}
+
+/* Space Grotesk - Geometric Scheme */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/space-grotesk-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/space-grotesk-bold.ttf') format('truetype');
+}
+
+/* Space Mono - Geometric Scheme */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/space-mono-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/space-mono-bold.ttf') format('truetype');
+}
+
+/* JetBrains Mono - Monospace Scheme */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/jetbrains-mono-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/jetbrains-mono-bold.ttf') format('truetype');
+}
+
+/* Playfair Display - Elegant Scheme */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/playfair-display-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/playfair-display-bold.ttf') format('truetype');
+}
+
+/* Source Sans Pro - Elegant Scheme */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/source-sans-pro-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/source-sans-pro-bold.ttf') format('truetype');
+}
+
+/* Poppins - Startup Scheme */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/poppins-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/poppins-bold.ttf') format('truetype');
+}
+
+/* ========================================
    CSS CUSTOM PROPERTIES (Design Tokens)
    ======================================== */
 
 :root {
-  /* Colors - Solarized Palette */
-  --color-base03: #002b36;    /* Primary text, dividers */
-  --color-base02: #073642;    /* Body text */
-  --color-base00: #657b83;    /* Muted text */
-  --color-base2: #eee8d5;     /* Background */
-  --color-blue: #268bd2;      /* Links, accents */
+  /* Colors - Theme-based (configured in site.json) */
+  --color-primary: var(--theme-primary, #002b36);      /* Primary text, dividers */
+  --color-secondary: var(--theme-secondary, #073642);  /* Body text */
+  --color-muted: var(--theme-muted, #657b83);          /* Muted text */
+  --color-background: var(--theme-background, #eee8d5); /* Background */
+  --color-accent: var(--theme-accent, #268bd2);        /* Links, accents */
 
-  /* Typography */
-  --font-name: 'Bungee Shade', sans-serif;
-  --font-tagline: 'Bungee', sans-serif;
-  --font-heading: 'Bungee', sans-serif;
-  --font-body: 'EB Garamond', serif;
-  --font-link: 'Quicksand', sans-serif;
-  --font-ui: 'Quicksand', sans-serif;
+  /* Typography - Font-scheme based (configured in site.json) */
+  --font-name: var(--fontscheme-name, 'Bungee Shade', sans-serif);
+  --font-tagline: var(--fontscheme-tagline, 'Bungee', sans-serif);
+  --font-heading: var(--fontscheme-heading, 'Bungee', sans-serif);
+  --font-body: var(--fontscheme-body, 'EB Garamond', serif);
+  --font-link: var(--fontscheme-link, 'Quicksand', sans-serif);
+  --font-ui: var(--fontscheme-ui, 'Quicksand', sans-serif);
 
   /* Font Sizes - Fluid typography using clamp(min, preferred, max) */
   --size-name: clamp(36px, 6.67vw, 96px);        /* Scales 36-96px */
@@ -37,10 +269,12 @@
 
   /* Positioning - Proportional to viewport */
   --header-top: clamp(2rem, 4.58vw, 5rem);          /* Fluid: 32px-80px */
-  --divider-gap: clamp(1rem, 1.04vw, 1.5rem);       /* Fluid: 16px-24px */
+  --divider-gap: clamp(0.75rem, 1.04vw, 1.25rem);   /* Fluid: 12px-20px - symmetric gap around divider */
   --divider-height: 1.5px;                          /* Fixed divider */
-  --divider-top: calc(var(--header-top) + var(--size-name)*2 + var(--divider-gap));
-  --header-full-height: calc(var(--header-top) + var(--size-name)*2 + var(--divider-gap)*2 + var(--size-tagline)*2);
+  --name-line-height: 1;                            /* No extra spacing - keeps text tight */
+  --tagline-line-height: 1;                         /* No extra spacing - keeps text tight */
+  --divider-top: calc(var(--header-top) + var(--size-name) * 2 * var(--name-line-height) + var(--divider-gap));
+  --header-full-height: calc(var(--header-top) + var(--size-name) * 2 * var(--name-line-height) + var(--divider-gap) * 2 + var(--size-tagline) * 2 * var(--tagline-line-height));
   --initial-bottom-spacing: var(--header-top);      /* Match header-top for symmetry */
 }
 
@@ -75,15 +309,15 @@ body {
   font-family: var(--font-body);
   font-size: var(--size-body);
   line-height: 1.5;
-  color: var(--color-base02);
-  background-color: var(--color-base2);
+  color: var(--color-secondary);
+  background-color: var(--color-background);
   overflow-x: hidden;
   min-height: 100vh;
   position: relative;
 }
 
 a {
-  color: var(--color-blue);
+  color: var(--color-accent);
   text-decoration: none;
 
   &:hover {
@@ -113,8 +347,8 @@ ul {
   left: var(--margin-left);
   right: var(--margin-right);
   height: var(--divider-top);
-  background-color: var(--color-base2);
-  border: 1px solid var(--color-base2);
+  background-color: var(--color-background);
+  border: 1px solid var(--color-background);
 }
 
 .site-header__name {
@@ -124,23 +358,9 @@ ul {
   font-family: var(--font-name);
   font-size: var(--size-name);
   font-weight: normal;
-  line-height: 1;
-  color: var(--color-base03);
+  line-height: var(--name-line-height);
+  color: var(--color-primary);
   width: 29.75rem; /* 476px */
-  margin: 0;
-}
-
-.site-header__tagline {
-  position: absolute;
-  top: calc(var(--header-top) + var(--size-name)*2 + var(--divider-gap)*2 + var(--divider-height, 1.5px));
-  left: var(--margin-left);
-  font-family: var(--font-tagline);
-  font-size: var(--size-tagline);
-  font-weight: normal;
-  line-height: 1;
-  color: var(--color-base03);
-  /* Constrain width to not overlap with content column */
-  max-width: calc(100vw - var(--margin-left) - var(--margin-right) - var(--content-width) - 2rem);
   margin: 0;
 }
 
@@ -150,9 +370,23 @@ ul {
   left: var(--margin-left);
   right: var(--margin-right);
   height: var(--divider-height);
-  background-color: var(--color-base03);
+  background-color: var(--color-primary);
   border: none;
   border-radius: 10px;
+  margin: 0;
+}
+
+.site-header__tagline {
+  position: absolute;
+  top: calc(var(--divider-top) + var(--divider-gap));
+  left: var(--margin-left);
+  font-family: var(--font-tagline);
+  font-size: var(--size-tagline);
+  font-weight: normal;
+  line-height: var(--tagline-line-height);
+  color: var(--color-primary);
+  /* Constrain width to not overlap with content column */
+  max-width: calc(100vw - var(--margin-left) - var(--margin-right) - var(--content-width) - 2rem);
   margin: 0;
 }
 
@@ -182,7 +416,7 @@ ul {
   font-family: var(--font-link);
   font-size: var(--size-link);
   font-weight: 600;
-  color: var(--color-blue);
+  color: var(--color-accent);
   text-decoration: none;
 
   &:hover {
@@ -236,7 +470,7 @@ ul {
   font-size: var(--size-heading);
   font-weight: normal;
   line-height: 1.33; /* 24px line height */
-  color: var(--color-base00);
+  color: var(--color-muted);
   margin: 0;
 }
 
@@ -245,7 +479,7 @@ ul {
   font-size: var(--size-body);
   font-weight: normal;
   line-height: 1.5;
-  color: var(--color-base02);
+  color: var(--color-secondary);
 
   & p {
     margin-bottom: 1.5rem;
@@ -265,7 +499,7 @@ ul {
   font-family: var(--font-body);
   font-size: var(--size-body);
   line-height: 1.5;
-  color: var(--color-base02);
+  color: var(--color-secondary);
   margin: 0;
 }
 
@@ -274,11 +508,8 @@ ul {
   align-items: flex-end;
   justify-content: flex-end;
   padding: var(--gap-small);
-
-  & svg {
-    width: 12px;
-    height: 12px;
-  }
+  color: var(--color-secondary);
+  font-size: 12px;
 }
 
 .content-section--intro {
@@ -309,12 +540,12 @@ ul {
   font-family: var(--font-body);
   font-size: var(--size-body);
   line-height: 1.5;
-  color: var(--color-base02);
+  color: var(--color-secondary);
   margin: 0;
 }
 
 .timeline__link {
-  color: var(--color-blue);
+  color: var(--color-accent);
   text-decoration: none;
 
   &:hover {
@@ -335,15 +566,14 @@ ul {
     font-size: var(--size-ui);
     font-weight: 500;
     line-height: 1.5;
-    color: var(--color-base03);
+    color: var(--color-primary);
   }
 }
 
 .timeline__arrow {
-  width: 12px;
-  height: 12px;
+  font-size: 12px;
   flex-shrink: 0;
-
+  color: var(--color-primary);
 }
 
 /* ========================================
@@ -351,7 +581,7 @@ ul {
    ======================================== */
 
 .content-link {
-  color: var(--color-blue);
+  color: var(--color-accent);
   text-decoration: none;
 
   &:hover {
@@ -451,7 +681,7 @@ ul {
 
 /* Focus styles for keyboard navigation */
 a:focus-visible {
-  outline: 2px solid var(--color-blue);
+  outline: 2px solid var(--color-accent);
   outline-offset: 2px;
 }
 

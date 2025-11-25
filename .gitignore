@@ -32,3 +32,12 @@ yarn-error.log*
 ### 11ty ###
 _site/
 .cache/
+
+### Design Screenshots ###
+docs/design/screenshots/
+
+### Environment ###
+.env
+
+### Claude AI ###
+.claude/

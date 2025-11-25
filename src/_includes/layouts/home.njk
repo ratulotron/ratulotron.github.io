@@ -10,9 +10,7 @@ layout: layouts/base.njk
       {{ site.description }}
     </p>
     <div class="intro__scroll-indicator" aria-label="Scroll down for more content">
-      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M6 1V11M6 11L1 6M6 11L11 6" stroke="#073642" stroke-width="1.5"/>
-      </svg>
+      <i class="fa-solid fa-arrow-down"></i>
     </div>
   </section>
   <!-- Philosophy Section -->
@@ -33,9 +31,7 @@ layout: layouts/base.njk
           <article class="timeline__entry">
             <p class="timeline__text">{{ entry.text | safe }}</p>
             <div class="timeline__year">
-              <svg class="timeline__arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 6L1 6M1 6L6 11M1 6L6 1" stroke="#002b36" stroke-width="1.5"/>
-              </svg>
+              <i class="fa-solid fa-arrow-left timeline__arrow"></i>
               <time datetime="{{ entry.year }}">{{ entry.year }}</time>
             </div>
           </article>

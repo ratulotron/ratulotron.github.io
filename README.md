@@ -73,21 +73,21 @@ npm run build
 # Clean build output
 npm run clean
 
-# Generate screenshots for visual testing
-npm run screenshot              # Build and screenshot the site
+# Capture design screenshots at different viewports
+npm run design:capture
 ```
 
 The dev server will be available at `http://localhost:8080` with live reload.
 
-### Visual Testing
+### Design Documentation
 
-Use Playwright to generate screenshots at different viewport sizes:
+Capture design screenshots at different viewport sizes:
 
 ```bash
-npm run screenshot
+npm run design:capture
 ```
 
-Screenshots are saved to `test-screenshots/` directory. See `scripts/README.md` for details.
+See `docs/design/README.md` for details.
 
 ## Deployment
 
