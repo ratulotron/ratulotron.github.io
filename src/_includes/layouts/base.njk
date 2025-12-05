@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      {% if title %}
-        {{ title }}
-        -
-      {% endif %}
-      {{ site.name }}
-    </title>
+    <title>{% if title and title != 'Home' %}{{ title }} - {{ site.name }}{% else %}{{ site.name }} | {{ site.tagline }}{% endif %}</title>
     <meta name="description" content="{{ description or site.description }}" />
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Theme Colors -->
     <!-- prettier-ignore-start -->
@@ -42,10 +44,64 @@
 
     <!-- All fonts are now self-hosted in /assets/fonts/ with @font-face in style.css -->
     <!-- Open Graph -->
-    <meta property="og:title" content="{% if title %}{{ title }} -{% endif %}{{ site.name }}" />
+    <meta property="og:title" content="{% if title %}{{ title }} - {% endif %}{{ site.name }}" />
     <meta property="og:description" content="{{ description or site.description }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:image" content="{{ site.url }}/assets/images/og-image.jpg" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{% if title %}{{ title }} - {% endif %}{{ site.name }}" />
+    <meta name="twitter:description" content="{{ description or site.description }}" />
+    <meta name="twitter:image" content="{{ site.url }}/assets/images/og-image.jpg" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "{{ site.url }}/#person",
+            "name": "Ratul Minhaz",
+            "alternateName": "Minhazur Rahman",
+            "url": "{{ site.url }}",
+            "image": "{{ site.url }}/assets/images/profile.jpg",
+            "sameAs": [
+              "https://github.com/ratulotron",
+              "https://linkedin.com/in/minhazratul",
+              "https://facebook.com/ratulotron"
+            ],
+            "jobTitle": "Senior Data Engineer",
+            "worksFor": {
+              "@type": "Place",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Berlin",
+                "addressCountry": "DE"
+              }
+            },
+            "knowsAbout": ["Data Engineering", "Python", "ETL Pipelines", "Backend Development", "Data Science"],
+            "alumniOf": {
+              "@type": "EducationalOrganization",
+              "name": "Computer Science"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "{{ site.url }}/#website",
+            "url": "{{ site.url }}",
+            "name": "{{ site.name }}",
+            "description": "{{ site.description }}",
+            "publisher": {
+              "@id": "{{ site.url }}/#person"
+            },
+            "inLanguage": "en-US"
+          }
+        ]
+      }
+    </script>
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
