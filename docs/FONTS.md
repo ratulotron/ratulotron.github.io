@@ -17,7 +17,9 @@ Then rebuild: `npm run build` or the dev server will auto-reload if running `npm
 ## Available Font Schemes
 
 ### playful
+
 **Playful** - Mix of decorative and classical fonts
+
 - Name: Bungee Shade (decorative outline)
 - Tagline: Bungee (bold display)
 - Headings: Bungee (bold display)
@@ -27,7 +29,9 @@ Then rebuild: `npm run build` or the dev server will auto-reload if running `npm
 - **Best for**: Creative portfolios, artistic expression
 
 ### technical
+
 **Technical & Modern** - Clean sans-serif with monospace accents
+
 - Name: IBM Plex Sans (technical sans-serif)
 - Tagline: IBM Plex Sans
 - Headings: IBM Plex Sans
@@ -37,7 +41,9 @@ Then rebuild: `npm run build` or the dev server will auto-reload if running `npm
 - **Best for**: Software engineers, technical professionals
 
 ### professional
+
 **Professional & Readable** - Corporate-friendly with monospace accents
+
 - Name: Work Sans (professional sans)
 - Tagline: Work Sans
 - Headings: Work Sans
@@ -47,7 +53,9 @@ Then rebuild: `npm run build` or the dev server will auto-reload if running `npm
 - **Best for**: Corporate environments, business portfolios
 
 ### geometric
+
 **Geometric & Modern** - Angular shapes with coding vibe
+
 - Name: Space Grotesk (geometric display)
 - Tagline: Space Grotesk
 - Headings: Space Grotesk
@@ -57,7 +65,9 @@ Then rebuild: `npm run build` or the dev server will auto-reload if running `npm
 - **Best for**: Modern tech companies, balanced personality
 
 ### minimalist
+
 **Minimalist** - Single font family for ultra-clean look
+
 - Name: Inter (all elements)
 - Tagline: Inter
 - Headings: Inter
@@ -67,7 +77,9 @@ Then rebuild: `npm run build` or the dev server will auto-reload if running `npm
 - **Best for**: Minimal design lovers, focus on content
 
 ### monospace
+
 **Full Monospace** - Terminal aesthetic for pure coder style
+
 - Name: JetBrains Mono (all elements)
 - Tagline: JetBrains Mono
 - Headings: JetBrains Mono
@@ -77,7 +89,9 @@ Then rebuild: `npm run build` or the dev server will auto-reload if running `npm
 - **Best for**: Developers, hacker aesthetic, terminal lovers
 
 ### elegant
+
 **Elegant Engineer** - Sophisticated serif with clean sans
+
 - Name: Playfair Display (elegant serif)
 - Tagline: Playfair Display
 - Headings: Source Sans Pro (clean sans)
@@ -87,7 +101,9 @@ Then rebuild: `npm run build` or the dev server will auto-reload if running `npm
 - **Best for**: Senior engineers, refined professionalism
 
 ### startup
+
 **Startup Vibes** - Bold and friendly modern tech feel
+
 - Name: Poppins (all elements)
 - Tagline: Poppins
 - Headings: Poppins
@@ -110,26 +126,32 @@ Different font types are applied to specific elements:
 ## Recommendations by Role
 
 ### Software Engineer / Backend Developer
+
 - **Best**: `technical`, `professional`, `monospace`
 - These emphasize technical expertise and coding background
 
 ### Frontend Developer / Web Designer
+
 - **Best**: `geometric`, `minimalist`, `startup`
 - These show design sensibility and modern aesthetics
 
 ### Full Stack Developer
+
 - **Best**: `technical`, `geometric`, `professional`
 - Balanced between technical and design-aware
 
 ### Data Engineer / Data Scientist
+
 - **Best**: `technical`, `professional`, `minimalist`
 - Clean, analytical, focused on clarity
 
 ### Tech Lead / Engineering Manager
+
 - **Best**: `professional`, `elegant`, `geometric`
 - Professional with leadership presence
 
 ### Creative Technologist
+
 - **Best**: `current`, `geometric`, `startup`
 - Shows personality while maintaining tech credibility
 

@@ -7,10 +7,7 @@ module.exports = function (eleventyConfig) {
 
   // Browser Sync configuration for local development
   eleventyConfig.setBrowserSyncConfig({
-    files: [
-      "_site/**/*.html",
-      "src/assets/css/**/*.css"
-    ]
+    files: ["_site/**/*.html", "src/assets/css/**/*.css"],
   });
 
   // Collections for blog posts
@@ -19,16 +16,16 @@ module.exports = function (eleventyConfig) {
   });
 
   // Filters
-  eleventyConfig.addFilter("readableDate", dateObj => {
-    return new Date(dateObj).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
+    return new Date(dateObj).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
     });
   });
 
   // ISO date for datetime attributes
-  eleventyConfig.addFilter("isoDate", dateObj => {
+  eleventyConfig.addFilter("isoDate", (dateObj) => {
     return new Date(dateObj).toISOString();
   });
 
@@ -37,10 +34,10 @@ module.exports = function (eleventyConfig) {
       input: "src",
       output: "_site",
       includes: "_includes",
-      data: "_data"
+      data: "_data",
     },
     templateFormats: ["md", "njk", "html"],
     markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk"
+    htmlTemplateEngine: "njk",
   };
 };

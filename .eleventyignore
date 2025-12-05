@@ -1,0 +1,18 @@
+# Eleventy ignore file
+# Files and directories that should not be processed by Eleventy
+
+# Documentation
+README.md
+docs/
+
+# Design artifacts
+screenshots/
+
+# Development
+node_modules/
+.git/
+.github/
+
+# Build output (already excluded by default, but explicit is good)
+_site/
+.cache/

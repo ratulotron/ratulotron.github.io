@@ -1,7 +1,8 @@
 {
-  "name": "Ratul Minhaz",
-  "tagline": "DATA ENGINEER\nBASED IN BERLIN",
-  "description": "Ratul Minhaz is a Bangladeshi software crafter currently living in Berlin, Germany. Over the past 4 years he had explored different facets of software development. At the moment he is focused on building data solutions and bridging product development with data science.",
+  "name": "RATUL MINHAZ",
+  "tagline": "DATA ENGINEER BASED IN BERLIN",
+  "description": "Data Engineer in Berlin building data solutions and bridging product development with data science. Python, backend, ETL pipelines.",
+  "intro": "I'm a tinkerer who learns by building. Whether it's code, cameras, or fountain pens—I need to understand how things work by taking them apart and putting them back together. I organize chaos into systems, and I do my best work alongside people who ask good questions.",
   "url": "https://ratulotron.github.io",
   "theme": "monochrome",
   "fontScheme": "playful",

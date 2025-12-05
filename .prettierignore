@@ -1,0 +1,22 @@
+# Prettier ignore file
+# Files that should not be formatted
+
+# Dependencies
+node_modules/
+
+# Build output
+_site/
+.cache/
+
+# Design artifacts
+docs/design/screenshots/
+
+# Package lock (auto-generated)
+package-lock.json
+
+# Fonts (binary files)
+*.ttf
+*.woff
+*.woff2
+*.zip
+

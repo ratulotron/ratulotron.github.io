@@ -4,230 +4,230 @@
 
 /* Current/Playful Scheme Fonts */
 @font-face {
-  font-family: 'Bungee';
+  font-family: "Bungee";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/bungee.ttf') format('truetype');
+  src: url("/assets/fonts/bungee.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Bungee Shade';
+  font-family: "Bungee Shade";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/bungee-shade.ttf') format('truetype');
+  src: url("/assets/fonts/bungee-shade.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'EB Garamond';
+  font-family: "EB Garamond";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/eb-garamond.ttf') format('truetype');
+  src: url("/assets/fonts/eb-garamond.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Quicksand';
+  font-family: "Quicksand";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/assets/fonts/quicksand-500.ttf') format('truetype');
+  src: url("/assets/fonts/quicksand-500.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Quicksand';
+  font-family: "Quicksand";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/assets/fonts/quicksand-700.ttf') format('truetype');
+  src: url("/assets/fonts/quicksand-700.ttf") format("truetype");
 }
 
 /* Inter - Used in multiple schemes */
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/inter-regular.ttf') format('truetype');
+  src: url("/assets/fonts/inter-regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/assets/fonts/inter-bold.ttf') format('truetype');
+  src: url("/assets/fonts/inter-bold.ttf") format("truetype");
 }
 
 /* IBM Plex Sans - Technical Scheme */
 @font-face {
-  font-family: 'IBM Plex Sans';
+  font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/ibm-plex-sans-regular.ttf') format('truetype');
+  src: url("/assets/fonts/ibm-plex-sans-regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'IBM Plex Sans';
+  font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/assets/fonts/ibm-plex-sans-bold.ttf') format('truetype');
+  src: url("/assets/fonts/ibm-plex-sans-bold.ttf") format("truetype");
 }
 
 /* IBM Plex Mono - Technical Scheme */
 @font-face {
-  font-family: 'IBM Plex Mono';
+  font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/ibm-plex-mono-regular.ttf') format('truetype');
+  src: url("/assets/fonts/ibm-plex-mono-regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'IBM Plex Mono';
+  font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('/assets/fonts/ibm-plex-mono-semibold.ttf') format('truetype');
+  src: url("/assets/fonts/ibm-plex-mono-semibold.ttf") format("truetype");
 }
 
 /* Work Sans - Professional Scheme */
 @font-face {
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/work-sans-regular.ttf') format('truetype');
+  src: url("/assets/fonts/work-sans-regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/assets/fonts/work-sans-bold.ttf') format('truetype');
+  src: url("/assets/fonts/work-sans-bold.ttf") format("truetype");
 }
 
 /* Source Code Pro - Professional & Elegant Schemes */
 @font-face {
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/source-code-pro-regular.ttf') format('truetype');
+  src: url("/assets/fonts/source-code-pro-regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('/assets/fonts/source-code-pro-semibold.ttf') format('truetype');
+  src: url("/assets/fonts/source-code-pro-semibold.ttf") format("truetype");
 }
 
 /* Space Grotesk - Geometric Scheme */
 @font-face {
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/space-grotesk-regular.ttf') format('truetype');
+  src: url("/assets/fonts/space-grotesk-regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/assets/fonts/space-grotesk-bold.ttf') format('truetype');
+  src: url("/assets/fonts/space-grotesk-bold.ttf") format("truetype");
 }
 
 /* Space Mono - Geometric Scheme */
 @font-face {
-  font-family: 'Space Mono';
+  font-family: "Space Mono";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/space-mono-regular.ttf') format('truetype');
+  src: url("/assets/fonts/space-mono-regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Space Mono';
+  font-family: "Space Mono";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/assets/fonts/space-mono-bold.ttf') format('truetype');
+  src: url("/assets/fonts/space-mono-bold.ttf") format("truetype");
 }
 
 /* JetBrains Mono - Monospace Scheme */
 @font-face {
-  font-family: 'JetBrains Mono';
+  font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/jetbrains-mono-regular.ttf') format('truetype');
+  src: url("/assets/fonts/jetbrains-mono-regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'JetBrains Mono';
+  font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/assets/fonts/jetbrains-mono-bold.ttf') format('truetype');
+  src: url("/assets/fonts/jetbrains-mono-bold.ttf") format("truetype");
 }
 
 /* Playfair Display - Elegant Scheme */
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/playfair-display-regular.ttf') format('truetype');
+  src: url("/assets/fonts/playfair-display-regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/assets/fonts/playfair-display-bold.ttf') format('truetype');
+  src: url("/assets/fonts/playfair-display-bold.ttf") format("truetype");
 }
 
 /* Source Sans Pro - Elegant Scheme */
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/source-sans-pro-regular.ttf') format('truetype');
+  src: url("/assets/fonts/source-sans-pro-regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/assets/fonts/source-sans-pro-bold.ttf') format('truetype');
+  src: url("/assets/fonts/source-sans-pro-bold.ttf") format("truetype");
 }
 
 /* Poppins - Startup Scheme */
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/poppins-regular.ttf') format('truetype');
+  src: url("/assets/fonts/poppins-regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/assets/fonts/poppins-bold.ttf') format('truetype');
+  src: url("/assets/fonts/poppins-bold.ttf") format("truetype");
 }
 
 /* ========================================
@@ -236,46 +236,55 @@
 
 :root {
   /* Colors - Theme-based (configured in site.json) */
-  --color-primary: var(--theme-primary, #002b36);      /* Primary text, dividers */
-  --color-secondary: var(--theme-secondary, #073642);  /* Body text */
-  --color-muted: var(--theme-muted, #657b83);          /* Muted text */
+  --color-primary: var(--theme-primary, #002b36); /* Primary text, dividers */
+  --color-secondary: var(--theme-secondary, #073642); /* Body text */
+  --color-muted: var(--theme-muted, #657b83); /* Muted text */
   --color-background: var(--theme-background, #eee8d5); /* Background */
-  --color-accent: var(--theme-accent, #268bd2);        /* Links, accents */
+  --color-accent: var(--theme-accent, #268bd2); /* Links, accents */
 
   /* Typography - Font-scheme based (configured in site.json) */
-  --font-name: var(--fontscheme-name, 'Bungee Shade', sans-serif);
-  --font-tagline: var(--fontscheme-tagline, 'Bungee', sans-serif);
-  --font-heading: var(--fontscheme-heading, 'Bungee', sans-serif);
-  --font-body: var(--fontscheme-body, 'EB Garamond', serif);
-  --font-link: var(--fontscheme-link, 'Quicksand', sans-serif);
-  --font-ui: var(--fontscheme-ui, 'Quicksand', sans-serif);
+  --font-name: var(--fontscheme-name, "Bungee Shade", sans-serif);
+  --font-tagline: var(--fontscheme-tagline, "Bungee", sans-serif);
+  --font-heading: var(--fontscheme-heading, "Bungee", sans-serif);
+  --font-body: var(--fontscheme-body, "EB Garamond", serif);
+  --font-link: var(--fontscheme-link, "Quicksand", sans-serif);
+  --font-ui: var(--fontscheme-ui, "Quicksand", sans-serif);
 
   /* Font Sizes - Fluid typography using clamp(min, preferred, max) */
-  --size-name: clamp(36px, 6.67vw, 96px);        /* Scales 36-96px */
-  --size-tagline: clamp(18px, 3.33vw, 48px);     /* Scales 18-48px (half of name) */
-  --size-heading: clamp(16px, 1.25vw, 18px);     /* Scales 16-18px */
-  --size-body: clamp(18px, 1.67vw, 24px);        /* Scales 18-24px */
-  --size-link: clamp(16px, 1.25vw, 18px);        /* Scales 16-18px */
-  --size-ui: clamp(16px, 1.25vw, 18px);          /* Scales 16-18px */
+  --size-name: clamp(36px, 6.67vw, 96px); /* Scales 36-96px */
+  --size-tagline: clamp(18px, 3.33vw, 48px); /* Scales 18-48px (half of name) */
+  --size-heading: clamp(16px, 1.25vw, 18px); /* Scales 16-18px */
+  --size-body: clamp(18px, 1.67vw, 24px); /* Scales 18-24px */
+  --size-link: clamp(16px, 1.25vw, 18px); /* Scales 16-18px */
+  --size-ui: clamp(16px, 1.25vw, 18px); /* Scales 16-18px */
 
   /* Layout - Fluid and proportional */
   --canvas-width: 1440px;
-  --margin-left: clamp(1rem, 8.33vw, 7.5rem);      /* Fluid margins: 16px-120px */
-  --margin-right: clamp(1rem, 8.33vw, 7.5rem);     /* Fluid margins: 16px-120px */
-  --content-width: clamp(20rem, 44.44vw, 40rem);   /* Fluid content: 320px-640px */
-  --gap-section: clamp(2rem, 4.17vw, 3.75rem);     /* Fluid gap: 32px-60px */
-  --gap-small: 0.3125rem;                           /* Fixed small gap */
-  --gap-timeline: 0.625rem;                         /* Fixed timeline gap */
+  --margin-left: clamp(1rem, 8.33vw, 7.5rem); /* Fluid margins: 16px-120px */
+  --margin-right: clamp(1rem, 8.33vw, 7.5rem); /* Fluid margins: 16px-120px */
+  --content-width: clamp(20rem, 44.44vw, 40rem); /* Fluid content: 320px-640px */
+  --gap-section: clamp(2rem, 4.17vw, 3.75rem); /* Fluid gap: 32px-60px */
+  --gap-small: 0.3125rem; /* Fixed small gap */
+  --gap-timeline: 0.625rem; /* Fixed timeline gap */
 
   /* Positioning - Proportional to viewport */
-  --header-top: clamp(2rem, 4.58vw, 5rem);          /* Fluid: 32px-80px */
-  --divider-gap: clamp(0.75rem, 1.04vw, 1.25rem);   /* Fluid: 12px-20px - symmetric gap around divider */
-  --divider-height: 1.5px;                          /* Fixed divider */
-  --name-line-height: 1;                            /* No extra spacing - keeps text tight */
-  --tagline-line-height: 1;                         /* No extra spacing - keeps text tight */
-  --divider-top: calc(var(--header-top) + var(--size-name) * 2 * var(--name-line-height) + var(--divider-gap));
-  --header-full-height: calc(var(--header-top) + var(--size-name) * 2 * var(--name-line-height) + var(--divider-gap) * 2 + var(--size-tagline) * 2 * var(--tagline-line-height));
-  --initial-bottom-spacing: var(--header-top);      /* Match header-top for symmetry */
+  --header-top: clamp(2rem, 4.58vw, 5rem); /* Fluid: 32px-80px */
+  --divider-gap: clamp(
+    0.75rem,
+    1.04vw,
+    1.25rem
+  ); /* Fluid: 12px-20px - symmetric gap around divider */
+  --divider-height: 1.5px; /* Fixed divider */
+  --name-line-height: 1; /* No extra spacing - keeps text tight */
+  --tagline-line-height: 1; /* No extra spacing - keeps text tight */
+  --divider-top: calc(
+    var(--header-top) + var(--size-name) * 2 * var(--name-line-height) + var(--divider-gap)
+  );
+  --header-full-height: calc(
+    var(--header-top) + var(--size-name) * 2 * var(--name-line-height) + var(--divider-gap) * 2 +
+      var(--size-tagline) * 2 * var(--tagline-line-height)
+  );
+  --initial-bottom-spacing: var(--header-top); /* Match header-top for symmetry */
 }
 
 /* ========================================
@@ -451,7 +460,10 @@ ul {
   padding-bottom: var(--initial-bottom-spacing);
   /* Push content down so only intro is visible initially */
   /* Add extra space to clear the fixed header completely */
-  padding-top: max(calc(100vh - var(--initial-bottom-spacing) - 10rem), calc(var(--divider-top) + 5rem));
+  padding-top: max(
+    calc(100vh - var(--initial-bottom-spacing) - 10rem),
+    calc(var(--divider-top) + 5rem)
+  );
   margin-top: 0;
 }
 

@@ -6,7 +6,9 @@
     "start": "eleventy --serve",
     "build": "eleventy",
     "clean": "rm -rf _site",
-    "design:capture": "npm run build && node docs/design/capture-design.js"
+    "design:capture": "npm run build && node docs/design/capture-design.js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,8 @@
   "homepage": "https://github.com/ratulotron/ratulotron.github.io#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
-    "playwright": "^1.56.1"
+    "playwright": "^1.56.1",
+    "prettier": "^3.7.4",
+    "prettier-plugin-jinja-template": "^2.1.0"
   }
 }

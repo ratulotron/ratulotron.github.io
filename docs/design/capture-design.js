@@ -5,25 +5,25 @@
  * Captures design screenshots at different viewport sizes for documentation
  */
 
-const { chromium } = require('playwright');
-const path = require('path');
-const fs = require('fs');
+const { chromium } = require("playwright");
+const path = require("path");
+const fs = require("fs");
 
 // Configuration
 const viewports = [
-  { name: '01-desktop-1440x900', width: 1440, height: 900 },
-  { name: '02-desktop-1920x1080', width: 1920, height: 1080 },
-  { name: '03-laptop-1280x800', width: 1280, height: 800 },
-  { name: '04-laptop-1024x768', width: 1024, height: 768 },
-  { name: '05-tablet-768x1024', width: 768, height: 1024 },
-  { name: '06-mobile-375x667', width: 375, height: 667 },
+  { name: "01-desktop-1440x900", width: 1440, height: 900 },
+  { name: "02-desktop-1920x1080", width: 1920, height: 1080 },
+  { name: "03-laptop-1280x800", width: 1280, height: 800 },
+  { name: "04-laptop-1024x768", width: 1024, height: 768 },
+  { name: "05-tablet-768x1024", width: 768, height: 1024 },
+  { name: "06-mobile-375x667", width: 375, height: 667 },
 ];
 
-const mode = process.argv[2] || 'build'; // Always use built site now
+const mode = process.argv[2] || "build"; // Always use built site now
 
-const htmlFile = path.join(__dirname, '..', '..', '_site', 'index.html');
+const htmlFile = path.join(__dirname, "..", "..", "_site", "index.html");
 
-const outputDir = path.join(__dirname, 'screenshots');
+const outputDir = path.join(__dirname, "screenshots");
 
 async function takeScreenshots() {
   // Create output directory
@@ -36,7 +36,7 @@ async function takeScreenshots() {
 
   // Launch browser with web server to properly load CSS and assets
   const browser = await chromium.launch();
-  const siteDir = path.join(__dirname, '..', '..', '_site');
+  const siteDir = path.join(__dirname, "..", "..", "_site");
 
   for (const viewport of viewports) {
     const context = await browser.newContext({
@@ -48,22 +48,23 @@ async function takeScreenshots() {
     const page = await context.newPage();
 
     // Serve the _site directory with proper MIME types
-    await page.route('**/*', async (route) => {
+    await page.route("**/*", async (route) => {
       const url = route.request().url();
       const urlPath = new URL(url).pathname;
-      const filePath = path.join(siteDir, urlPath === '/' ? 'index.html' : urlPath);
+      const filePath = path.join(siteDir, urlPath === "/" ? "index.html" : urlPath);
 
       if (fs.existsSync(filePath)) {
         const content = fs.readFileSync(filePath);
         const ext = path.extname(filePath);
-        const contentType = {
-          '.html': 'text/html',
-          '.css': 'text/css',
-          '.js': 'application/javascript',
-          '.png': 'image/png',
-          '.jpg': 'image/jpeg',
-          '.svg': 'image/svg+xml',
-        }[ext] || 'application/octet-stream';
+        const contentType =
+          {
+            ".html": "text/html",
+            ".css": "text/css",
+            ".js": "application/javascript",
+            ".png": "image/png",
+            ".jpg": "image/jpeg",
+            ".svg": "image/svg+xml",
+          }[ext] || "application/octet-stream";
 
         await route.fulfill({
           status: 200,
@@ -76,10 +77,10 @@ async function takeScreenshots() {
     });
 
     // Navigate to the page
-    await page.goto('http://localhost/index.html');
+    await page.goto("http://localhost/index.html");
 
     // Wait for fonts and styles to load
-    await page.waitForLoadState('networkidle');
+    await page.waitForLoadState("networkidle");
     await page.waitForTimeout(500); // Extra time for web fonts
 
     // Take screenshot
@@ -101,6 +102,6 @@ async function takeScreenshots() {
 
 // Run the screenshot generation
 takeScreenshots().catch((error) => {
-  console.error('❌ Error taking screenshots:', error);
+  console.error("❌ Error taking screenshots:", error);
   process.exit(1);
 });

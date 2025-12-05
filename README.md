@@ -13,6 +13,7 @@ Personal portfolio and blog built with Eleventy (11ty) and deployed on GitHub Pa
 ## Design
 
 Converted from Figma design to pixel-perfect HTML/CSS implementation with:
+
 - Solarized color palette
 - Custom typography (Bungee Shade, Bungee, EB Garamond, Quicksand)
 - Fixed header and social menu with scrollable content
@@ -135,6 +136,7 @@ All design tokens are defined as CSS custom properties in `src/assets/css/style.
 ## Browser Support
 
 Modern browsers with CSS nesting support:
+
 - Chrome 112+
 - Firefox 117+
 - Safari 16.5+

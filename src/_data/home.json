@@ -1,0 +1,72 @@
+{
+  "timeline": {
+    "heading": "Timeline",
+    "entries": [
+      {
+        "year": "2025",
+        "text": "Started bike commuting to work, small step for planet earth"
+      },
+      {
+        "year": "2024",
+        "text": "First ever country wide trip: 5 cities in Vietnam in 2 weeks"
+      },
+      {
+        "year": "2023",
+        "text": "Somehow promoted to Senior Data Engineer"
+      },
+      {
+        "year": "2022",
+        "text": "Picked up photography while exploring Berlin"
+      },
+      {
+        "year": "2021",
+        "text": "Moved to Berlin during -15°C winter"
+      },
+      {
+        "year": "2020",
+        "text": "Decided to self-isolate during pandemic by moving to a completely new country"
+      },
+      {
+        "year": "2019",
+        "text": "Infatuated with data engineering from backend dev"
+      },
+      {
+        "year": "2017",
+        "text": "Finally done with undergrad, started full time job as software developer"
+      },
+      {
+        "year": "2016",
+        "text": "Stepped back from volunteering"
+      },
+      {
+        "year": "2015",
+        "text": "Landed first internship as a software developer"
+      },
+      {
+        "year": "2014",
+        "text": "Fell in love with Python!"
+      },
+      {
+        "year": "2013",
+        "text": "Became <a href=\"https://www.mozilla.org/\" class=\"timeline__link\" target=\"_blank\" rel=\"noopener noreferrer\">Mozilla</a> Representative, leading regional student programs"
+      },
+      {
+        "year": "2012",
+        "text": "Joined <a href=\"https://www.facebook.com/communityactionbd\" class=\"timeline__link\">CommunityAction</a> as student social worker"
+      },
+      {
+        "year": "199x",
+        "text": "Born and raised in Dhaka, Bangladesh"
+      }
+    ]
+  },
+  "about": {
+    "heading": "About",
+    "paragraphs": [
+      "I consider myself an <a href=\"https://www.youtube.com/watch?v=MBRqu0YOH14\" class=\"timeline__link\" target=\"_blank\" rel=\"noopener noreferrer\">optimistic nihilist</a>—finding meaning in what we humans do as a species and society, rather than what our biology dictates to us. It's always bothered me how unequal our society is and exactly how much our privilege contributes to our successes, regardless of passion or talent.",
+      "Perhaps it was this need to find meaning in being human that led me toward volunteerism. I was luckily enough to find a bunch of die-hard open source and open web fans in Dhaka who all contributed to the <a href=\"https://www.mozilla.org/\" class=\"timeline__link\" target=\"_blank\" rel=\"noopener noreferrer\">Mozilla Foundation</a>—spending years engaging students in open source initiatives through the Firefox Student Ambassadors program and organizing workshops for Mozilla projects. I was also lucky enough to be part of a student-run social welfare organization, <a href=\"http://ca-bd.org/\" class=\"timeline__link\" target=\"_blank\" rel=\"noopener noreferrer\">CommunityAction Bangladesh</a>, which enabled me to help underprivileged people—albeit just a handful—improve their lives through various educational and social programs. One project I'm extremely grateful to have been part of is the winter clothes drive, where we collected old clothes from friends and family, cleaned and packed them at our drop-off stations, and shipped them to the remotest parts of the country for people without warm clothing. It warms my heart to think I was part of something that put smiles on at least a couple hundred faces :)",
+      "I've also gone through phases—a <a href=\"https://www.youtube.com/watch?v=LmNH9ndK428\" class=\"timeline__link\" target=\"_blank\" rel=\"noopener noreferrer\">cooking show appearance</a>!, exploring Berlin with a camera, tinkering with fountain pens, convincing my ukulele we should be friends. The pattern is the same across all of them: understand by doing, improve by rebuilding.",
+      "I'm always up for a cup of coffee, whether in a café or virtually :) Don't hesitate to reach out through social media, or just <a href=\"https://calendly.com/ratulotron\" class=\"timeline__link\" target=\"_blank\" rel=\"noopener noreferrer\">set up a meeting directly</a>."
+    ]
+  }
+}

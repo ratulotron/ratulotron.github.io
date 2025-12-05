@@ -2,32 +2,20 @@
 layout: layouts/base.njk
 ---
 
-<main
-  class="main-content">
+<main class="main-content">
   <!-- Introduction with scroll indicator -->
   <section class="content-section content-section--intro">
-    <p class="intro__text">
-      {{ site.description }}
-    </p>
+    <p class="intro__text">{{ site.intro }}</p>
     <div class="intro__scroll-indicator" aria-label="Scroll down for more content">
       <i class="fa-solid fa-arrow-down"></i>
     </div>
   </section>
-  <!-- Philosophy Section -->
-  {% if philosophy %}
-    <section class="content-section">
-      <h2 class="content-section__heading">Philosophy</h2>
-      <div class="content-section__text">
-        {{ philosophy | safe }}
-      </div>
-    </section>
-  {% endif %}
   <!-- Timeline Section -->
-  {% if timeline.length > 0 %}
+  {% if home.timeline.entries.length > 0 %}
     <section class="content-section">
-      <h2 class="content-section__heading">Timeline</h2>
+      <h2 class="content-section__heading">{{ home.timeline.heading }}</h2>
       <div class="timeline">
-        {% for entry in timeline %}
+        {% for entry in home.timeline.entries %}
           <article class="timeline__entry">
             <p class="timeline__text">{{ entry.text | safe }}</p>
             <div class="timeline__year">
@@ -40,11 +28,13 @@ layout: layouts/base.njk
     </section>
   {% endif %}
   <!-- About Section -->
-  {% if about %}
+  {% if home.about %}
     <section class="content-section">
-      <h2 class="content-section__heading">About</h2>
+      <h2 class="content-section__heading">{{ home.about.heading }}</h2>
       <div class="content-section__text">
-        {{ about | safe }}
+        {% for paragraph in home.about.paragraphs %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
       </div>
     </section>
   {% endif %}

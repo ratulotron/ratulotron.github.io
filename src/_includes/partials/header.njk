@@ -1,10 +1,8 @@
 <header class="site-header">
   <div class="site-header__background"></div>
   <h1 class="site-header__name">
-    {{ site.name.split(' ')[0] }}<br>{{ site.name.split(' ')[1] }}
+    {{ site.name.split(' ')[0] }}<br />{{ site.name.split(' ')[1] }}
   </h1>
-  <hr class="site-header__divider">
-  <p class="site-header__tagline">
-    {{ site.tagline | safe }}
-  </p>
+  <hr class="site-header__divider" />
+  <p class="site-header__tagline">{{ site.tagline | safe }}</p>
 </header>
