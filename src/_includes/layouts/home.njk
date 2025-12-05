@@ -33,7 +33,7 @@ layout: layouts/base.njk
       <h2 class="content-section__heading">{{ home.about.heading }}</h2>
       <div class="content-section__text">
         {% for paragraph in home.about.paragraphs %}
-          <p>{{ paragraph }}</p>
+          <p>{{ paragraph | safe }}</p>
         {% endfor %}
       </div>
     </section>
