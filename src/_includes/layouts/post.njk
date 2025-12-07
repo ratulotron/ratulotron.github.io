@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+---
+
+<main class="main-content main-content--blog">
+  <article class="blog-post">
+    <header class="blog-post__header">
+      <h1 class="blog-post__title">{{ title }}</h1>
+      <div class="blog-post__meta">
+        <time class="blog-post__date" datetime="{{ date | isoDate }}">
+          {{ date | readableDate }}
+        </time>
+        {% if tags %}
+          <div class="blog-post__tags">
+            {% for tag in tags %}
+              {% if tag != "posts" %}
+                <span class="blog-post__tag">#{{ tag }}</span>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </header>
+    <div class="blog-post__content">
+      {{ content | safe }}
+    </div>
+    <footer class="blog-post__footer">
+      <a href="/blog/" class="blog-post__back-link">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back to all posts
+      </a>
+    </footer>
+  </article>
+</main>

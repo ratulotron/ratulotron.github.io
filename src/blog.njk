@@ -1,0 +1,42 @@
+---
+layout: layouts/base.njk
+title: Blog
+description: Thoughts on data engineering, Python, and building things
+---
+
+<main class="main-content main-content--blog">
+  <section class="content-section">
+    <h1 class="content-section__heading">Blog</h1>
+
+    {% if collections.posts.length > 0 %}
+      <div class="blog-list">
+        {% for post in collections.posts | reverse %}
+          <article class="blog-list__item">
+            <h2 class="blog-list__title">
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </h2>
+            <div class="blog-list__meta">
+              <time class="blog-list__date" datetime="{{ post.data.date | isoDate }}">
+                {{ post.data.date | readableDate }}
+              </time>
+              {% if post.data.tags %}
+                <div class="blog-list__tags">
+                  {% for tag in post.data.tags %}
+                    {% if tag != "posts" %}
+                      <span class="blog-list__tag">#{{ tag }}</span>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+            {% if post.data.description %}
+              <p class="blog-list__excerpt">{{ post.data.description }}</p>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="content-section__text">No blog posts yet. Check back soon!</p>
+    {% endif %}
+  </section>
+</main>
