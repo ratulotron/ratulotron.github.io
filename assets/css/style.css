@@ -1,0 +1,714 @@
+/* ========================================
+   FONT DECLARATIONS
+   ======================================== */
+
+/* Current/Playful Scheme Fonts */
+@font-face {
+  font-family: "Bungee";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/bungee.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bungee Shade";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/bungee-shade.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/eb-garamond.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/quicksand-500.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/quicksand-700.ttf") format("truetype");
+}
+
+/* Inter - Used in multiple schemes */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/inter-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/inter-bold.ttf") format("truetype");
+}
+
+/* IBM Plex Sans - Technical Scheme */
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-sans-bold.ttf") format("truetype");
+}
+
+/* IBM Plex Mono - Technical Scheme */
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/ibm-plex-mono-semibold.ttf") format("truetype");
+}
+
+/* Work Sans - Professional Scheme */
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/work-sans-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/work-sans-bold.ttf") format("truetype");
+}
+
+/* Source Code Pro - Professional & Elegant Schemes */
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/source-code-pro-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/source-code-pro-semibold.ttf") format("truetype");
+}
+
+/* Space Grotesk - Geometric Scheme */
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/space-grotesk-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/space-grotesk-bold.ttf") format("truetype");
+}
+
+/* Space Mono - Geometric Scheme */
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/space-mono-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/space-mono-bold.ttf") format("truetype");
+}
+
+/* JetBrains Mono - Monospace Scheme */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/jetbrains-mono-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/jetbrains-mono-bold.ttf") format("truetype");
+}
+
+/* Playfair Display - Elegant Scheme */
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/playfair-display-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/playfair-display-bold.ttf") format("truetype");
+}
+
+/* Source Sans Pro - Elegant Scheme */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/source-sans-pro-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/source-sans-pro-bold.ttf") format("truetype");
+}
+
+/* Poppins - Startup Scheme */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/poppins-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/poppins-bold.ttf") format("truetype");
+}
+
+/* ========================================
+   CSS CUSTOM PROPERTIES (Design Tokens)
+   ======================================== */
+
+:root {
+  /* Colors - Theme-based (configured in site.json) */
+  --color-primary: var(--theme-primary, #002b36); /* Primary text, dividers */
+  --color-secondary: var(--theme-secondary, #073642); /* Body text */
+  --color-muted: var(--theme-muted, #657b83); /* Muted text */
+  --color-background: var(--theme-background, #eee8d5); /* Background */
+  --color-accent: var(--theme-accent, #268bd2); /* Links, accents */
+
+  /* Typography - Font-scheme based (configured in site.json) */
+  --font-name: var(--fontscheme-name, "Bungee Shade", sans-serif);
+  --font-tagline: var(--fontscheme-tagline, "Bungee", sans-serif);
+  --font-heading: var(--fontscheme-heading, "Bungee", sans-serif);
+  --font-body: var(--fontscheme-body, "EB Garamond", serif);
+  --font-link: var(--fontscheme-link, "Quicksand", sans-serif);
+  --font-ui: var(--fontscheme-ui, "Quicksand", sans-serif);
+
+  /* Font Sizes - Fluid typography using clamp(min, preferred, max) */
+  --size-name: clamp(36px, 6.67vw, 96px); /* Scales 36-96px */
+  --size-tagline: clamp(18px, 3.33vw, 48px); /* Scales 18-48px (half of name) */
+  --size-heading: clamp(16px, 1.25vw, 18px); /* Scales 16-18px */
+  --size-body: clamp(18px, 1.67vw, 24px); /* Scales 18-24px */
+  --size-link: clamp(16px, 1.25vw, 18px); /* Scales 16-18px */
+  --size-ui: clamp(16px, 1.25vw, 18px); /* Scales 16-18px */
+
+  /* Layout - Fluid and proportional */
+  --canvas-width: 1440px;
+  --margin-left: clamp(1rem, 8.33vw, 7.5rem); /* Fluid margins: 16px-120px */
+  --margin-right: clamp(1rem, 8.33vw, 7.5rem); /* Fluid margins: 16px-120px */
+  --content-width: clamp(20rem, 44.44vw, 40rem); /* Fluid content: 320px-640px */
+  --gap-section: clamp(2rem, 4.17vw, 3.75rem); /* Fluid gap: 32px-60px */
+  --gap-small: 0.3125rem; /* Fixed small gap */
+  --gap-timeline: 0.625rem; /* Fixed timeline gap */
+
+  /* Positioning - Proportional to viewport */
+  --header-top: clamp(2rem, 4.58vw, 5rem); /* Fluid: 32px-80px */
+  --divider-gap: clamp(
+    0.75rem,
+    1.04vw,
+    1.25rem
+  ); /* Fluid: 12px-20px - symmetric gap around divider */
+  --divider-height: 1.5px; /* Fixed divider */
+  --name-line-height: 1; /* No extra spacing - keeps text tight */
+  --tagline-line-height: 1; /* No extra spacing - keeps text tight */
+  --divider-top: calc(
+    var(--header-top) + var(--size-name) * 2 * var(--name-line-height) + var(--divider-gap)
+  );
+  --header-full-height: calc(
+    var(--header-top) + var(--size-name) * 2 * var(--name-line-height) + var(--divider-gap) * 2 +
+      var(--size-tagline) * 2 * var(--tagline-line-height)
+  );
+  --initial-bottom-spacing: var(--header-top); /* Match header-top for symmetry */
+}
+
+/* ========================================
+   RESET & BASE STYLES
+   ======================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px; /* Base for rem calculations */
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar completely - down arrow indicates scrollable content */
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Opera */
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  line-height: 1.5;
+  color: var(--color-secondary);
+  background-color: var(--color-background);
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+/* ========================================
+   FIXED HEADER
+   ======================================== */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.site-header__background {
+  position: absolute;
+  top: 0;
+  left: var(--margin-left);
+  right: var(--margin-right);
+  height: var(--divider-top);
+  background-color: var(--color-background);
+  border: 1px solid var(--color-background);
+}
+
+.site-header__name {
+  position: absolute;
+  top: var(--header-top);
+  left: var(--margin-left);
+  font-family: var(--font-name);
+  font-size: var(--size-name);
+  font-weight: normal;
+  line-height: var(--name-line-height);
+  color: var(--color-primary);
+  width: 29.75rem; /* 476px */
+  margin: 0;
+}
+
+.site-header__divider {
+  position: absolute;
+  top: var(--divider-top);
+  left: var(--margin-left);
+  right: var(--margin-right);
+  height: var(--divider-height);
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.site-header__tagline {
+  position: absolute;
+  top: calc(var(--divider-top) + var(--divider-gap));
+  left: var(--margin-left);
+  font-family: var(--font-tagline);
+  font-size: var(--size-tagline);
+  font-weight: normal;
+  line-height: var(--tagline-line-height);
+  color: var(--color-primary);
+  /* Constrain width to not overlap with content column */
+  max-width: calc(100vw - var(--margin-left) - var(--margin-right) - var(--content-width) - 2rem);
+  margin: 0;
+}
+
+/* ========================================
+   FIXED SOCIAL MENU
+   ======================================== */
+
+.social-menu {
+  position: fixed;
+  /* Align top of social menu with first line of intro text */
+  /* Add half-leading plus small adjustment for perfect alignment */
+  top: calc(100vh - var(--initial-bottom-spacing) - 10rem + 0.575em);
+  left: var(--margin-left);
+  z-index: 50;
+}
+
+.social-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small);
+}
+
+.social-menu__link {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-small);
+  font-family: var(--font-link);
+  font-size: var(--size-link);
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.social-menu__icon {
+  font-size: 18px;
+  width: 18px;
+  flex-shrink: 0;
+  display: inline-block;
+  text-align: center;
+}
+
+.social-menu__text {
+  line-height: 1;
+}
+
+/* ========================================
+   MAIN CONTENT (Scrollable)
+   ======================================== */
+
+.main-content {
+  position: relative;
+  right: var(--margin-right);
+  width: var(--content-width);
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-section);
+  padding-bottom: var(--initial-bottom-spacing);
+  /* Push content down so only intro is visible initially */
+  /* Add extra space to clear the fixed header completely */
+  padding-top: max(
+    calc(100vh - var(--initial-bottom-spacing) - 10rem),
+    calc(var(--divider-top) + 5rem)
+  );
+  margin-top: 0;
+}
+
+/* ========================================
+   CONTENT SECTIONS
+   ======================================== */
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small);
+}
+
+.content-section__heading {
+  font-family: var(--font-heading);
+  font-size: var(--size-heading);
+  font-weight: normal;
+  line-height: 1.33; /* 24px line height */
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.content-section__text {
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  font-weight: normal;
+  line-height: 1.5;
+  color: var(--color-secondary);
+  text-align: justify;
+
+  & p {
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* ========================================
+   INTRO SECTION
+   ======================================== */
+
+.intro__text {
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  line-height: 1.5;
+  color: var(--color-secondary);
+  text-align: justify;
+  margin: 0;
+}
+
+.intro__scroll-indicator {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: var(--gap-small);
+  color: var(--color-secondary);
+  font-size: 16px;
+}
+
+.content-section--intro {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-small);
+  align-items: flex-end;
+}
+
+/* ========================================
+   TIMELINE
+   ======================================== */
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-timeline);
+}
+
+.timeline__entry {
+  display: flex;
+  gap: var(--gap-small);
+  align-items: flex-end;
+}
+
+.timeline__text {
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  line-height: 1.5;
+  color: var(--color-secondary);
+  text-align: left;
+  margin: 0;
+}
+
+.timeline__link {
+  color: var(--color-accent);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.timeline__year {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-small);
+  padding: var(--gap-small);
+  flex-shrink: 0;
+
+  & time {
+    font-family: var(--font-ui);
+    font-size: var(--size-ui);
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--color-primary);
+  }
+}
+
+.timeline__arrow {
+  font-size: 16px;
+  flex-shrink: 0;
+  color: var(--color-primary);
+}
+
+/* ========================================
+   CONTENT LINKS
+   ======================================== */
+
+.content-link {
+  color: var(--color-accent);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Transition zone - add extra top padding to prevent overlap */
+@media (min-width: 1101px) and (max-width: 1300px) {
+  .main-content {
+    /* Use a safe fixed value that ensures clearance at these widths */
+    padding-top: max(calc(100vh - var(--initial-bottom-spacing) - 10rem), 30rem);
+  }
+}
+
+/* Large screens - center content within max canvas */
+@media (min-width: 1600px) {
+  :root {
+    --margin-left: calc((100vw - var(--canvas-width)) / 2 + 7.5rem);
+    --margin-right: calc((100vw - var(--canvas-width)) / 2 + 7.5rem);
+  }
+}
+
+/* Tablet and below - stack layout instead of side-by-side */
+@media (max-width: 1100px) {
+  /* Make header static/relative instead of fixed */
+  .site-header {
+    position: relative;
+  }
+
+  .site-header__background {
+    position: relative;
+    height: auto;
+    left: 0;
+    right: 0;
+    padding: var(--header-top) 0 var(--divider-gap) 0;
+  }
+
+  .site-header__name {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: calc(100% - var(--margin-left) - var(--margin-right));
+    max-width: 100%;
+    margin: 0 var(--margin-right) 0 var(--margin-left);
+  }
+
+  .site-header__divider {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: var(--divider-gap) var(--margin-right) var(--divider-gap) var(--margin-left);
+  }
+
+  .site-header__tagline {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: calc(100% - var(--margin-left) - var(--margin-right));
+    max-width: 100%;
+    margin: 0 var(--margin-right) 0 var(--margin-left);
+  }
+
+  /* Stack social menu below header */
+  .social-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 2rem var(--margin-left) 2rem var(--margin-left);
+  }
+
+  /* Make content full width and stack below */
+  .main-content {
+    position: relative;
+    right: auto;
+    margin: 0 var(--margin-right) var(--initial-bottom-spacing) var(--margin-left);
+    width: auto;
+    max-width: none;
+    padding-top: 0;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
