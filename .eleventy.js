@@ -4,7 +4,7 @@ module.exports = function (eleventyConfig) {
   // Sitemap plugin
   eleventyConfig.addPlugin(sitemap, {
     sitemap: {
-      hostname: "https://ratulotron.github.io",
+      hostname: "https://ratul.xyz",
     },
   });
 
