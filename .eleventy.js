@@ -1,7 +1,17 @@
+const sitemap = require("@quasibit/eleventy-plugin-sitemap");
+
 module.exports = function (eleventyConfig) {
+  // Sitemap plugin
+  eleventyConfig.addPlugin(sitemap, {
+    sitemap: {
+      hostname: "https://ratulotron.github.io",
+    },
+  });
+
   // Copy static assets to output
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/CNAME");
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
 
   // Watch CSS files for changes
   eleventyConfig.addWatchTarget("src/assets/css/");

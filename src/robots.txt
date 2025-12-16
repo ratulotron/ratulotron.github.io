@@ -1,4 +1,8 @@
+# robots.txt for ratulotron.github.io
+
+# Allow all crawlers
 User-agent: *
 Allow: /
 
+# Sitemap location
 Sitemap: https://ratulotron.github.io/sitemap.xml
