@@ -1,12 +1,4 @@
-const sitemap = require("@quasibit/eleventy-plugin-sitemap");
-
 module.exports = function (eleventyConfig) {
-  // Sitemap plugin
-  eleventyConfig.addPlugin(sitemap, {
-    sitemap: {
-      hostname: "https://ratul.xyz",
-    },
-  });
 
   // Copy static assets to output
   eleventyConfig.addPassthroughCopy("src/assets");

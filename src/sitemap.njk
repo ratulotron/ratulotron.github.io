@@ -11,7 +11,7 @@ eleventyExcludeFromCollections: true
     <priority>1.0</priority>
   </url>
   {% for post in collections.all %}
-    {% if post.url and post.url != '/sitemap.xml' %}
+    {% if post.url and post.url != '/sitemap.xml' and post.url != '/' %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
     <lastmod>{{ post.date | isoDate }}</lastmod>
