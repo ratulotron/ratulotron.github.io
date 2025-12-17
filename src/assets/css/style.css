@@ -18,6 +18,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/go-mono');
 
 /* ========================================
    CSS CUSTOM PROPERTIES (Design Tokens)
@@ -25,11 +26,16 @@
 
 :root {
   /* Colors - Theme-based (configured in site.json) */
-  --color-primary: var(--theme-primary, #002b36); /* Primary text, dividers */
-  --color-secondary: var(--theme-secondary, #073642); /* Body text */
-  --color-muted: var(--theme-muted, #657b83); /* Muted text */
-  --color-background: var(--theme-background, #eee8d5); /* Background */
-  --color-accent: var(--theme-accent, #268bd2); /* Links, accents */
+  --color-primary: var(--theme-primary, #002b36);
+  /* Primary text, dividers */
+  --color-secondary: var(--theme-secondary, #073642);
+  /* Body text */
+  --color-muted: var(--theme-muted, #657b83);
+  /* Muted text */
+  --color-background: var(--theme-background, #eee8d5);
+  /* Background */
+  --color-accent: var(--theme-accent, #268bd2);
+  /* Links, accents */
 
   /* Typography - Font-scheme based (configured in site.json) */
   --font-name: var(--fontscheme-name, "Bungee Shade", sans-serif);
@@ -40,40 +46,51 @@
   --font-ui: var(--fontscheme-ui, "Quicksand", sans-serif);
 
   /* Font Sizes - Fluid typography using clamp(min, preferred, max) */
-  --size-name: clamp(36px, 6.67vw, 96px); /* Scales 36-96px */
-  --size-tagline: clamp(18px, 3.33vw, 48px); /* Scales 18-48px (half of name) */
-  --size-heading: clamp(16px, 1.25vw, 18px); /* Scales 16-18px */
-  --size-body: clamp(18px, 1.67vw, 24px); /* Scales 18-24px */
-  --size-link: clamp(16px, 1.25vw, 18px); /* Scales 16-18px */
-  --size-ui: clamp(16px, 1.25vw, 18px); /* Scales 16-18px */
+  --size-name: clamp(36px, 6.67vw, 96px);
+  /* Scales 36-96px */
+  --size-tagline: clamp(18px, 3.33vw, 48px);
+  /* Scales 18-48px (half of name) */
+  --size-heading: clamp(16px, 1.25vw, 18px);
+  /* Scales 16-18px */
+  --size-body: clamp(18px, 1.67vw, 24px);
+  /* Scales 18-24px */
+  --size-link: clamp(16px, 1.25vw, 18px);
+  /* Scales 16-18px */
+  --size-ui: clamp(16px, 1.25vw, 18px);
+  /* Scales 16-18px */
 
   /* Layout - Fluid and proportional */
   --canvas-width: 1440px;
-  --margin-left: clamp(1rem, 8.33vw, 7.5rem); /* Fluid margins: 16px-120px */
-  --margin-right: clamp(1rem, 8.33vw, 7.5rem); /* Fluid margins: 16px-120px */
-  --content-width: clamp(20rem, 44.44vw, 40rem); /* Fluid content: 320px-640px */
-  --gap-section: clamp(2rem, 4.17vw, 3.75rem); /* Fluid gap: 32px-60px */
-  --gap-small: 0.3125rem; /* Fixed small gap */
-  --gap-timeline: 0.625rem; /* Fixed timeline gap */
+  --margin-left: clamp(1rem, 8.33vw, 7.5rem);
+  /* Fluid margins: 16px-120px */
+  --margin-right: clamp(1rem, 8.33vw, 7.5rem);
+  /* Fluid margins: 16px-120px */
+  --content-width: clamp(20rem, 44.44vw, 40rem);
+  /* Fluid content: 320px-640px */
+  --gap-section: clamp(2rem, 4.17vw, 3.75rem);
+  /* Fluid gap: 32px-60px */
+  --gap-small: 0.3125rem;
+  /* Fixed small gap */
+  --gap-timeline: 0.625rem;
+  /* Fixed timeline gap */
 
   /* Positioning - Proportional to viewport */
-  --header-top: clamp(2rem, 4.58vw, 5rem); /* Fluid: 32px-80px */
-  --divider-gap: clamp(
-    0.75rem,
-    1.04vw,
-    1.25rem
-  ); /* Fluid: 12px-20px - symmetric gap around divider */
-  --divider-height: 1.5px; /* Fixed divider */
-  --name-line-height: 1; /* No extra spacing - keeps text tight */
-  --tagline-line-height: 1; /* No extra spacing - keeps text tight */
-  --divider-top: calc(
-    var(--header-top) + var(--size-name) * 2 * var(--name-line-height) + var(--divider-gap)
-  );
-  --header-full-height: calc(
-    var(--header-top) + var(--size-name) * 2 * var(--name-line-height) + var(--divider-gap) * 2 +
-      var(--size-tagline) * 2 * var(--tagline-line-height)
-  );
-  --initial-bottom-spacing: var(--header-top); /* Match header-top for symmetry */
+  --header-top: clamp(2rem, 4.58vw, 5rem);
+  /* Fluid: 32px-80px */
+  --divider-gap: clamp(0.75rem,
+      1.04vw,
+      1.25rem);
+  /* Fluid: 12px-20px - symmetric gap around divider */
+  --divider-height: 1.5px;
+  /* Fixed divider */
+  --name-line-height: 1;
+  /* No extra spacing - keeps text tight */
+  --tagline-line-height: 1;
+  /* No extra spacing - keeps text tight */
+  --divider-top: calc(var(--header-top) + var(--size-name) * 2 * var(--name-line-height) + var(--divider-gap));
+  --header-full-height: calc(var(--header-top) + var(--size-name) * 2 * var(--name-line-height) + var(--divider-gap) * 2 + var(--size-tagline) * 2 * var(--tagline-line-height));
+  --initial-bottom-spacing: var(--header-top);
+  /* Match header-top for symmetry */
 }
 
 /* ========================================
@@ -89,18 +106,22 @@
 }
 
 html {
-  font-size: 16px; /* Base for rem calculations */
+  font-size: 16px;
+  /* Base for rem calculations */
   scroll-behavior: smooth;
 }
 
 /* Hide scrollbar completely - down arrow indicates scrollable content */
 html {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE/Edge */
 }
 
 html::-webkit-scrollbar {
-  display: none; /* Chrome/Safari/Opera */
+  display: none;
+  /* Chrome/Safari/Opera */
 }
 
 body {
@@ -158,7 +179,8 @@ ul {
   font-weight: normal;
   line-height: var(--name-line-height);
   color: var(--color-primary);
-  width: 29.75rem; /* 476px */
+  width: 29.75rem;
+  /* 476px */
   margin: 0;
 }
 
@@ -249,10 +271,8 @@ ul {
   padding-bottom: var(--initial-bottom-spacing);
   /* Push content down so only intro is visible initially */
   /* Add extra space to clear the fixed header completely */
-  padding-top: max(
-    calc(100vh - var(--initial-bottom-spacing) - 10rem),
-    calc(var(--divider-top) + 5rem)
-  );
+  padding-top: max(calc(100vh - var(--initial-bottom-spacing) - 10rem),
+      calc(var(--divider-top) + 5rem));
   margin-top: 0;
 }
 
@@ -270,7 +290,8 @@ ul {
   font-family: var(--font-heading);
   font-size: var(--size-heading);
   font-weight: normal;
-  line-height: 1.33; /* 24px line height */
+  line-height: 1.33;
+  /* 24px line height */
   color: var(--color-muted);
   margin: 0;
 }
@@ -415,6 +436,7 @@ ul {
 
 /* Tablet and below - stack layout instead of side-by-side */
 @media (max-width: 1100px) {
+
   /* Make header static/relative instead of fixed */
   .site-header {
     position: relative;

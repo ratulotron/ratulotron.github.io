@@ -94,5 +94,17 @@
       "link": "'Poppins', sans-serif",
       "ui": "'Poppins', sans-serif"
     }
+  },
+  "gomono": {
+    "name": "Go Mono",
+    "description": "The Go programming language font - Pure & Simple",
+    "fonts": {
+      "name": "'Go Mono', monospace",
+      "tagline": "'Go Mono', monospace",
+      "heading": "'Go Mono', monospace",
+      "body": "'Go Mono', monospace",
+      "link": "'Go Mono', monospace",
+      "ui": "'Go Mono', monospace"
+    }
   }
 }
