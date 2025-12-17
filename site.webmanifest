@@ -1,0 +1,21 @@
+{
+  "name": "RATUL MINHAZ - DATA ENGINEER BASED IN BERLIN",
+  "short_name": "RATUL MINHAZ",
+  "description": "Data Engineer in Berlin building data solutions and bridging product development with data science. Python, backend, ETL pipelines.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/assets/images/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

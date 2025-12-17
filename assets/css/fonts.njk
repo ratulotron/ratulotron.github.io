@@ -1,0 +1,16 @@
+---
+permalink: /assets/css/fonts.css
+---
+/* ========================================
+   FONT IMPORTS - Dynamically Generated
+   ======================================== */
+
+/* Selected font scheme: {{ site.fontScheme }} */
+{% set selectedScheme = fonts[site.fontScheme] %}
+{% if selectedScheme and selectedScheme.fontUrls %}
+{% for url in selectedScheme.fontUrls %}
+@import url('{{ url }}');
+{% endfor %}
+{% else %}
+/* Warning: Font scheme '{{ site.fontScheme }}' not found or has no fontUrls */
+{% endif %}

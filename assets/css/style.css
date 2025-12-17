@@ -1,0 +1,553 @@
+/* ========================================
+   FONT DECLARATIONS
+   ======================================== */
+
+/* Import dynamically generated fonts based on selected scheme */
+@import url('/assets/css/fonts.css');
+
+/* ========================================
+   CSS CUSTOM PROPERTIES (Design Tokens)
+   ======================================== */
+
+:root {
+  /* Colors - Theme-based (configured in site.json) */
+  --color-primary: var(--theme-primary, #002b36);
+  /* Primary text, dividers */
+  --color-secondary: var(--theme-secondary, #073642);
+  /* Body text */
+  --color-muted: var(--theme-muted, #657b83);
+  /* Muted text */
+  --color-background: var(--theme-background, #eee8d5);
+  /* Background */
+  --color-accent: var(--theme-accent, #268bd2);
+  /* Links, accents */
+
+  /* Typography - Font-scheme based (configured in site.json) */
+  /* Fallback stacks keep a sensible look if web fonts fail */
+  --font-name: var(
+    --fontscheme-name,
+    "Bungee Shade",
+    "Bungee",
+    "Unbounded",
+    "Space Grotesk",
+    "Inter",
+    system-ui,
+    sans-serif
+  );
+  --font-tagline: var(
+    --fontscheme-tagline,
+    "Bungee",
+    "Unbounded",
+    "Space Grotesk",
+    "Inter",
+    system-ui,
+    sans-serif
+  );
+  --font-heading: var(
+    --fontscheme-heading,
+    "Bungee",
+    "Space Grotesk",
+    "Inter",
+    system-ui,
+    sans-serif
+  );
+  --font-body: var(
+    --fontscheme-body,
+    "EB Garamond",
+    "Playfair Display",
+    "Georgia",
+    serif
+  );
+  --font-link: var(
+    --fontscheme-link,
+    "Quicksand",
+    "Inter",
+    system-ui,
+    sans-serif
+  );
+  --font-ui: var(
+    --fontscheme-ui,
+    "Quicksand",
+    "Inter",
+    system-ui,
+    sans-serif
+  );
+
+  /* Font Sizes - Fluid typography using clamp(min, preferred, max) */
+  --size-name: clamp(36px, 6.67vw, 96px);
+  /* Scales 36-96px */
+  --size-tagline: clamp(18px, 3.33vw, 48px);
+  /* Scales 18-48px (half of name) */
+  --size-heading: clamp(16px, 1.25vw, 18px);
+  /* Scales 16-18px */
+  --size-body: clamp(18px, 1.67vw, 24px);
+  /* Scales 18-24px */
+  --size-link: clamp(16px, 1.25vw, 18px);
+  /* Scales 16-18px */
+  --size-ui: clamp(16px, 1.25vw, 18px);
+  /* Scales 16-18px */
+
+  /* Layout - Fluid and proportional */
+  --canvas-width: 1440px;
+  --margin-left: clamp(1rem, 8.33vw, 7.5rem);
+  /* Fluid margins: 16px-120px */
+  --margin-right: clamp(1rem, 8.33vw, 7.5rem);
+  /* Fluid margins: 16px-120px */
+  --content-width: clamp(20rem, 44.44vw, 40rem);
+  /* Fluid content: 320px-640px */
+  --gap-section: clamp(2rem, 4.17vw, 3.75rem);
+  /* Fluid gap: 32px-60px */
+  --gap-small: 0.3125rem;
+  /* Fixed small gap */
+  --gap-timeline: 0.625rem;
+  /* Fixed timeline gap */
+
+  /* Positioning - Proportional to viewport */
+  --header-top: clamp(2rem, 4.58vw, 5rem);
+  /* Fluid: 32px-80px */
+  --divider-gap: clamp(0.75rem,
+      1.04vw,
+      1.25rem);
+  /* Fluid: 12px-20px - symmetric gap around divider */
+  --divider-height: 1.5px;
+  /* Fixed divider */
+  --name-line-height: 1;
+  /* No extra spacing - keeps text tight */
+  --tagline-line-height: 1;
+  /* No extra spacing - keeps text tight */
+  --divider-top: calc(var(--header-top) + var(--size-name) * 2 * var(--name-line-height) + var(--divider-gap));
+  --header-full-height: calc(var(--header-top) + var(--size-name) * 2 * var(--name-line-height) + var(--divider-gap) * 2 + var(--size-tagline) * 2 * var(--tagline-line-height));
+  --initial-bottom-spacing: var(--header-top);
+  /* Match header-top for symmetry */
+}
+
+/* ========================================
+   RESET & BASE STYLES
+   ======================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  /* Base for rem calculations */
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar completely - down arrow indicates scrollable content */
+html {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE/Edge */
+}
+
+html::-webkit-scrollbar {
+  display: none;
+  /* Chrome/Safari/Opera */
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  line-height: 1.5;
+  color: var(--color-secondary);
+  background-color: var(--color-background);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+/* ========================================
+   FIXED HEADER
+   ======================================== */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.site-header__background {
+  position: absolute;
+  top: 0;
+  right: var(--margin-right);
+  left: var(--margin-left);
+  height: var(--divider-top);
+  background-color: var(--color-background);
+  border: 1px solid var(--color-background);
+}
+
+.site-header__name {
+  position: absolute;
+  top: var(--header-top);
+  left: var(--margin-left);
+  width: 29.75rem;
+  /* 476px */
+  margin: 0;
+  font-family: var(--font-name);
+  font-size: var(--size-name);
+  font-weight: normal;
+  line-height: var(--name-line-height);
+  color: var(--color-primary);
+}
+
+.site-header__divider {
+  position: absolute;
+  top: var(--divider-top);
+  right: var(--margin-right);
+  left: var(--margin-left);
+  height: var(--divider-height);
+  margin: 0;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 10px;
+}
+
+.site-header__tagline {
+  position: absolute;
+  top: calc(var(--divider-top) + var(--divider-gap));
+  left: var(--margin-left);
+  /* Constrain width to not overlap with content column */
+  max-width: calc(100vw - var(--margin-left) - var(--margin-right) - var(--content-width) - 2rem);
+  margin: 0;
+  font-family: var(--font-tagline);
+  font-size: var(--size-tagline);
+  font-weight: normal;
+  line-height: var(--tagline-line-height);
+  color: var(--color-primary);
+}
+
+/* ========================================
+   FIXED SOCIAL MENU
+   ======================================== */
+
+.social-menu {
+  position: fixed;
+  /* Align top of social menu with first line of intro text */
+  /* Add half-leading plus small adjustment for perfect alignment */
+  top: calc(100vh - var(--initial-bottom-spacing) - 10rem + 0.575em);
+  left: var(--margin-left);
+  z-index: 50;
+}
+
+.social-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small);
+}
+
+.social-menu__link {
+  display: flex;
+  gap: var(--gap-small);
+  align-items: center;
+  font-family: var(--font-link);
+  font-size: var(--size-link);
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.social-menu__icon {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 18px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.social-menu__text {
+  line-height: 1;
+}
+
+/* ========================================
+   MAIN CONTENT (Scrollable)
+   ======================================== */
+
+.main-content {
+  position: relative;
+  right: var(--margin-right);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-section);
+  width: var(--content-width);
+  /* Push content down so only intro is visible initially */
+  /* Add extra space to clear the fixed header completely */
+  padding-top: max(calc(100vh - var(--initial-bottom-spacing) - 10rem),
+      calc(var(--divider-top) + 5rem));
+  padding-bottom: var(--initial-bottom-spacing);
+  margin-top: 0;
+  margin-left: auto;
+}
+
+/* ========================================
+   CONTENT SECTIONS
+   ======================================== */
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small);
+}
+
+.content-section__heading {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: var(--size-heading);
+  font-weight: normal;
+  line-height: 1.33;
+  /* 24px line height */
+  color: var(--color-muted);
+}
+
+.content-section__text {
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  font-weight: normal;
+  line-height: 1.5;
+  color: var(--color-secondary);
+  text-align: justify;
+
+  & p {
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* ========================================
+   INTRO SECTION
+   ======================================== */
+
+.intro__text {
+  flex: 1;
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  line-height: 1.5;
+  color: var(--color-secondary);
+  text-align: justify;
+}
+
+.intro__scroll-indicator {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: var(--gap-small);
+  font-size: 16px;
+  color: var(--color-secondary);
+}
+
+.content-section--intro {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-small);
+  align-items: flex-end;
+}
+
+/* ========================================
+   TIMELINE
+   ======================================== */
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-timeline);
+}
+
+.timeline__entry {
+  display: flex;
+  gap: var(--gap-small);
+  align-items: flex-end;
+}
+
+.timeline__text {
+  flex: 1;
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  line-height: 1.5;
+  color: var(--color-secondary);
+  text-align: left;
+}
+
+.timeline__link {
+  color: var(--color-accent);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.timeline__year {
+  display: flex;
+  flex-shrink: 0;
+  gap: var(--gap-small);
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--gap-small);
+
+  & time {
+    font-family: var(--font-ui);
+    font-size: var(--size-ui);
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--color-primary);
+  }
+}
+
+.timeline__arrow {
+  flex-shrink: 0;
+  font-size: 16px;
+  color: var(--color-primary);
+}
+
+/* ========================================
+   CONTENT LINKS
+   ======================================== */
+
+.content-link {
+  color: var(--color-accent);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Transition zone - add extra top padding to prevent overlap */
+@media (min-width: 1101px) and (max-width: 1300px) {
+  .main-content {
+    /* Use a safe fixed value that ensures clearance at these widths */
+    padding-top: max(calc(100vh - var(--initial-bottom-spacing) - 10rem), 30rem);
+  }
+}
+
+/* Large screens - center content within max canvas */
+@media (min-width: 1600px) {
+  :root {
+    --margin-left: calc((100vw - var(--canvas-width)) / 2 + 7.5rem);
+    --margin-right: calc((100vw - var(--canvas-width)) / 2 + 7.5rem);
+  }
+}
+
+/* Tablet and below - stack layout instead of side-by-side */
+@media (max-width: 1100px) {
+
+  /* Make header static/relative instead of fixed */
+  .site-header {
+    position: relative;
+  }
+
+  .site-header__background {
+    position: relative;
+    right: 0;
+    left: 0;
+    height: auto;
+    padding: var(--header-top) 0 var(--divider-gap) 0;
+  }
+
+  .site-header__name {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: calc(100% - var(--margin-left) - var(--margin-right));
+    max-width: 100%;
+    margin: 0 var(--margin-right) 0 var(--margin-left);
+  }
+
+  .site-header__divider {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: var(--divider-gap) var(--margin-right) var(--divider-gap) var(--margin-left);
+  }
+
+  .site-header__tagline {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: calc(100% - var(--margin-left) - var(--margin-right));
+    max-width: 100%;
+    margin: 0 var(--margin-right) 0 var(--margin-left);
+  }
+
+  /* Stack social menu below header */
+  .social-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 2rem var(--margin-left) 2rem var(--margin-left);
+  }
+
+  /* Make content full width and stack below */
+  .main-content {
+    position: relative;
+    right: auto;
+    width: auto;
+    max-width: none;
+    padding-top: 0;
+    margin: 0 var(--margin-right) var(--initial-bottom-spacing) var(--margin-left);
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
