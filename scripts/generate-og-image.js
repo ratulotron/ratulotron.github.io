@@ -92,6 +92,44 @@ async function generateOGImage() {
     writeFileSync(outputPath, Buffer.from(buffer));
 
     console.log(`✅ OG image generated: ${outputPath}\n`);
+
+    // Generate favicon (32x32) with initials
+    console.log('🎨 Generating favicon...');
+
+    const initials = siteData.name
+        .split(' ')
+        .map(word => word[0])
+        .join('');
+
+    const faviconResponse = new ImageResponse(
+        h(
+            'div',
+            {
+                style: {
+                    width: '100%',
+                    height: '100%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    backgroundColor: colors.primary,
+                    color: colors.background,
+                    fontSize: 18,
+                    fontWeight: 'bold',
+                },
+            },
+            initials
+        ),
+        {
+            width: 32,
+            height: 32,
+        }
+    );
+
+    const faviconBuffer = await faviconResponse.arrayBuffer();
+    const faviconPath = join(__dirname, '../src/assets/images/favicon-32x32.png');
+    writeFileSync(faviconPath, Buffer.from(faviconBuffer));
+
+    console.log(`✅ Favicon generated: ${faviconPath}\n`);
 }
 
 generateOGImage().catch((error) => {
