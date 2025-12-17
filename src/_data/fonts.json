@@ -58,5 +58,41 @@
       "link": "'IBM Plex Mono', monospace",
       "ui": "'IBM Plex Mono', monospace"
     }
+  },
+  "neo": {
+    "name": "Neo-Grotesque",
+    "description": "Unbounded optimism - Wide, modern, distinct",
+    "fonts": {
+      "name": "'Unbounded', sans-serif",
+      "tagline": "'Unbounded', sans-serif",
+      "heading": "'Unbounded', sans-serif",
+      "body": "'Work Sans', sans-serif",
+      "link": "'Unbounded', sans-serif",
+      "ui": "'Work Sans', sans-serif"
+    }
+  },
+  "typewriter": {
+    "name": "Typewriter",
+    "description": "Classic meets modern - Courier Prime distinctness",
+    "fonts": {
+      "name": "'Courier Prime', monospace",
+      "tagline": "'Courier Prime', monospace",
+      "heading": "'Courier Prime', monospace",
+      "body": "'Inter', sans-serif",
+      "link": "'Courier Prime', monospace",
+      "ui": "'Inter', sans-serif"
+    }
+  },
+  "swiss2": {
+    "name": "Swiss 2.0",
+    "description": "Contemporary Swiss - DM Sans and Mono",
+    "fonts": {
+      "name": "'DM Sans', sans-serif",
+      "tagline": "'DM Mono', monospace",
+      "heading": "'DM Sans', sans-serif",
+      "body": "'DM Sans', sans-serif",
+      "link": "'DM Mono', monospace",
+      "ui": "'DM Mono', monospace"
+    }
   }
 }
