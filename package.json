@@ -1,12 +1,14 @@
 {
   "name": "ratulotron.github.io",
   "version": "1.0.0",
+  "type": "module",
   "description": "Personal portfolio and blog of Ratul Minhaz - Data Engineer based in Berlin",
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
     "clean": "rm -rf _site",
     "design:capture": "npm run build && node docs/design/capture-design.js",
+    "og:generate": "node scripts/generate-og-image.js",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
@@ -29,10 +31,12 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
+    "@vercel/og": "^0.8.6",
     "jsonresume-theme-even": "^0.26.1",
     "playwright": "^1.56.1",
     "prettier": "^3.7.4",
     "prettier-plugin-jinja-template": "^2.1.0",
+    "react": "^19.2.3",
     "resumed": "^6.1.0"
   }
 }
