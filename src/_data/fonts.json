@@ -11,100 +11,52 @@
       "ui": "'Quicksand', sans-serif"
     }
   },
-  "technical": {
-    "name": "Technical & Modern",
-    "description": "Clean sans-serif with monospace accents - Professional coder aesthetic",
+  "go": {
+    "name": "Go",
+    "description": "The Go programming language font - Pure & Simple",
     "fonts": {
-      "name": "'IBM Plex Sans', sans-serif",
-      "tagline": "'IBM Plex Sans', sans-serif",
-      "heading": "'IBM Plex Sans', sans-serif",
-      "body": "'Inter', sans-serif",
-      "link": "'IBM Plex Mono', monospace",
-      "ui": "'IBM Plex Mono', monospace"
+      "name": "'Bungee Shade', sans-serif",
+      "tagline": "'Bungee', sans-serif",
+      "heading": "'Bungee', monospace",
+      "body": "'Go', sans-serif",
+      "link": "'Go', sans-serif",
+      "ui": "'Go', sans-serif"
     }
   },
-  "professional": {
-    "name": "Professional & Readable",
-    "description": "Highly readable with subtle monospace - Corporate friendly",
+  "editorial": {
+    "name": "Editorial",
+    "description": "High-end magazine feel - Elegant serifs with clean sans",
     "fonts": {
-      "name": "'Work Sans', sans-serif",
-      "tagline": "'Work Sans', sans-serif",
-      "heading": "'Work Sans', sans-serif",
-      "body": "'Work Sans', sans-serif",
-      "link": "'Source Code Pro', monospace",
-      "ui": "'Source Code Pro', monospace"
-    }
-  },
-  "geometric": {
-    "name": "Geometric & Modern",
-    "description": "Angular geometry with coding vibe - Balanced personality and professionalism",
-    "fonts": {
-      "name": "'Space Grotesk', sans-serif",
-      "tagline": "'Space Grotesk', sans-serif",
-      "heading": "'Space Grotesk', sans-serif",
-      "body": "'Inter', sans-serif",
-      "link": "'Space Mono', monospace",
-      "ui": "'Space Mono', monospace"
-    }
-  },
-  "minimalist": {
-    "name": "Minimalist",
-    "description": "Single font family - Ultra clean and modern",
-    "fonts": {
-      "name": "'Inter', sans-serif",
-      "tagline": "'Inter', sans-serif",
+      "name": "'Playfair Display', serif",
+      "tagline": "'Playfair Display', serif",
       "heading": "'Inter', sans-serif",
-      "body": "'Inter', sans-serif",
+      "body": "'EB Garamond', serif",
       "link": "'Inter', sans-serif",
       "ui": "'Inter', sans-serif"
     }
   },
-  "monospace": {
-    "name": "Full Monospace",
-    "description": "Terminal aesthetic - Pure coder style",
+  "brutalist": {
+    "name": "Brutalist",
+    "description": "Bold, raw, and modern - Space Grotesk dominance",
     "fonts": {
-      "name": "'JetBrains Mono', monospace",
-      "tagline": "'JetBrains Mono', monospace",
-      "heading": "'JetBrains Mono', monospace",
-      "body": "'JetBrains Mono', monospace",
-      "link": "'JetBrains Mono', monospace",
-      "ui": "'JetBrains Mono', monospace"
+      "name": "'Space Grotesk', sans-serif",
+      "tagline": "'Space Grotesk', sans-serif",
+      "heading": "'Space Grotesk', sans-serif",
+      "body": "'Space Mono', monospace",
+      "link": "'Space Grotesk', sans-serif",
+      "ui": "'Space Mono', monospace"
     }
   },
-  "elegant": {
-    "name": "Elegant Engineer",
-    "description": "Sophisticated serif with clean sans - Refined professionalism",
+  "ibm": {
+    "name": "IBM Plex",
+    "description": "The engineer's choice - Efficient and technical",
     "fonts": {
-      "name": "'Playfair Display', serif",
-      "tagline": "'Playfair Display', serif",
-      "heading": "'Source Sans Pro', sans-serif",
-      "body": "'Source Sans Pro', sans-serif",
-      "link": "'Source Sans Pro', sans-serif",
-      "ui": "'Source Code Pro', monospace"
-    }
-  },
-  "startup": {
-    "name": "Startup Vibes",
-    "description": "Bold and friendly - Modern tech company feel",
-    "fonts": {
-      "name": "'Poppins', sans-serif",
-      "tagline": "'Poppins', sans-serif",
-      "heading": "'Poppins', sans-serif",
-      "body": "'Poppins', sans-serif",
-      "link": "'Poppins', sans-serif",
-      "ui": "'Poppins', sans-serif"
-    }
-  },
-  "gomono": {
-    "name": "Go Mono",
-    "description": "The Go programming language font - Pure & Simple",
-    "fonts": {
-      "name": "'Go Mono', monospace",
-      "tagline": "'Go Mono', monospace",
-      "heading": "'Go Mono', monospace",
-      "body": "'Go Mono', monospace",
-      "link": "'Go Mono', monospace",
-      "ui": "'Go Mono', monospace"
+      "name": "'IBM Plex Sans', sans-serif",
+      "tagline": "'IBM Plex Mono', monospace",
+      "heading": "'IBM Plex Sans', sans-serif",
+      "body": "'IBM Plex Sans', sans-serif",
+      "link": "'IBM Plex Mono', monospace",
+      "ui": "'IBM Plex Mono', monospace"
     }
   }
 }

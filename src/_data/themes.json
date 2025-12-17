@@ -21,70 +21,81 @@
       "accent": "#0066cc"
     }
   },
-  "ocean-breeze": {
-    "name": "Ocean Breeze",
-    "description": "Cool and professional - Based on Ocean Five",
+  "swiss": {
+    "name": "Swiss Style",
+    "description": "International Typographic Style - Ultra clean with bold accents",
     "colors": {
-      "primary": "#00A0B0",
-      "secondary": "#6A4A3C",
-      "muted": "#CC333F",
-      "background": "#F5F5F0",
-      "accent": "#EDC951"
+      "primary": "#000000",
+      "secondary": "#2d2d2d",
+      "muted": "#757575",
+      "background": "#ffffff",
+      "accent": "#ff3333"
     }
   },
-  "earthy": {
-    "name": "Earthy",
-    "description": "Warm and grounded - Natural tones",
+  "terminal": {
+    "name": "Terminal",
+    "description": "Retro terminal - Pure black and green",
     "colors": {
-      "primary": "#5E4A3C",
-      "secondary": "#7A6A53",
-      "muted": "#948C75",
-      "background": "#F5F1E8",
-      "accent": "#80BCA3"
+      "primary": "#e0e0e0",
+      "secondary": "#a0a0a0",
+      "muted": "#404040",
+      "background": "#000000",
+      "accent": "#00ff00"
     }
   },
-  "sunset": {
-    "name": "Sunset",
-    "description": "Warm and inviting - Based on Let Them Eat Cake",
+  "midnight": {
+    "name": "Midnight",
+    "description": "Deep space - High contrast dark theme",
     "colors": {
-      "primary": "#774F38",
-      "secondary": "#5E3D2E",
-      "muted": "#9A7B6B",
-      "background": "#FAF6F0",
-      "accent": "#E08E79"
+      "primary": "#cbd5e1",
+      "secondary": "#94a3b8",
+      "muted": "#475569",
+      "background": "#0f172a",
+      "accent": "#38bdf8"
     }
   },
-  "mint-coral": {
-    "name": "Mint Coral",
-    "description": "Fresh and modern - Soft pastels",
+  "quiet-light": {
+    "name": "Quiet Light",
+    "description": "Peaceful light theme - Purple accents",
     "colors": {
-      "primary": "#3FB8AF",
-      "secondary": "#547980",
-      "muted": "#7FC7AF",
-      "background": "#F8F8F5",
-      "accent": "#FF9E9D"
+      "primary": "#785677",
+      "secondary": "#555555",
+      "muted": "#777777",
+      "background": "#F5F5F5",
+      "accent": "#AA3731"
     }
   },
-  "dark-mode": {
-    "name": "Dark Mode",
-    "description": "Easy on the eyes - Dark theme",
+  "linear": {
+    "name": "Linear Dark",
+    "description": "Inspired by Linear.app - Sophisticated and professional",
     "colors": {
-      "primary": "#E8E8E8",
-      "secondary": "#C8C8C8",
-      "muted": "#999999",
-      "background": "#1a1a1a",
-      "accent": "#4ECDC4"
+      "primary": "#F7F8F8",
+      "secondary": "#8A8F98",
+      "muted": "#56525C",
+      "background": "#121316",
+      "accent": "#5E6AD2"
     }
   },
-  "lavender": {
-    "name": "Lavender Dreams",
-    "description": "Soft and elegant - Based on Clair de Lune",
+  "paper": {
+    "name": "Academic Paper",
+    "description": "Tufte inspired - Readability first",
     "colors": {
-      "primary": "#413E4A",
-      "secondary": "#73626E",
-      "muted": "#9A8A94",
-      "background": "#FAF6F5",
-      "accent": "#B38184"
+      "primary": "#111111",
+      "secondary": "#444444",
+      "muted": "#777777",
+      "background": "#fffff8",
+      "accent": "#D73027"
+    }
+  },
+  "system": {
+    "name": "System UI",
+    "description": "Native OS feel - San Francisco/Apple aesthetic",
+    "colors": {
+      "primary": "#1d1d1f",
+      "secondary": "#86868b",
+      "muted": "#d2d2d7",
+      "background": "#f5f5f7",
+      "accent": "#0066cc"
     }
   },
   "dracula": {

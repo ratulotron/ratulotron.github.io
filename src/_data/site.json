@@ -3,8 +3,8 @@
   "tagline": "DATA ENGINEER BASED IN BERLIN",
   "description": "Data Engineer in Berlin building data solutions and bridging product development with data science. Python, backend, ETL pipelines.",
   "url": "https://ratul.xyz",
-  "theme": "monochrome",
-  "fontScheme": "gomono",
+  "theme": "system",
+  "fontScheme": "go",
   "author": {
     "name": "Ratul Minhaz",
     "email": "hello@ratul.xyz"
