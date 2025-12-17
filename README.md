@@ -1,146 +1,83 @@
 # Ratul Minhaz - Personal Portfolio
 
-Personal portfolio and blog built with Eleventy (11ty) and deployed on GitHub Pages.
+> [!NOTE]
+> It's a work in progress and not ready for production. Feel free to fork and improve, PRs are welcome!
+
+Being a backend heavy dev, I never got around properly fixing all the CSS gimmicks even though I had the original concept since 2018. I finally decided to fix the issues and make it a production ready 11ty template. Thanks to [Claude Code](https://claude.ai/code) and [Antigravity](https://antigravity.ai)!
+
+
+## Original Design
+
+The original Figma design can be found [here](./docs/design/).
+
+My plan was to fix the title, subtitle, and social menu while the right-side content scrolled. The CSS challenge was achieving the effect of content vanishing under a top bar, like paper sliding into an envelope.
+
+**Homepage**
+![Design](./docs/design/01_homepage.png)
+**Homepage - Scroll Mid**
+![Design](./docs/design/02_homepage_scroll_mid.png)
+**Homepage - Scroll End**
+![Design](./docs/design/03_homepage_scroll_end.png)
+
 
 ## Tech Stack
 
-- **Static Site Generator**: [Eleventy (11ty)](https://www.11ty.dev/)
+Although for a while it was just a static HTML file, I realized I need something more robust to do the updates. I already used Hugo as a static site generator for my blog, so I decided to use 11ty for this portfolio. 
+
+- **Static Site Generator**: [11ty](https://www.11ty.dev/)
 - **Templating**: Nunjucks
-- **Styling**: Modern CSS (CSS Nesting, Custom Properties)
-- **JavaScript**: Vanilla JS (progressive enhancement)
-- **Deployment**: GitHub Actions → GitHub Pages
+- **Styling**: Modern CSS
+- **JavaScript**: Vanilla JS
+- **Deployment**: GitHub Pages
 
-## Design
+## Features
 
-Converted from Figma design to pixel-perfect HTML/CSS implementation with:
+- **Configurable Design**: 
+    - Manage colors, fonts, and configurations via JSON files in `src/_data/` without touching CSS.
+    - Comes with a few pre-configured themes and fonts.
+- **Lightweight**: Minimal dependencies, fast build times.
+- **Responsive**: Mobile-first design with a responsive layout.
+- **Responsive**: Mobile-first design with a responsive layout.
 
-- Solarized color palette
-- Custom typography (Bungee Shade, Bungee, EB Garamond, Quicksand)
-- Fixed header and social menu with scrollable content
-- Responsive design (desktop-first)
+## How to use
 
-## Project Structure
+### Content Management
 
-```
-.
-├── .github/
-│   └── workflows/
-│       └── deploy.yml          # GitHub Actions deployment
-├── src/
-│   ├── _data/                  # Global data files
-│   │   ├── site.json          # Site metadata
-│   │   ├── social.json        # Social links
-│   │   └── timeline.json      # Timeline entries
-│   ├── _includes/
-│   │   ├── layouts/           # Page layouts
-│   │   │   ├── base.njk
-│   │   │   └── home.njk
-│   │   └── partials/          # Reusable components
-│   │       ├── header.njk
-│   │       └── social-menu.njk
-│   ├── assets/
-│   │   └── css/
-│   │       └── style.css      # Main stylesheet
-│   ├── content/
-│   │   └── blog/              # Blog posts (future)
-│   └── index.njk              # Home page
-├── _site/                     # Built static site (gitignored)
-├── scripts/                   # Automation scripts
-│   ├── screenshot.js         # Playwright screenshot generator
-│   └── README.md
-├── .eleventy.js               # Eleventy configuration
-└── package.json
-```
+Modify these JSON files in `src/_data/`:
+- **`home.json`**: Edit the "Intro", "Timeline", and "About" sections.
+- **`site.json`**: Name, description, active theme/font.
+- **`social.json`**: Social media links.
+
+### Theming & Fonts
+
+This project comes with curated **Themes** (Solarized, Nord, etc.) and **Font Schemes** (Playful, Technical, etc.).
+
+1.  **Check Available Options**:
+    *   Open `src/_data/themes.json` for color themes.
+    *   Open `src/_data/fonts.json` for font schemes.
+2.  **Apply Changes**:
+    *   Edit `src/_data/site.json` and update the `theme` or `fontScheme` property to match the key you want.
+
 
 ## Development
 
 ### Prerequisites
 
 - Node.js 20+
-- npm
+- pnpm
 
 ### Setup
 
 ```bash
 # Install dependencies
-npm install
+pnpm install
 
 # Start development server
-npm start
+pnpm start
 
 # Build for production
-npm run build
-
-# Clean build output
-npm run clean
-
-# Capture design screenshots at different viewports
-npm run design:capture
+pnpm run build
 ```
-
-The dev server will be available at `http://localhost:8080` with live reload.
-
-### Design Documentation
-
-Capture design screenshots at different viewport sizes:
-
-```bash
-npm run design:capture
-```
-
-See `docs/design/README.md` for details.
-
-## Deployment
-
-Automatically deployed to GitHub Pages via GitHub Actions on push to `master` branch.
-
-### GitHub Pages Setup
-
-1. Go to repository Settings > Pages
-2. Source: GitHub Actions
-3. The workflow will automatically build and deploy on push
-
-## Content Management
-
-### Updating Content
-
-- **Site info**: Edit `src/_data/site.json`
-- **Social links**: Edit `src/_data/social.json`
-- **Timeline**: Edit `src/_data/timeline.json`
-- **Philosophy/About**: Edit front matter in `src/index.njk`
-
-### Adding Blog Posts
-
-Create a new markdown file in `src/content/blog/`:
-
-```markdown
----
-layout: layouts/post.njk
-title: "My Blog Post"
-date: 2025-01-01
-tags: ["tag1", "tag2"]
----
-
-Content here...
-```
-
-## Design System
-
-All design tokens are defined as CSS custom properties in `src/assets/css/style.css`:
-
-- **Colors**: Solarized palette variables
-- **Typography**: Font family and size variables
-- **Spacing**: rem-based spacing scale
-- **Layout**: Responsive breakpoints and margins
-
-## Browser Support
-
-Modern browsers with CSS nesting support:
-
-- Chrome 112+
-- Firefox 117+
-- Safari 16.5+
-- Edge 112+
 
 ## License
 

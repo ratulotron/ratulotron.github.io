@@ -1,8 +1,0 @@
-# robots.txt for ratul.xyz
-
-# Allow all crawlers
-User-agent: *
-Allow: /
-
-# Sitemap location
-Sitemap: https://ratul.xyz/sitemap.xml

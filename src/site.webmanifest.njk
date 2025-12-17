@@ -1,7 +1,11 @@
+---
+permalink: /site.webmanifest
+eleventyExcludeFromCollections: true
+---
 {
-  "name": "Ratul Minhaz - Data Engineer",
-  "short_name": "Ratul Minhaz",
-  "description": "Data Engineer in Berlin building data solutions and bridging product development with data science",
+  "name": "{{ site.name }} - {{ site.tagline | replace('\n', ' ') }}",
+  "short_name": "{{ site.name }}",
+  "description": "{{ site.description }}",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

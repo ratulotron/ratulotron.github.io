@@ -2,8 +2,6 @@ module.exports = function (eleventyConfig) {
 
   // Copy static assets to output
   eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy("src/CNAME");
-  eleventyConfig.addPassthroughCopy("src/robots.txt");
 
   // Watch CSS files for changes
   eleventyConfig.addWatchTarget("src/assets/css/");

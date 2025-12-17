@@ -29,8 +29,10 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
+    "jsonresume-theme-even": "^0.26.1",
     "playwright": "^1.56.1",
     "prettier": "^3.7.4",
-    "prettier-plugin-jinja-template": "^2.1.0"
+    "prettier-plugin-jinja-template": "^2.1.0",
+    "resumed": "^6.1.0"
   }
 }
