@@ -9,7 +9,13 @@
       "body": "'EB Garamond', serif",
       "link": "'Quicksand', sans-serif",
       "ui": "'Quicksand', sans-serif"
-    }
+    },
+    "fontUrls": [
+      "https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap",
+      "https://fonts.googleapis.com/css2?family=Bungee&display=swap",
+      "https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&display=swap",
+      "https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap"
+    ]
   },
   "go": {
     "name": "Go",
@@ -21,7 +27,12 @@
       "body": "'Go', sans-serif",
       "link": "'Go', sans-serif",
       "ui": "'Go', sans-serif"
-    }
+    },
+    "fontUrls": [
+      "https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap",
+      "https://fonts.googleapis.com/css2?family=Bungee&display=swap",
+      "https://fonts.cdnfonts.com/css/go"
+    ]
   },
   "editorial": {
     "name": "Editorial",
@@ -33,7 +44,12 @@
       "body": "'EB Garamond', serif",
       "link": "'Inter', sans-serif",
       "ui": "'Inter', sans-serif"
-    }
+    },
+    "fontUrls": [
+      "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap",
+      "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap",
+      "https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&display=swap"
+    ]
   },
   "brutalist": {
     "name": "Brutalist",
@@ -45,7 +61,11 @@
       "body": "'Space Mono', monospace",
       "link": "'Space Grotesk', sans-serif",
       "ui": "'Space Mono', monospace"
-    }
+    },
+    "fontUrls": [
+      "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap",
+      "https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+    ]
   },
   "ibm": {
     "name": "IBM Plex",
@@ -57,7 +77,11 @@
       "body": "'IBM Plex Sans', sans-serif",
       "link": "'IBM Plex Mono', monospace",
       "ui": "'IBM Plex Mono', monospace"
-    }
+    },
+    "fontUrls": [
+      "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap",
+      "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap"
+    ]
   },
   "neo": {
     "name": "Neo-Grotesque",
@@ -69,7 +93,11 @@
       "body": "'Work Sans', sans-serif",
       "link": "'Unbounded', sans-serif",
       "ui": "'Work Sans', sans-serif"
-    }
+    },
+    "fontUrls": [
+      "https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap",
+      "https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+    ]
   },
   "typewriter": {
     "name": "Typewriter",
@@ -81,7 +109,11 @@
       "body": "'Inter', sans-serif",
       "link": "'Courier Prime', monospace",
       "ui": "'Inter', sans-serif"
-    }
+    },
+    "fontUrls": [
+      "https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap",
+      "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    ]
   },
   "swiss2": {
     "name": "Swiss 2.0",
@@ -93,7 +125,11 @@
       "body": "'DM Sans', sans-serif",
       "link": "'DM Mono', monospace",
       "ui": "'DM Mono', monospace"
-    }
+    },
+    "fontUrls": [
+      "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap",
+      "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap"
+    ]
   },
   "contrast": {
     "name": "Contrast",
@@ -105,7 +141,11 @@
       "body": "'Inter', sans-serif",
       "link": "'Inter', sans-serif",
       "ui": "'Inter', sans-serif"
-    }
+    },
+    "fontUrls": [
+      "https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap",
+      "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    ]
   },
   "monostack": {
     "name": "Mono Stack",
@@ -117,7 +157,11 @@
       "body": "'Roboto Mono', monospace",
       "link": "'JetBrains Mono', monospace",
       "ui": "'JetBrains Mono', monospace"
-    }
+    },
+    "fontUrls": [
+      "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap",
+      "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
+    ]
   },
   "humanist": {
     "name": "Humanist",
@@ -129,7 +173,11 @@
       "body": "'Public Sans', sans-serif",
       "link": "'Public Sans', sans-serif",
       "ui": "'Public Sans', sans-serif"
-    }
+    },
+    "fontUrls": [
+      "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&display=swap",
+      "https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap"
+    ]
   },
   "display": {
     "name": "Display",
@@ -141,6 +189,11 @@
       "body": "'Archivo', sans-serif",
       "link": "'Archivo Narrow', sans-serif",
       "ui": "'Archivo Narrow', sans-serif"
-    }
+    },
+    "fontUrls": [
+      "https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap",
+      "https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap",
+      "https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap"
+    ]
   }
 }
