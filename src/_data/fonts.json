@@ -94,5 +94,53 @@
       "link": "'DM Mono', monospace",
       "ui": "'DM Mono', monospace"
     }
+  },
+  "contrast": {
+    "name": "Contrast",
+    "description": "Maximum visual tension - Dramatic serif meets clean sans",
+    "fonts": {
+      "name": "'Abril Fatface', serif",
+      "tagline": "'Abril Fatface', serif",
+      "heading": "'Inter', sans-serif",
+      "body": "'Inter', sans-serif",
+      "link": "'Inter', sans-serif",
+      "ui": "'Inter', sans-serif"
+    }
+  },
+  "monostack": {
+    "name": "Mono Stack",
+    "description": "Terminal aesthetic with variety - JetBrains and Roboto Mono",
+    "fonts": {
+      "name": "'JetBrains Mono', monospace",
+      "tagline": "'JetBrains Mono', monospace",
+      "heading": "'Roboto Mono', monospace",
+      "body": "'Roboto Mono', monospace",
+      "link": "'JetBrains Mono', monospace",
+      "ui": "'JetBrains Mono', monospace"
+    }
+  },
+  "humanist": {
+    "name": "Humanist",
+    "description": "Warm and approachable - Fraunces serif with Public Sans",
+    "fonts": {
+      "name": "'Fraunces', serif",
+      "tagline": "'Fraunces', serif",
+      "heading": "'Public Sans', sans-serif",
+      "body": "'Public Sans', sans-serif",
+      "link": "'Public Sans', sans-serif",
+      "ui": "'Public Sans', sans-serif"
+    }
+  },
+  "display": {
+    "name": "Display",
+    "description": "Bold condensed power - Archivo family",
+    "fonts": {
+      "name": "'Archivo Black', sans-serif",
+      "tagline": "'Archivo Black', sans-serif",
+      "heading": "'Archivo', sans-serif",
+      "body": "'Archivo', sans-serif",
+      "link": "'Archivo Narrow', sans-serif",
+      "ui": "'Archivo Narrow', sans-serif"
+    }
   }
 }
