@@ -1,7 +1,9 @@
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
 
   // Copy static assets to output
   eleventyConfig.addPassthroughCopy("src/assets");
+  // Copy top-level generated files like resume.pdf
+  eleventyConfig.addPassthroughCopy("src/*.pdf");
 
   // Watch CSS files for changes
   eleventyConfig.addWatchTarget("src/assets/css/");
@@ -41,4 +43,4 @@ module.exports = function (eleventyConfig) {
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
   };
-};
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/stylelintrc",
+  "extends": ["stylelint-config-standard", "stylelint-config-recess-order"],
+  "rules": {
+    "color-hex-length": "short",
+    "selector-class-pattern": null,
+    "no-descending-specificity": null,
+    "comment-empty-line-before": null,
+    "media-feature-range-notation": null,
+    "no-duplicate-selectors": null
+  }
+}

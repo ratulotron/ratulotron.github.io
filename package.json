@@ -7,8 +7,10 @@
     "start": "eleventy --serve",
     "build": "eleventy",
     "clean": "rm -rf _site",
-    "design:capture": "npm run build && node docs/design/capture-design.js",
+    "design:capture": "pnpm run build && node scripts/capture-screenshots.js",
     "og:generate": "node scripts/generate-og-image.js",
+    "lint:css": "stylelint \"src/**/*.css\"",
+    "lint:css:fix": "stylelint \"src/**/*.css\" --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
@@ -32,11 +34,12 @@
     "@11ty/eleventy": "^3.1.2",
     "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
     "@vercel/og": "^0.8.6",
-    "jsonresume-theme-even": "^0.26.1",
-    "playwright": "^1.56.1",
+    "playwright": "^1.57.0",
     "prettier": "^3.7.4",
     "prettier-plugin-jinja-template": "^2.1.0",
     "react": "^19.2.3",
-    "resumed": "^6.1.0"
+    "stylelint": "^16.9.0",
+    "stylelint-config-recess-order": "^5.0.0",
+    "stylelint-config-standard": "^36.0.0"
   }
 }

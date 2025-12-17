@@ -23,12 +23,55 @@
   /* Links, accents */
 
   /* Typography - Font-scheme based (configured in site.json) */
-  --font-name: var(--fontscheme-name, "Bungee Shade", sans-serif);
-  --font-tagline: var(--fontscheme-tagline, "Bungee", sans-serif);
-  --font-heading: var(--fontscheme-heading, "Bungee", sans-serif);
-  --font-body: var(--fontscheme-body, "EB Garamond", serif);
-  --font-link: var(--fontscheme-link, "Quicksand", sans-serif);
-  --font-ui: var(--fontscheme-ui, "Quicksand", sans-serif);
+  /* Fallback stacks keep a sensible look if web fonts fail */
+  --font-name: var(
+    --fontscheme-name,
+    "Bungee Shade",
+    "Bungee",
+    "Unbounded",
+    "Space Grotesk",
+    "Inter",
+    system-ui,
+    sans-serif
+  );
+  --font-tagline: var(
+    --fontscheme-tagline,
+    "Bungee",
+    "Unbounded",
+    "Space Grotesk",
+    "Inter",
+    system-ui,
+    sans-serif
+  );
+  --font-heading: var(
+    --fontscheme-heading,
+    "Bungee",
+    "Space Grotesk",
+    "Inter",
+    system-ui,
+    sans-serif
+  );
+  --font-body: var(
+    --fontscheme-body,
+    "EB Garamond",
+    "Playfair Display",
+    "Georgia",
+    serif
+  );
+  --font-link: var(
+    --fontscheme-link,
+    "Quicksand",
+    "Inter",
+    system-ui,
+    sans-serif
+  );
+  --font-ui: var(
+    --fontscheme-ui,
+    "Quicksand",
+    "Inter",
+    system-ui,
+    sans-serif
+  );
 
   /* Font Sizes - Fluid typography using clamp(min, preferred, max) */
   --size-name: clamp(36px, 6.67vw, 96px);
@@ -86,8 +129,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 html {
@@ -110,14 +153,14 @@ html::-webkit-scrollbar {
 }
 
 body {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
   font-family: var(--font-body);
   font-size: var(--size-body);
   line-height: 1.5;
   color: var(--color-secondary);
   background-color: var(--color-background);
-  overflow-x: hidden;
-  min-height: 100vh;
-  position: relative;
 }
 
 a {
@@ -140,16 +183,16 @@ ul {
 .site-header {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
   z-index: 100;
 }
 
 .site-header__background {
   position: absolute;
   top: 0;
-  left: var(--margin-left);
   right: var(--margin-right);
+  left: var(--margin-left);
   height: var(--divider-top);
   background-color: var(--color-background);
   border: 1px solid var(--color-background);
@@ -159,40 +202,40 @@ ul {
   position: absolute;
   top: var(--header-top);
   left: var(--margin-left);
+  width: 29.75rem;
+  /* 476px */
+  margin: 0;
   font-family: var(--font-name);
   font-size: var(--size-name);
   font-weight: normal;
   line-height: var(--name-line-height);
   color: var(--color-primary);
-  width: 29.75rem;
-  /* 476px */
-  margin: 0;
 }
 
 .site-header__divider {
   position: absolute;
   top: var(--divider-top);
-  left: var(--margin-left);
   right: var(--margin-right);
+  left: var(--margin-left);
   height: var(--divider-height);
+  margin: 0;
   background-color: var(--color-primary);
   border: none;
   border-radius: 10px;
-  margin: 0;
 }
 
 .site-header__tagline {
   position: absolute;
   top: calc(var(--divider-top) + var(--divider-gap));
   left: var(--margin-left);
+  /* Constrain width to not overlap with content column */
+  max-width: calc(100vw - var(--margin-left) - var(--margin-right) - var(--content-width) - 2rem);
+  margin: 0;
   font-family: var(--font-tagline);
   font-size: var(--size-tagline);
   font-weight: normal;
   line-height: var(--tagline-line-height);
   color: var(--color-primary);
-  /* Constrain width to not overlap with content column */
-  max-width: calc(100vw - var(--margin-left) - var(--margin-right) - var(--content-width) - 2rem);
-  margin: 0;
 }
 
 /* ========================================
@@ -216,8 +259,8 @@ ul {
 
 .social-menu__link {
   display: flex;
-  align-items: center;
   gap: var(--gap-small);
+  align-items: center;
   font-family: var(--font-link);
   font-size: var(--size-link);
   font-weight: 600;
@@ -230,10 +273,10 @@ ul {
 }
 
 .social-menu__icon {
-  font-size: 18px;
-  width: 18px;
-  flex-shrink: 0;
   display: inline-block;
+  flex-shrink: 0;
+  width: 18px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -248,17 +291,17 @@ ul {
 .main-content {
   position: relative;
   right: var(--margin-right);
-  width: var(--content-width);
-  margin-left: auto;
   display: flex;
   flex-direction: column;
   gap: var(--gap-section);
-  padding-bottom: var(--initial-bottom-spacing);
+  width: var(--content-width);
   /* Push content down so only intro is visible initially */
   /* Add extra space to clear the fixed header completely */
   padding-top: max(calc(100vh - var(--initial-bottom-spacing) - 10rem),
       calc(var(--divider-top) + 5rem));
+  padding-bottom: var(--initial-bottom-spacing);
   margin-top: 0;
+  margin-left: auto;
 }
 
 /* ========================================
@@ -272,13 +315,13 @@ ul {
 }
 
 .content-section__heading {
+  margin: 0;
   font-family: var(--font-heading);
   font-size: var(--size-heading);
   font-weight: normal;
   line-height: 1.33;
   /* 24px line height */
   color: var(--color-muted);
-  margin: 0;
 }
 
 .content-section__text {
@@ -304,12 +347,12 @@ ul {
 
 .intro__text {
   flex: 1;
+  margin: 0;
   font-family: var(--font-body);
   font-size: var(--size-body);
   line-height: 1.5;
   color: var(--color-secondary);
   text-align: justify;
-  margin: 0;
 }
 
 .intro__scroll-indicator {
@@ -317,8 +360,8 @@ ul {
   align-items: flex-end;
   justify-content: flex-end;
   padding: var(--gap-small);
-  color: var(--color-secondary);
   font-size: 16px;
+  color: var(--color-secondary);
 }
 
 .content-section--intro {
@@ -346,12 +389,12 @@ ul {
 
 .timeline__text {
   flex: 1;
+  margin: 0;
   font-family: var(--font-body);
   font-size: var(--size-body);
   line-height: 1.5;
   color: var(--color-secondary);
   text-align: left;
-  margin: 0;
 }
 
 .timeline__link {
@@ -365,11 +408,11 @@ ul {
 
 .timeline__year {
   display: flex;
+  flex-shrink: 0;
+  gap: var(--gap-small);
   align-items: center;
   justify-content: flex-end;
-  gap: var(--gap-small);
   padding: var(--gap-small);
-  flex-shrink: 0;
 
   & time {
     font-family: var(--font-ui);
@@ -381,8 +424,8 @@ ul {
 }
 
 .timeline__arrow {
-  font-size: 16px;
   flex-shrink: 0;
+  font-size: 16px;
   color: var(--color-primary);
 }
 
@@ -429,9 +472,9 @@ ul {
 
   .site-header__background {
     position: relative;
-    height: auto;
-    left: 0;
     right: 0;
+    left: 0;
+    height: auto;
     padding: var(--header-top) 0 var(--divider-gap) 0;
   }
 
@@ -447,8 +490,8 @@ ul {
   .site-header__divider {
     position: relative;
     top: 0;
-    left: 0;
     right: 0;
+    left: 0;
     margin: var(--divider-gap) var(--margin-right) var(--divider-gap) var(--margin-left);
   }
 
@@ -473,10 +516,10 @@ ul {
   .main-content {
     position: relative;
     right: auto;
-    margin: 0 var(--margin-right) var(--initial-bottom-spacing) var(--margin-left);
     width: auto;
     max-width: none;
     padding-top: 0;
+    margin: 0 var(--margin-right) var(--initial-bottom-spacing) var(--margin-left);
   }
 }
 

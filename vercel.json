@@ -1,0 +1,6 @@
+{
+  "buildCommand": "pnpm run build",
+  "outputDirectory": "_site",
+  "installCommand": "pnpm install",
+  "ignoreCommand": "echo 'Skipping design capture on Vercel'"
+}

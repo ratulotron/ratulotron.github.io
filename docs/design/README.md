@@ -10,7 +10,7 @@ Captures design screenshots at different viewport sizes using Playwright for doc
 
 ```bash
 # Build site and capture design screenshots
-npm run design:capture
+pnpm run design:capture
 ```
 
 ### Viewport Sizes
@@ -43,9 +43,11 @@ docs/design/screenshots/
 
 ### How It Works
 
+Script: [scripts/capture-screenshots.js](../../scripts/capture-screenshots.js)
+
 1. Builds the 11ty site to `_site/`
-2. Uses Playwright's route interception to serve built files with proper MIME types
-3. Launches headless Chromium for each viewport configuration
-4. Waits for fonts and resources to load (including self-hosted fonts)
-5. Captures viewport screenshot
+2. Serves built files via Playwright route interception with correct MIME types
+3. Launches headless Chromium per viewport configuration
+4. Waits for fonts and resources to load (including generated `fonts.css`)
+5. Captures viewport screenshot only (not full page)
 6. Saves screenshots with descriptive names
