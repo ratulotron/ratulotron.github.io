@@ -70,7 +70,6 @@
 }
 </style>
 <!-- prettier-ignore-end -->
-<!-- All fonts are now self-hosted in /assets/fonts/ with @font-face in style.css -->
 <!-- Open Graph --> <meta property="og:title" content="{% if title %}{{ title }} - {% endif %}{{ site.name }}"/>
 <meta property="og:description" content="{{ description or site.description }}"/>
 <meta property="og:type" content="website"/>
@@ -87,7 +86,7 @@ rel="canonical" href="{{ site.url }}{{ page.url }}"/>
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
   { "@context": "https://schema.org", "@graph": [ { "@type": "Person", "@id": "{{ site.url }}/#person", "name": "Ratul
-                  Minhaz", "alternateName": "Minhazur Rahman", "url": "{{ site.url }} ", "image": "{{ site.url }}
+                    Minhaz", "alternateName": "Minhazur Rahman", "url": "{{ site.url }} ", "image": "{{ site.url }}
   /assets/images/profile.jpg", "sameAs": [ "https://github.com/ratulotron", "https://linkedin.com/in/minhazratul",
   "https://facebook.com/ratulotron" ], "jobTitle": "Senior Data Engineer", "worksFor": { "@type": "Place", "address": {
   "@type": "PostalAddress", "addressLocality": "Berlin", "addressCountry": "DE" } }, "knowsAbout": ["Data Engineering",
