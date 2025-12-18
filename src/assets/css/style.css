@@ -251,7 +251,7 @@ ul {
    FIXED SOCIAL MENU
    ======================================== */
 
-.social-menu {
+.profiles-menu {
   position: fixed;
   /* Align top of social menu with first line of intro text */
   /* Add half-leading plus small adjustment for perfect alignment */
@@ -260,13 +260,13 @@ ul {
   z-index: 50;
 }
 
-.social-menu__list {
+.profiles-menu__list {
   display: flex;
   flex-direction: column;
   gap: var(--gap-small);
 }
 
-.social-menu__link {
+.profiles-menu__link {
   display: flex;
   gap: var(--gap-small);
   align-items: center;
@@ -278,16 +278,16 @@ ul {
 }
 
 /* Do not underline the entire link on hover; we'll underline text only */
-.social-menu__link:hover {
+.profiles-menu__link:hover {
   text-decoration: none;
 }
 
 /* Underline only the text (not the icon) on hover, matching default link style */
-.social-menu__link:hover .social-menu__text {
+.profiles-menu__link:hover .profiles-menu__text {
   text-decoration: underline;
 }
 
-.social-menu__icon {
+.profiles-menu__icon {
   display: inline-block;
   flex-shrink: 0;
   width: 18px;
@@ -296,7 +296,7 @@ ul {
   text-decoration: none;
 }
 
-.social-menu__text {
+.profiles-menu__text {
   line-height: 1;
 }
 
@@ -520,8 +520,8 @@ ul {
     margin: 0 var(--margin-right) 0 var(--margin-left);
   }
 
-  /* Stack social menu below header */
-  .social-menu {
+  /* Stack profiles menu below header */
+  .profiles-menu {
     position: relative;
     top: 0;
     left: 0;

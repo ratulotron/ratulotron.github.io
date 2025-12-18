@@ -1,14 +1,14 @@
-<nav class="social-menu">
-  <ul class="social-menu__list">
+<nav class="profiles-menu" role="navigation" aria-label="Profile links">
+  <ul class="profiles-menu__list">
     {% for link in social %}
-      <li class="social-menu__item">
+      <li class="profiles-menu__item">
         <a
           href="{{ link.url }}"
-          class="social-menu__link"
+          class="profiles-menu__link"
           {% if link.url.startsWith('http') %}target="_blank" rel="noopener noreferrer"{% endif %}
         >
-          <i class="{{ link.icon }} social-menu__icon"></i>
-          <span class="social-menu__text">{{ link.name }}</span>
+          <i class="{{ link.icon }} profiles-menu__icon"></i>
+          <span class="profiles-menu__text">{{ link.name }}</span>
         </a>
       </li>
     {% endfor %}
