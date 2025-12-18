@@ -2,11 +2,11 @@
 permalink: /robots.txt
 eleventyExcludeFromCollections: true
 ---
-# robots.txt for {{ site.url | replace("https://", "") | replace("http://", "") }}
+# robots.txt for {{ config.domain }}
 
 # Allow all crawlers
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: {{ site.url }}/sitemap.xml
+Sitemap: {{ config.url }}/sitemap.xml

@@ -212,6 +212,15 @@ ul {
   color: var(--color-primary);
 }
 
+.site-header__name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header__name a:hover {
+  text-decoration: underline;
+}
+
 .site-header__divider {
   position: absolute;
   top: var(--divider-top);

@@ -34,10 +34,11 @@ My plan was to fix the title, subtitle, and social menu while the right-side con
 
 ### Content Management
 
-Modify these JSON files in `src/_data/`:
+Modify these files in `src/_data/`:
 
 - **`home.json`**: Edit the "Intro", "Timeline", and "About" sections.
-- **`site.json`**: Name, description, active theme/font.
+- **`site.json`**: Name, tagline, description, active theme/font, and author.
+- **`config.js`**: Environment-specific settings (domain/URL). Uses `SITE_DOMAIN` env var or defaults to `ratul.xyz`.
 - **`social.json`**: Social media links.
 
 ### Theming & Fonts
@@ -63,6 +64,9 @@ This project comes with curated **Themes** (Solarized, Nord, etc.) and **Font Sc
 # Install dependencies
 pnpm install
 
+# (Optional) Copy .env.example to .env for custom domain
+cp .env.example .env
+
 # Start development server
 pnpm start
 
@@ -83,10 +87,11 @@ pnpm run build
 
 ## Deploying to Vercel
 
-- Build command: `pnpm run build`
-- Output directory: `_site`
-- Install command: `pnpm install`
-- OG image generation is manual: run `pnpm run og:generate` locally when you change `src/_data/site.json` (name/tagline) or `src/_data/themes.json`, then commit the updated asset.
+- **Build command**: `pnpm run build`
+- **Output directory**: `_site`
+- **Install command**: `pnpm install`
+- **Environment variable**: Set `SITE_DOMAIN` to your custom domain (e.g., `ratul.xyz`) in Vercel project settings.
+- **OG image generation**: Manual step - run `pnpm run og:generate` locally when you change `src/_data/site.json` (name/tagline) or `src/_data/themes.json`, then commit the updated assets.
 
 ## License
 

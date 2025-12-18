@@ -2,8 +2,6 @@ export default function (eleventyConfig) {
 
   // Copy static assets to output
   eleventyConfig.addPassthroughCopy("src/assets");
-  // Copy top-level generated files like resume.pdf
-  eleventyConfig.addPassthroughCopy("src/*.pdf");
 
   // Watch CSS files for changes
   eleventyConfig.addWatchTarget("src/assets/css/");
@@ -13,23 +11,10 @@ export default function (eleventyConfig) {
     files: ["_site/**/*.html", "src/assets/css/**/*.css"],
   });
 
-  // Collections for blog posts
-  eleventyConfig.addCollection("posts", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/content/blog/**/*.md");
-  });
-
-  // Filters
-  eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return new Date(dateObj).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-  });
-
-  // ISO date for datetime attributes
+  // Minimal filters used by templates
   eleventyConfig.addFilter("isoDate", (dateObj) => {
-    return new Date(dateObj).toISOString();
+    const d = dateObj ? new Date(dateObj) : new Date();
+    return d.toISOString();
   });
 
   return {

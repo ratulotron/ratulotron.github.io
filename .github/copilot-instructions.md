@@ -3,8 +3,9 @@
 ## Project Overview
 
 - **Architecture:** 11ty (Eleventy) static site using Nunjucks templates with data-driven theming. Source lives in [src/](src); build output goes to [\_site/](_site).
-- **Data model:** JSON in [src/\_data/](src/_data) drives content and design:
-  - [site.json](src/_data/site.json): site metadata, active `theme` and `fontScheme`.
+- **Data model:** Files in [src/\_data/](src/_data) drive content and design:
+  - [site.json](src/_data/site.json): site metadata (name, tagline, description), active `theme` and `fontScheme`, author info.
+  - [config.js](src/_data/config.js): environment-specific settings (domain/url). Reads `SITE_DOMAIN` env var or defaults to `ratul.xyz`.
   - [home.json](src/_data/home.json): homepage intro, timeline, and about copy.
   - [social.json](src/_data/social.json): social links for the fixed menu.
   - [themes.json](src/_data/themes.json) and [fonts.json](src/_data/fonts.json): curated design presets.
@@ -45,12 +46,14 @@
 
 ## Integration Notes
 
-- **GitHub Pages:** CNAME and robots/sitemap are generated from `site.url` ([src/CNAME.njk](src/CNAME.njk), [src/robots.njk](src/robots.njk), [src/sitemap.njk](src/sitemap.njk)).
+- **Environment Config:** Set `SITE_DOMAIN` env var for custom domain. Templates use `{{ config.domain }}` for domain-only refs (CNAME, robots) and `{{ config.url }}` for full URLs (canonical, OG, sitemap).
+- **GitHub Pages:** CNAME and robots/sitemap use `config.domain` and `config.url` ([src/CNAME.njk](src/CNAME.njk), [src/robots.njk](src/robots.njk), [src/sitemap.njk](src/sitemap.njk)).
 - **Playwright script:** The capture tool currently reads built files from `_site`. If you encounter ESM/CommonJS issues (package.json uses `type: module`), convert the script to ESM or run with an approach compatible with Node's module type before editing.
 - **Vercel Deploy:** Eleventy + ESM works on Vercel. See [vercel.json](vercel.json):
   - `buildCommand`: `pnpm run build`
   - `outputDirectory`: `_site`
   - `installCommand`: `pnpm install`
+  - Set `SITE_DOMAIN` env var in Vercel project settings.
     OG image generation is manual (`pnpm run og:generate`) when `site.json`/`themes.json` change. Design capture is local-only.
 
 ## Guardrails

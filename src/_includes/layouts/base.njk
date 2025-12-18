@@ -73,16 +73,16 @@
 <!-- Open Graph --> <meta property="og:title" content="{% if title %}{{ title }} - {% endif %}{{ site.name }}"/>
 <meta property="og:description" content="{{ description or site.description }}"/>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+<meta property="og:url" content="{{ config.url }}{{ page.url }}"/>
 <meta
-property="og:image" content="{{ site.url }}/assets/images/og-image.jpg"/> <!-- Twitter Card -->
+property="og:image" content="{{ config.url }}/assets/images/og-image.jpg"/> <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="{% if title %}{{ title }} - {% endif %}{{ site.name }}"/>
 <meta name="twitter:description" content="{{ description or site.description }}"/>
 <meta
-name="twitter:image" content="{{ site.url }}/assets/images/og-image.jpg"/> <!-- Canonical URL -->
+name="twitter:image" content="{{ config.url }}/assets/images/og-image.jpg"/> <!-- Canonical URL -->
 <link
-rel="canonical" href="{{ site.url }}{{ page.url }}"/>
+rel="canonical" href="{{ config.url }}{{ page.url }}"/>
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
   { "@context": "https://schema.org", "@graph": [ { "@type": "Person", "@id": "{{ site.url }}/#person", "name": "Ratul
@@ -91,8 +91,8 @@ rel="canonical" href="{{ site.url }}{{ page.url }}"/>
   "https://facebook.com/ratulotron" ], "jobTitle": "Senior Data Engineer", "worksFor": { "@type": "Place", "address": {
   "@type": "PostalAddress", "addressLocality": "Berlin", "addressCountry": "DE" } }, "knowsAbout": ["Data Engineering",
   "Python", "ETL Pipelines", "Backend Development", "Data Science"], "alumniOf": { "@type": "EducationalOrganization",
-  "name": "Computer Science" } }, { "@type": "WebSite", "@id": "{{ site.url }} /#website", "url": "{{ site.url }}
-  ", "name": "{{ site.name }} ", "description": "{{ site.description }} ", "publisher": { "@id": "{{ site.url }} /#person"
+  "name": "Computer Science" } }, { "@type": "WebSite", "@id": "{{ config.url }} /#website", "url": "{{ config.url }}
+  ", "name": "{{ site.name }} ", "description": "{{ site.description }} ", "publisher": { "@id": "{{ config.url }} /#person"
   }, "inLanguage": "en-US" } ] }
 </script>
 <!-- Google tag (gtag.js) -->
