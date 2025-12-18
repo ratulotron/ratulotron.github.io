@@ -218,7 +218,7 @@ ul {
 }
 
 .site-header__name a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .site-header__divider {
@@ -275,10 +275,16 @@ ul {
   font-weight: 600;
   color: var(--color-accent);
   text-decoration: none;
+}
 
-  &:hover {
-    text-decoration: underline;
-  }
+/* Do not underline the entire link on hover; we'll underline text only */
+.social-menu__link:hover {
+  text-decoration: none;
+}
+
+/* Underline only the text (not the icon) on hover, matching default link style */
+.social-menu__link:hover .social-menu__text {
+  text-decoration: underline;
 }
 
 .social-menu__icon {
@@ -287,29 +293,15 @@ ul {
   width: 18px;
   font-size: 18px;
   text-align: center;
-}
-
   text-decoration: none;
-  position: relative;
+}
+
+.social-menu__text {
   line-height: 1;
-
-/* Animated underline */
-.social-menu__link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 2px;
-  background: var(--color-accent);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 180ms ease;
 }
 
-.social-menu__link:hover::after {
-  transform: scaleX(1);
-}
+/* ========================================
+   MAIN CONTENT (Scrollable)
    ======================================== */
 
 .main-content {
