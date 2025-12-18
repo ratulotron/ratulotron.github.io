@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Personal portfolio and blog of Ratul Minhaz - Data Engineer based in Berlin",
+  "packageManager": "pnpm@10.25.0",
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",

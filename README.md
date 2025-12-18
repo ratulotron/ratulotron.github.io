@@ -30,29 +30,6 @@ My plan was to fix the title, subtitle, and social menu while the right-side con
 - **Lightweight**: Minimal dependencies, fast build times.
 - **Responsive**: Mobile-first design with a responsive layout.
 
-## Resume Generation
-
-The project supports generating a resume using JSONResume + Resumed.
-
-By default, it uses a local theme aligned with the site's design:
-
-```sh
-# Render HTML resume
-pnpm run resume:html
-
-# Export PDF resume (optional)
-pnpm run resume:pdf
-```
-
-You can also use external themes:
-
-```sh
-# Use the even theme
-pnpm exec resumed render resume.json -t jsonresume-theme-even -o src/resume.html
-```
-
-The generated `src/resume.html` is included in the Eleventy build and published.
-
 ## How to use
 
 ### Content Management
@@ -93,8 +70,6 @@ pnpm start
 pnpm run build
 ```
 
-## Deploying to Vercel
-
 ## Scripts
 
 - `pnpm start` – Start Eleventy dev server with live reload.
@@ -103,8 +78,6 @@ pnpm run build
 - `pnpm run format` – Format sources with Prettier (Nunjucks plugin enabled).
 - `pnpm run og:generate` – Generate OG image and favicon from theme colors.
 - `pnpm run design:capture` – Capture screenshots from built `_site` (ensure Chromium installed: `npx playwright install chromium`).
-- `pnpm run resume:html` – Render resume.html using JSONResume theme.
-- `pnpm run resume:pdf` – Export resume.pdf (if configured).
 - `pnpm run lint:css` – Lint CSS files.
 - `pnpm run lint:css:fix` – Fix CSS linting issues.
 

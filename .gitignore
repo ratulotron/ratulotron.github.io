@@ -41,3 +41,5 @@ docs/design/screenshots/
 
 ### Claude AI ###
 .claude/
+.vercel
+.env*.local

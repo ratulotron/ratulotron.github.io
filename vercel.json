@@ -1,6 +1,7 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "eleventy",
   "buildCommand": "pnpm run build",
   "outputDirectory": "_site",
-  "installCommand": "pnpm install",
-  "ignoreCommand": "echo 'Skipping design capture on Vercel'"
+  "installCommand": "pnpm install"
 }
