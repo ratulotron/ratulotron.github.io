@@ -5,6 +5,7 @@
         <a
           href="{{ link.url }}"
           class="profiles-menu__link"
+          data-track="social_{{ link.name | lower | replace('é', 'e') }}"
           {% if link.url.startsWith('http') %}target="_blank" rel="noopener noreferrer"{% endif %}
         >
           <i class="{{ link.icon }} profiles-menu__icon"></i>

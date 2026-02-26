@@ -101,6 +101,17 @@ rel="canonical" href="{{ config.url }}{{ page.url }}"/>
   }
   gtag('js', new Date());
   gtag('config', 'G-KN14X7Z5JS');
+
+  // CTA click tracking
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('[data-track]').forEach(function(el) {
+      el.addEventListener('click', function() {
+        gtag('event', 'cta_click', {
+          'event_label': this.getAttribute('data-track')
+        });
+      });
+    });
+  });
 </script>
 <!-- Font Awesome -->
 <link
